@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Login</title>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
+  <link rel="stylesheet" href="https://use.typekit.net/gtu7ugu.css">
+  <script src="https://kit.fontawesome.com/e8c8e8e543.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+  <body>
+    <img class='bg' src='/assets/login.jpg'>
+<h1 class='logo' ><a href='/'><span class='black'>Van</span>tage</a></h1>
+<p>* open source placeholder image, to be updated.</p>
+<div class='con'>
+    <h1><span class='black'>Welcome</span> Back</h1>
+    <p>EMAIL</p>
+    <input type='email'>
+    <p>PASSWORD</p>
+    <input type='password'>
+    <div class='forgot'><a>Forgot your password?</a></div>
+    <button>Login</button>
+</div>
+
+<style>
+    .logo {
+        z-index: 1;
+        position:fixed;
+        top: 20px;
+        right: 40px;
+        font-size:20pt;
+        color:var(--main);
+        cursor:pointer;
+    }
+    .logo a:visited{
+        color:var(--main);
+    }
+    .logo a:hover {
+        filter:brightness(90%);
+    }
+    .bg {
+        position:fixed;
+        z-index: -1;
+        top:0px;
+        left:0px;
+        height:100%;
+        width:100%;
+        object-fit:cover;
+        opacity:0.8;
+    }
+    .con {
+        background-color:white;
+        position:fixed;
+        left:0px;
+        top:0px;
+        width:450px;
+        height:100%;
+        padding-left:100px;
+    }
+    .con h1 {
+        color:var(--main);
+        font-size:25pt;
+        margin-top:150px;
+        margin-bottom:60px;
+    }
+    .con p {
+        color:rgba(65, 65, 65, 0.521);
+        font-size:10.5pt;
+        font-weight:600;
+        margin:0px;
+        margin-top:15px;
+        margin-bottom:7px;
+    }
+    .con input {
+        border-radius:5px;
+        border:var(--text-dark) 2px solid;
+        padding:8px 15px;
+        font-size:13pt;
+        font-family: sofia-pro;
+        outline-color:var(--main);
+        width:250px;
+    }
+    .forgot{
+        color:var(--main);
+        font-size:10.5pt;
+        font-weight:400;
+        margin-top:20px;
+        cursor:pointer;
+    }
+    .forgot:hover{
+        text-decoration:underline;
+    }
+    .con button{
+        border:none;
+        background-color:var(--main);
+        color:white;
+        padding:10px 30px;
+        width:280px;
+        text-align:center;
+        font-size:12pt;
+        border-radius:5px;
+        font-weight:bold;
+        margin-top:20px;
+        cursor:pointer;
+        transition:all 0.1s ease-in-out;
+    }
+    .con button:hover {
+        opacity:0.8;
+    }
+</style>
+  </body>
+</html>
+

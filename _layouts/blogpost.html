@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+  {% include header.html %}
+  <main>
+    <div class='padding page-head' style='width:700px;'>
+      <h1>{{page.title}}</h1>
+      <p>{{page.date | date: "%B %d, %Y" }} | by {{page.author}}</p> <br>
+      <hr>
+      <div class='content'>
+        {{content}}
+      </div>
+    </div>
+    {% include footer.html %}
+  </main>
+
+  <script>
+      $("#mainnav").addClass("active");
+        $( "#title" ).css("opacity",0);
+        $( "#logo" ).css("opacity",1);
+  </script>
+
+<style>
+    .page-head {
+      margin-top:100px;
+    }
+    .content h1, .content h2, .content h3{
+        margin-top:80px;
+    }
+</style>
