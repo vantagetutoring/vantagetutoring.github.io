@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Vantage Tutoring</title>
+  <title>Weird Button Challenge</title>
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
@@ -78,29 +78,56 @@
 	.dropdown:hover .dropdown-con {display: block;}
 </style>
   <main>
-    <div class='padding page-head'>
-      <h1></h1>
-      <p></p> <br>
+    <div class='padding page-head' style='width:700px;'>
+      <h1>Weird Button Challenge</h1>
+      <p>July 27, 2020 | by Jayson Tian</p> <br>
       <hr>
-      <style type="text/css" media="screen">
-  .container {
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
+      <div class='content'>
+        <p>Win this challenge by pressing the green button.</p>
+
+<p><button id="s1" onclick="greendie()">HOVER OVER ME, don’t click.</button></p>
+
+<p><button id="s2" onclick="win()">CLICK HERE TO WIN </button></p>
+
+<style>
+    button {
+        position: fixed;
+        font-size:20pt;
+        padding:20px 30px;
+    }
+    #s1 {
+        background-color: red;
+        color:white;
+        top:400px;
+        left:50px;
+    }
+    #s2 {
+        background-color: green;
+        color:white;
+        top:400px;
+        right:50px;
+    }
+
 </style>
 
-<div class="container">
-  <h1>Oh No.</h1>
-  <p>You either got the wrong link or I might've messed up big time.</p>
-  <p><strong>This page doesn't exist (404).</strong></p>
-  <button onclick="location.replace('/index.html')"><i class='fas fa-home'> </i> To my humble abode</button>
-</div>
+<script>
+    $('#s2').hide();
+    function greendie(){
+        $('#s2').remove();
+        $('#s1').text("You just killed the green button.");
+    }
+    $('#s1').mouseover(function(){
+        $('#s2').show()   })
+        $('#s1').mouseleave(function(){
+        $('#s2').hide()   })
 
+        function win(){
+            alert('yay congrats you won.')
+        }
+    </script>
+
+
+      </div>
     </div>
     <footer>
 	<div class='padding'>
@@ -252,6 +279,9 @@ background-color:white;
 <style>
     .page-head {
       margin-top:100px;
+    }
+    .content h1, .content h2, .content h3{
+        margin-top:80px;
     }
 </style>
 

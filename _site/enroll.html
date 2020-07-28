@@ -18,16 +18,65 @@
       
 <nav id='mainnav'>
 	<div id='mainnav-holder'>
-		<a id='logo' href='http://localhost:4000'><span class='black'>Van</span>tage</a>
+		<a id='logo' href='/'><span class='black'>Van</span>tage</a>
 		<div id='navlinks'>
-			<a class='tab' href="/about">About Us</a>
-			<a class='tab' href="/aboutme">Our Program</a>
+			<div class='dropdown'>
+				<a class='tab'>About Us</a>
+				<div class='dropdown-con'>
+					<a href='/about'>Who We Are</a>
+					<a href='/team'>Our Team</a>
+					<a href='/blog'>The Blog</a>
+					<a href='/blog/whats-new'>What's New</a>
+				</div>
+			</div>
+			<div class='dropdown'>
+				<a class='tab'>Our Program</a>
+				<div class='dropdown-con'>
+					<a href='/program'>Overview</a>
+					<a href='/classes'>Classes</a>
+					<a href='/tutors'>Tutors</a>
+					<a href='/q+a'>Q&A</a>
+				</div>
+			</div>
 			<a class='tab' href="/pricing">Pricing</a>
 			<a id='sign-up-btn' href='/enroll'>Enroll Now</a>
 		</div>
 	</div>
 </nav>
 
+<style>
+	.dropdown {
+		position: relative;
+		  display: inline-block;
+		  height:40px;
+		  cursor:default;
+	}
+	.dropdown-con {
+		display:none;
+		position: absolute;
+		top: 40px;
+		left:-40px;
+		background-color: white;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.116);
+		border-radius:5px;
+		z-index: 1;
+	}
+	.dropdown-con a{
+		color: black;
+		padding: 8px 16px;
+		text-decoration: none;
+		display: block;
+		color:rgb(88, 88, 88);
+  		font-weight:500;
+  		font-size: 12.5pt;
+  		text-decoration:none;
+		cursor:pointer;
+	}
+	.dropdown-con a:hover {background-color: rgb(236, 236, 236);}
+
+	.dropdown:hover .dropdown-con {display: block;}
+</style>
   <main>
     <div class='padding page-head'>
       <h1>Course Enrollment</h1>

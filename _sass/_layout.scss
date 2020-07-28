@@ -172,6 +172,9 @@ a {
   width:340px;
 }
 
+.flex {
+  display:flex; justify-content: space-between;
+}
 #intro-lead a {
   float:right;
   margin-top:-10px;
@@ -193,6 +196,7 @@ a {
 
 .s2 {
   background-color:white;
+  font-size:12pt;
 }
 
 .s2 .bg{
@@ -229,7 +233,7 @@ a {
 }
 
 .s2 .grid div{
-  margin-top:20px;
+  margin-bottom:20px;
   width:45%;
   margin-left:5%;
 }
