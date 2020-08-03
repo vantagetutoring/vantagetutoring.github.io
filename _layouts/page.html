@@ -5,9 +5,33 @@ layout: default
   {% include header.html %}
   <main>
     <div class='padding page-head'>
-      <h1>{{page.title}}</h1>
-      <p>{{page.description}}</p> <br>
+
+
+      {% if page.image %}
+            <div class='flex'>
+              <div>
+                <h1>{{page.title}}</h1>
+                <p>{{page.description}}</p> <br>
+                {% if page.link %}
+                  <a class='header-btn'  href='{{page.link[1]}}'>{{page.link[0]}}</a>
+                {% endif %}
+              </div>
+              <img id='header-image' src='{{page.image}}'>
+            </div>
+      {% else %}
+            <div>
+              <h1>{{page.title}}</h1>
+              <p>{{page.description}}</p> <br>
+              {% if page.link %}
+                <a class='header-btn' href='{{page.link[1]}}'>{{page.link[0]}}</a>
+              {% endif %}
+            </div>
+      {% endif %}
+
+
+
       <hr>
+      <br>
       {{content}}
     </div>
     {% include footer.html %}
@@ -21,6 +45,22 @@ layout: default
 
 <style>
     .page-head {
-      margin-top:100px;
+      margin-top:150px;
     }
+    #header-image{
+      margin-top:-135px;
+    }
+    .header-btn{
+      background-color:var(--main);
+      color:white;
+      font-size: 13pt;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-top:40px;
+      cursor:pointer;
+    }
+    .header-btn:hover{
+
+    }
+
 </style>

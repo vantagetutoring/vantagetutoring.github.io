@@ -10,7 +10,7 @@ description: An affordable and considerate model. Trial classes anytime.
     <div>
         <img src='./assets/pricing-p.png'>
         <h2>Homework Help</h2>
-        <h1>$15 <span> / hr</span></h1>
+        <h1>$ <span> / hr</span></h1>
         <button>Try it Free</button>
         <ul>
             <li>Tutors help with extracurricular or school based homework</li>
@@ -19,7 +19,7 @@ description: An affordable and considerate model. Trial classes anytime.
     <div>
         <img src='./assets/pricing-1.png'>
         <h2>Standard Courses</h2>
-        <h1>$20 <span> / hr</span></h1>
+        <h1>$ <span> / hr</span></h1>
         <button>Try it Free</button>
         <ul>
             <li>Tutors help with extracurricular or school based homework</li>
@@ -28,7 +28,7 @@ description: An affordable and considerate model. Trial classes anytime.
     <div>
         <img src='./assets/pricing-p.png'>
         <h2>Select Premium Courses</h2>
-        <h1>$25 <span> / hr</span></h1>
+        <h1>$ <span> / hr</span></h1>
         <button>Enroll Now</button>
         <ul>
             <li>Tutors help with extracurricular or school based homework</li>
@@ -37,7 +37,7 @@ description: An affordable and considerate model. Trial classes anytime.
     <div>
         <img src='./assets/pricing-p.png'>
         <h2>8 Class Bundle</h2>
-        <h1>85% <span>Off</span></h1>
+        <h1>% <span>Off</span></h1>
         <button>Enroll Now</button>
         <ul>
             <p>Helo</p>

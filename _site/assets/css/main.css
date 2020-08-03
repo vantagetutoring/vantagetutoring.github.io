@@ -16,7 +16,11 @@ body {
   font-size: 13pt; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: var(--main); }
+
+a:hover {
+  text-decoration: underline; }
 
 #sign-up-btn {
   background-color: #fceada;

@@ -13,6 +13,11 @@ body {
 
 a {
   text-decoration:none;
+  color:var(--main)
+}
+
+a:hover {
+  text-decoration:underline;
 }
 
 #sign-up-btn{
