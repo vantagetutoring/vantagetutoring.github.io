@@ -2,6 +2,7 @@
 html{
   background-color: white;
 }
+
 body {
   margin:0px;
   font-family: sofia-pro, sans-serif;
@@ -19,6 +20,21 @@ a {
 a:hover {
   text-decoration:underline;
 }
+
+h1 {
+  font-size: 30pt;
+  margin:0px;
+}
+
+h2 {
+  margin:0px;
+}
+
+hr {
+  border: 1.5px solid black;
+  opacity: 0.1;
+}
+
 
 #sign-up-btn{
   background-color:#fceada;
@@ -272,16 +288,3 @@ a:hover {
 
 
 
-h1 {
-  font-size: 30pt;
-  margin:0px;
-}
-
-h2 {
-  margin:0px;
-}
-
-hr {
-  border: 1.5px solid black;
-  opacity: 0.1;
-}

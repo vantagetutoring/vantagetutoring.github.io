@@ -22,6 +22,17 @@ a {
 a:hover {
   text-decoration: underline; }
 
+h1 {
+  font-size: 30pt;
+  margin: 0px; }
+
+h2 {
+  margin: 0px; }
+
+hr {
+  border: 1.5px solid black;
+  opacity: 0.1; }
+
 #sign-up-btn {
   background-color: #fceada;
   border: solid 2px #fceada;
@@ -234,17 +245,6 @@ a:hover {
   border-radius: 50px;
   margin-top: 40px;
   cursor: pointer; }
-
-h1 {
-  font-size: 30pt;
-  margin: 0px; }
-
-h2 {
-  margin: 0px; }
-
-hr {
-  border: 1.5px solid black;
-  opacity: 0.1; }
 
 .highlight {
   background: #fff; }

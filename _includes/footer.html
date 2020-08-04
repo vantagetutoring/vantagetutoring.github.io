@@ -1,5 +1,6 @@
 <footer>
-	<div class='padding'>
+	<div id='footer-con'>
+		<!--
 		<div id='con'>
 			<div>
 				<h2>Interested? Get started for free today.</h2><br>
@@ -7,17 +8,16 @@
 			</div>
 			<div style='display: flex'>
 				<a id='footer-enroll' href='/enroll'>Enroll Now</a>
-			</div>
-		</div>
-		<div class='con-2'>
+			</div>-->
+
 			<div id='info'>
 				<h1>Vantage Tutoring</h1> <br>
 				<p>For students, by students. A tutoring and teaching service connecting high schoolers with younger kids.</p>
 				<p>© 2020 Vantage Tutoring, Inc.</p>
 				<a>Terms and Policy</a>
 			</div>
-			<div id='grid'>
-				<div>
+			<div class='link-con'>
+				<div class='link-col'>
 					<h2>Links</h2>
 					<a href='/'>Home</a>
 					<a href='/about'>About</a>
@@ -26,7 +26,7 @@
 					<a href='/login'>Login</a>
 					<a href='/'>Sign Up</a>
 				</div>
-				<div>
+				<div class='link-col'>
 					<h2>Program</h2>
 					<a href='/program'>Overview</a>
 					<a href='/classes'>Classes</a>
@@ -34,7 +34,7 @@
 					<a href='/pricing'>Pricing</a>
 					<a href='/q+a'>Q&A</a>
 				</div>
-				<div>
+				<div class='link-col'>
 					<h2>Company</h2>
 					<a href='/'>Help & Support</a>
 					<a href='/tutor/hire'>Join Our Team</a>
@@ -45,6 +45,7 @@
 					<a v>Email Us</a>
 				</div>
 			</div>
+			
 		</div>
 	</div>
 
@@ -52,19 +53,51 @@
 
 <style>
 
+
+footer {
+	background-image:url('/assets/footer.png');
+	background-size:cover;
+	margin-top:100px;
+	padding-top:150px;
+	padding-bottom:75px;
+	scroll-snap-align: end;
+	display:flex;
+}
+
+#footer-con{
+	margin:auto;
+	width:70%;
+	max-width:1000px;
+	min-width:830px;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content: space-between;
+}
+
+#info {
+	width:30%;
+}
+
+.link-con {
+	display:flex;
+	width: 450px;
+	margin-left:50px;
+	justify-content:space-between;
+}
+
+.link-col {
+	display:flex;
+	flex-direction:column;
+	width:150px;
+	font-size:12pt;
+}
+
+
 .con-2 {
 	display:flex;
 	justify-content: space-between;
 	margin-top:75px;
-}
-
-.con-2 p{
-	opacity:0.7
-}
-
-footer p {
-	margin:5px 0px;
-	font-size:11.5pt;
+	width:100%;
 }
 
 footer #info {
@@ -74,24 +107,16 @@ footer #info h1{
 	font-size:20pt;
 }
 
-footer #grid {
-	width:600px;
-	display:flex;
-}
 
-footer #grid h2{
+
+.link-col h2{
 	margin-top:5px;
 	font-size:16pt;
 	margin-bottom:20px;
 	margin-left:10px;
 }
 
-footer #grid div{
-	display:flex;
-	flex-direction:column;
-}
-
-footer #grid a{
+.link-col a{
 	margin-right:20px;
 	width:160px;
 	padding:4px 10px;
@@ -99,14 +124,13 @@ footer #grid a{
 	border-radius:3px;
 	color:inherit;
 	text-decoration: none;
-	font-size:11.5pt;
 }
-footer #grid a:hover{
+.link-col a:hover{
 	background-color:rgba(255, 58, 9, 0.123);
 }
 
 
-
+/*
 #con {
 	display:flex;
 	justify-content: space-between;
@@ -115,14 +139,9 @@ footer #grid a:hover{
 	padding: 35px 40px;
 	color:white;
 	align-items: center;
-}
-footer {
-	background-image:url('/assets/footer.png');
-	background-size:cover;
-	height:600px;
-	margin-top:100px;
-	scroll-snap-align: end;
-}
+}*/
+
+
 
 #footer-enroll {
 background-color:white;
@@ -136,4 +155,55 @@ background-color:white;
   margin-top:10px;
   font-weight:600;
 }
+
+@media only screen and (max-width: 600px) {
+  html {
+	scroll-snap-type: none;
+	font-size:13pt;
+  }
+
+  footer {
+	width:100%;
+	max-width:100%;
+	min-width:100%;
+	padding-top:210px;
+  }
+  #footer-con {
+	width:100%;
+	max-width:100%;
+	min-width:100%;
+	display:flex;
+	flex-direction: column-reverse;
+  }
+  #info {
+	  margin: 0px auto;
+	  text-align:center;
+	  margin-top:40px;
+  }
+  .link-con{
+	  display:flex;
+	  flex-direction: column;
+	  margin:0px;
+	  width:100%;
+	  text-align:left;
+  }
+  .link-col{
+	  margin: 0px;
+	  margin-left:40px;
+	  padding:0px;
+  }
+  .link-col a {
+	padding: 5px 0px;
+	font-size:13pt;
+  } 
+  .link-col h2{
+	font-size:18pt;
+	margin:0px;
+	margin-left:0px;
+	padding:0px 0px;
+	padding-top:30px;
+	padding-bottom:20px;
+  }
+  
+
 </style>

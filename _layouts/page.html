@@ -32,9 +32,11 @@ layout: default
 
       <hr>
       <br>
-      {{content}}
+      <div id='mobile-con'>
+        {{content}}
+      </div>
     </div>
-    {% include footer.html %}
+
   </main>
 
   <script>
@@ -44,6 +46,9 @@ layout: default
   </script>
 
 <style>
+    img {
+      object-fit: cover;
+    }
     .page-head {
       margin-top:150px;
     }
@@ -62,5 +67,54 @@ layout: default
     .header-btn:hover{
 
     }
+
+@media only screen and (max-width: 600px) {
+  main {
+    width:100%;
+  }
+ 
+  .page-head {
+    width:100%;
+    margin-top:50px;
+  }
+  .page-head .flex {
+    display:flex;
+    flex-direction: column-reverse;
+  }
+  .header-btn{
+    margin:auto;
+    margin-bottom:50px;
+  }
+  .flex div {
+    display:flex;
+    flex-direction: column;
+  }
+  .page-head h1, .page-head p{
+    text-align:center;
+    margin:20px auto;
+  }
+  p, a, details, summary, li, ul {
+    font-size:13.5pt;
+  }
+  #header-image {
+    width:40vh;
+    margin:0px auto;
+    margin-top:0px;
+  }
+  #mobile-con {
+    padding:0px 25px;
+    margin-top:20px;
+    margin-bottom:-150px;
+  }
+
+  hr {
+    width:80%;
+  }
+
+  h2, h3 {
+    font-size: 18pt;
+  }
+
+}
 
 </style>

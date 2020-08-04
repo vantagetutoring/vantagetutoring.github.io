@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
-  <html style='scroll-snap-type: y mandatory;'>
+  <html>
     {% include header.html %}
     <main>
         {{content}}
     </main>
-    {% include footer.html %}
   </html>
+  <style>
+    html {
+      scroll-snap-type: y mandatory;
+    }
+  </style>
 
   <script>
     $(window).scroll(function() {     
