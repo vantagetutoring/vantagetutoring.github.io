@@ -18,14 +18,10 @@ layout: default
       var scroll = $(window).scrollTop();
       if (scroll > 0) {
           $("#mainnav").addClass("active");
-          $( "#title" ).css("opacity",0);
-          $( "#logo" ).css("opacity",1);
           
       }
       else {
           $("#mainnav").removeClass("active");
-          $( "#title" ).css("opacity",1);
-          $( "#logo" ).css("opacity",0);
       }
     });
   </script>

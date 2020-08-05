@@ -6,8 +6,8 @@ layout: default
   <main>
     <div class='padding page-head'>
 
-
-      {% if page.image %}
+      <div id='head'>
+        {% if page.image %}
             <div class='flex'>
               <div>
                 <h1>{{page.title}}</h1>
@@ -27,22 +27,38 @@ layout: default
               {% endif %}
             </div>
       {% endif %}
+      </div>
+      
 
 
 
       <hr>
       <br>
-      <div id='mobile-con'>
-        {{content}}
-      </div>
+    </div>
+    <div id='mobile-con'>
+      {{content}}
     </div>
 
   </main>
 
   <script>
-      $("#mainnav").addClass("active");
-        $( "#title" ).css("opacity",0);
-        $( "#logo" ).css("opacity",1);
+      
+        if ($(window).width() < 600) {
+              $(window).scroll(function() {     
+              var scroll = $(window).scrollTop();
+              if (scroll > 0) {
+                  $("#mainnav").addClass("active");
+                  
+              }
+              else {
+                  $("#mainnav").removeClass("active");
+              }
+            });
+        } else {
+          $("#mainnav").addClass("active");
+          $( "#title" ).css("opacity",0);
+          $( "#logo" ).css("opacity",1);
+        }
   </script>
 
 <style>
@@ -68,6 +84,12 @@ layout: default
 
     }
 
+    #mobile-con {
+      max-width:1000px;
+      width:1000px;
+      margin:auto;
+    }
+
 @media only screen and (max-width: 600px) {
   main {
     width:100%;
@@ -89,9 +111,12 @@ layout: default
     display:flex;
     flex-direction: column;
   }
-  .page-head h1, .page-head p{
+  #head h1, #head p{
     text-align:center;
     margin:20px auto;
+  }
+  #head p{
+    width:450px;
   }
   p, a, details, summary, li, ul {
     font-size:13.5pt;
@@ -102,7 +127,8 @@ layout: default
     margin-top:0px;
   }
   #mobile-con {
-    padding:0px 25px;
+    width:85%;
+    padding:0px 7.5%;
     margin-top:20px;
     margin-bottom:-150px;
   }
@@ -113,6 +139,10 @@ layout: default
 
   h2, h3 {
     font-size: 18pt;
+  }
+
+  .flex {
+    flex-direction: column;
   }
 
 }

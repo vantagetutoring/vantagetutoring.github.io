@@ -2,7 +2,7 @@
 layout: page
 permalink: /pricing
 title: Pricing
-description: An affordable and considerate model. Trial classes anytime.
+description: An affordable and considerate model. Trial class anytime.
 ---
 
 <br>
@@ -40,7 +40,6 @@ description: An affordable and considerate model. Trial classes anytime.
         <h1>% <span>Off</span></h1>
         <button>Enroll Now</button>
         <ul>
-            <p>Helo</p>
             <li>Tutors help with extracurricular or school based homework</li>
         </ul>
     </div>
@@ -53,12 +52,13 @@ description: An affordable and considerate model. Trial classes anytime.
 <style>
     #pricing {
         display:flex;
+        flex-wrap:wrap;
         justify-content:space-between;
     }
     #pricing div{
         display:flex;
         flex-direction:column;
-        width: 23%;
+        width: 200px;
     }
 
     #pricing div img{
@@ -111,6 +111,31 @@ description: An affordable and considerate model. Trial classes anytime.
         margin-top:15px;
         cursor:pointer;
     }
+
+    @media only screen and (max-width: 600px) {
+        #pricing{
+            width:100%;
+        }
+        #pricing div{
+            width:300px;
+            margin:auto;
+            display:flex;
+            justify-content:space-around;
+            border: 3px solid var(--main-light);
+            border-radius:10px;
+            padding: 25px 15px;
+            margin-bottom:50px;
+        }
+        #pricing div img, #pricing div button, #pricing div li, #pricing div h2, #pricing div h1{
+            margin:0px auto;
+            text-align:center;
+        }
+        #pricing div h1 {
+            margin:10px auto;
+            margin-bottom:20px;
+        }
+    }
+
 
 
 </style>

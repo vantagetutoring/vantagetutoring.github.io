@@ -2,7 +2,7 @@
 layout: page
 permalink: enroll
 title: Course Enrollment
-description: Thank you for your interest! There are a variety of ways in which you can enroll your child, please select your preferred method below. Once enrolled, you and your child will automatically gain access to the course dashboard.
+description: Thank you for your interest! <br> There are a variety of ways in which you can enroll your child, please select your preferred method below. Once enrolled, you and your child will automatically gain access to the course dashboard.
 ---
 
 <div id='enroll'>
@@ -59,5 +59,17 @@ description: Thank you for your interest! There are a variety of ways in which y
         font-weight:bold;
         text-align:center;
         margin-top:20px;
+    }
+    @media only screen and (max-width: 600px) {
+        #enroll {
+            flex-direction:column;
+        }
+        #enroll div {
+            margin:auto;
+            margin-bottom:50px;
+        }
+        #enroll p{
+            width: 100%;
+        }
     }
 </style>

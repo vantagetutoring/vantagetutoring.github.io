@@ -71,11 +71,11 @@ link: [Apply Now, 'https://forms.gle/tX3kuWcmN2zvwwKx7']
     <div>
         <h2>🔗 We Want You! </h2>
         <ul>
-            <li>Fill out this <a href='https://forms.gle/tX3kuWcmN2zvwwKx7'>QUICK APPLICATION FORM</a>.</li>
+            <li>Fill out this <a href='https://forms.gle/tX3kuWcmN2zvwwKx7'>quick application form</a>.</li>
             <li>We'll review your application and get back to you ASAP with next steps if we think you're suitable for the job. Dw it'll be fast, we're glued to our phones 24/7.</li>
         </ul>
     </div>
-    <img src='/assets/hire-2.png'>
+    <img id='img2' src='/assets/hire-2.png'>
 </div>
 
 <h2>Questions & Answers</h2>
@@ -110,7 +110,7 @@ link: [Apply Now, 'https://forms.gle/tX3kuWcmN2zvwwKx7']
         margin-top:100px;
     }
     #grid-con div{
-        width:30%;
+        width:300px;
         padding:0px;
         display:flex;
         flex-direction: column;
@@ -118,7 +118,7 @@ link: [Apply Now, 'https://forms.gle/tX3kuWcmN2zvwwKx7']
     #grid-con div p{
         width:90%;
         text-align:center;
-        font-size:11pt;
+        font-size:11.5pt;
         margin:0px auto;
         min-height:150px;
     }
@@ -153,5 +153,35 @@ link: [Apply Now, 'https://forms.gle/tX3kuWcmN2zvwwKx7']
 
     summary:hover {
         background-color:rgb(231, 231, 231);
+    }
+
+    @media only screen and (max-width: 600px){
+        #grid-con div i{
+            font-size:50pt;
+            background-color:rgba(255, 139, 97, 0.712);
+            border-radius:100px;
+            margin:0px auto;
+            height:70px;
+            width:70px;
+            padding:28px;
+        }
+        #grid-con div p{
+            width:100%;
+            text-align:center;
+            font-size:13.5pt;
+            margin:0px auto;
+            min-height:150px;
+        }
+        #grid-con div h4{
+            font-size:18pt;
+            text-align: center;
+            margin:25px 0px;
+        }
+
+        #img2 {
+            width:300px;
+            margin:50px auto;
+        }
+
     }
 </style>

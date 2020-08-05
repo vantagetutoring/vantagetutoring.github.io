@@ -58,6 +58,62 @@
 </nav>
 
 <style>
+	#mainnav {
+  padding-top:65px;
+  width:100%;
+  top: 0;
+  z-index:1000;
+  transition: all .5s ease-in-out;
+  position:fixed;
+}
+
+#mainnav.active {
+  position:fixed;
+  top:0px;
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, .2);
+  padding-top: 10px;
+  padding-bottom: 15px;
+  height: 46px;
+  background-color:white;
+}
+
+#mainnav-holder {
+  display:flex;
+  justify-content: space-between;
+  max-width:1000px;
+  margin:auto;
+  vertical-align: middle;
+}
+
+#navlinks{
+  padding:10px;
+  z-index:1;
+}
+
+#logo{
+  font-weight: 700;
+  font-size:20pt;
+  margin:0px;
+  color:#ec6f5b;
+  text-decoration: none;
+  padding:5px 0px;
+  transition: all 0.2s ease-in-out;
+  opacity:0;
+}
+
+#title {
+  margin-top:150px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab {
+  color:rgb(88, 88, 88);
+  font-weight:500;
+  font-size: 12.5pt;
+  text-decoration:none;
+  margin-right:30px;
+}
+
 	.dropdown {
 		position: relative;
 		  display: inline-block;
@@ -89,25 +145,59 @@
 	.dropdown-con a:hover {background-color: rgb(236, 236, 236);}
 
 	.dropdown:hover .dropdown-con {display: block;}
+
+	@media only screen and (max-width: 600px){
+		.dropdown {
+			display:none;
+		}
+		#navlinks{
+			display:none;
+		}
+		#logo {
+			display:block;
+			opacity:1;
+		}
+		#mainnav{
+			width:100%;
+			padding:0px 25px;
+			padding-top:10px;
+			transition: all .2s ease-in-out;
+			padding-bottom: 15px;
+			border-bottom:2px rgb(255, 255, 255) solid;
+		}
+		#mainnav.active {
+			position:fixed;
+			top:0px;
+			box-shadow: none;
+			border-bottom:2px rgb(228, 228, 228) solid;
+			padding-top: 10px;
+			padding-bottom: 15px;
+			height: 46px;
+			background-color:white;
+		}
+	}
 </style>
   <main>
     <div class='padding page-head'>
 
-
-      
+      <div id='head'>
+        
             <div>
               <h1>Terms & Agreement</h1>
               <p></p> <br>
               
             </div>
       
+      </div>
+      
 
 
 
       <hr>
       <br>
-      <div id='mobile-con'>
-        <p>Last updated on July 30, 2020</p>
+    </div>
+    <div id='mobile-con'>
+      <p>Last updated on July 30, 2020</p>
 
 <p>The purpose of the Terms of Use is to help you understand how Vantage Tutoring, Inc. (“Vantage Tutoring”) works and how the user (“you”) may use the services offered on this site. Please make sure that you read these Terms prior to using or continuing to use this website. By using and/or continuing to use this site, you warrant that you understand, agree to, and accept all terms and conditions contained on this page.</p>
 
@@ -242,15 +332,28 @@ You agree to indemnify, defend, and hold harmless Vantage Tutoring and its subsi
 <h2 id="w-entire-agreement">W. ENTIRE AGREEMENT</h2>
 <p>These Terms constitute the entire agreement between you and Vantage Tutoring relating to their subject matter, and cancel and supersede any prior versions of the Terms. You may not assign or otherwise transfer the Terms or any right granted hereunder. You also may be subject to additional terms and conditions that may apply when you use Vantage Tutoring or third-party products or services.</p>
 
-      </div>
     </div>
 
   </main>
 
   <script>
-      $("#mainnav").addClass("active");
-        $( "#title" ).css("opacity",0);
-        $( "#logo" ).css("opacity",1);
+      
+        if ($(window).width() < 600) {
+              $(window).scroll(function() {     
+              var scroll = $(window).scrollTop();
+              if (scroll > 0) {
+                  $("#mainnav").addClass("active");
+                  
+              }
+              else {
+                  $("#mainnav").removeClass("active");
+              }
+            });
+        } else {
+          $("#mainnav").addClass("active");
+          $( "#title" ).css("opacity",0);
+          $( "#logo" ).css("opacity",1);
+        }
   </script>
 
 <style>
@@ -276,6 +379,12 @@ You agree to indemnify, defend, and hold harmless Vantage Tutoring and its subsi
 
     }
 
+    #mobile-con {
+      max-width:1000px;
+      width:1000px;
+      margin:auto;
+    }
+
 @media only screen and (max-width: 600px) {
   main {
     width:100%;
@@ -297,9 +406,12 @@ You agree to indemnify, defend, and hold harmless Vantage Tutoring and its subsi
     display:flex;
     flex-direction: column;
   }
-  .page-head h1, .page-head p{
+  #head h1, #head p{
     text-align:center;
     margin:20px auto;
+  }
+  #head p{
+    width:450px;
   }
   p, a, details, summary, li, ul {
     font-size:13.5pt;
@@ -310,7 +422,8 @@ You agree to indemnify, defend, and hold harmless Vantage Tutoring and its subsi
     margin-top:0px;
   }
   #mobile-con {
-    padding:0px 25px;
+    width:85%;
+    padding:0px 7.5%;
     margin-top:20px;
     margin-bottom:-150px;
   }
@@ -321,6 +434,10 @@ You agree to indemnify, defend, and hold harmless Vantage Tutoring and its subsi
 
   h2, h3 {
     font-size: 18pt;
+  }
+
+  .flex {
+    flex-direction: column;
   }
 
 }

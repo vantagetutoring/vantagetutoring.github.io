@@ -58,6 +58,62 @@
 </nav>
 
 <style>
+	#mainnav {
+  padding-top:65px;
+  width:100%;
+  top: 0;
+  z-index:1000;
+  transition: all .5s ease-in-out;
+  position:fixed;
+}
+
+#mainnav.active {
+  position:fixed;
+  top:0px;
+  box-shadow: 0 4px 10px -2px rgba(0, 0, 0, .2);
+  padding-top: 10px;
+  padding-bottom: 15px;
+  height: 46px;
+  background-color:white;
+}
+
+#mainnav-holder {
+  display:flex;
+  justify-content: space-between;
+  max-width:1000px;
+  margin:auto;
+  vertical-align: middle;
+}
+
+#navlinks{
+  padding:10px;
+  z-index:1;
+}
+
+#logo{
+  font-weight: 700;
+  font-size:20pt;
+  margin:0px;
+  color:#ec6f5b;
+  text-decoration: none;
+  padding:5px 0px;
+  transition: all 0.2s ease-in-out;
+  opacity:0;
+}
+
+#title {
+  margin-top:150px;
+  transition: all 0.2s ease-in-out;
+}
+
+.tab {
+  color:rgb(88, 88, 88);
+  font-weight:500;
+  font-size: 12.5pt;
+  text-decoration:none;
+  margin-right:30px;
+}
+
 	.dropdown {
 		position: relative;
 		  display: inline-block;
@@ -89,12 +145,43 @@
 	.dropdown-con a:hover {background-color: rgb(236, 236, 236);}
 
 	.dropdown:hover .dropdown-con {display: block;}
+
+	@media only screen and (max-width: 600px){
+		.dropdown {
+			display:none;
+		}
+		#navlinks{
+			display:none;
+		}
+		#logo {
+			display:block;
+			opacity:1;
+		}
+		#mainnav{
+			width:100%;
+			padding:0px 25px;
+			padding-top:10px;
+			transition: all .2s ease-in-out;
+			padding-bottom: 15px;
+			border-bottom:2px rgb(255, 255, 255) solid;
+		}
+		#mainnav.active {
+			position:fixed;
+			top:0px;
+			box-shadow: none;
+			border-bottom:2px rgb(228, 228, 228) solid;
+			padding-top: 10px;
+			padding-bottom: 15px;
+			height: 46px;
+			background-color:white;
+		}
+	}
 </style>
   <main>
     <div class='padding page-head'>
 
-
-      
+      <div id='head'>
+        
             <div class='flex'>
               <div>
                 <h1>Join Our Team</h1>
@@ -106,13 +193,16 @@
               <img id='header-image' src='/assets/hire.png'>
             </div>
       
+      </div>
+      
 
 
 
       <hr>
       <br>
-      <div id='mobile-con'>
-        <h2>🤔 What is Vantage?</h2>
+    </div>
+    <div id='mobile-con'>
+      <h2>🤔 What is Vantage?</h2>
 <ul>
     <li>We are a group of skilled students from the top high schools in the GTA offering tutoring.</li>
     <li>The company and management is non-profit.</li>
@@ -175,11 +265,11 @@
     <div>
         <h2>🔗 We Want You! </h2>
         <ul>
-            <li>Fill out this <a href='https://forms.gle/tX3kuWcmN2zvwwKx7'>QUICK APPLICATION FORM</a>.</li>
+            <li>Fill out this <a href='https://forms.gle/tX3kuWcmN2zvwwKx7'>quick application form</a>.</li>
             <li>We'll review your application and get back to you ASAP with next steps if we think you're suitable for the job. Dw it'll be fast, we're glued to our phones 24/7.</li>
         </ul>
     </div>
-    <img src='/assets/hire-2.png'>
+    <img id='img2' src='/assets/hire-2.png'>
 </div>
 
 <h2>Questions & Answers</h2>
@@ -214,7 +304,7 @@
         margin-top:100px;
     }
     #grid-con div{
-        width:30%;
+        width:300px;
         padding:0px;
         display:flex;
         flex-direction: column;
@@ -222,7 +312,7 @@
     #grid-con div p{
         width:90%;
         text-align:center;
-        font-size:11pt;
+        font-size:11.5pt;
         margin:0px auto;
         min-height:150px;
     }
@@ -258,16 +348,59 @@
     summary:hover {
         background-color:rgb(231, 231, 231);
     }
+
+    @media only screen and (max-width: 600px){
+        #grid-con div i{
+            font-size:50pt;
+            background-color:rgba(255, 139, 97, 0.712);
+            border-radius:100px;
+            margin:0px auto;
+            height:70px;
+            width:70px;
+            padding:28px;
+        }
+        #grid-con div p{
+            width:100%;
+            text-align:center;
+            font-size:13.5pt;
+            margin:0px auto;
+            min-height:150px;
+        }
+        #grid-con div h4{
+            font-size:18pt;
+            text-align: center;
+            margin:25px 0px;
+        }
+
+        #img2 {
+            width:300px;
+            margin:50px auto;
+        }
+
+    }
 </style>
-      </div>
     </div>
 
   </main>
 
   <script>
-      $("#mainnav").addClass("active");
-        $( "#title" ).css("opacity",0);
-        $( "#logo" ).css("opacity",1);
+      
+        if ($(window).width() < 600) {
+              $(window).scroll(function() {     
+              var scroll = $(window).scrollTop();
+              if (scroll > 0) {
+                  $("#mainnav").addClass("active");
+                  
+              }
+              else {
+                  $("#mainnav").removeClass("active");
+              }
+            });
+        } else {
+          $("#mainnav").addClass("active");
+          $( "#title" ).css("opacity",0);
+          $( "#logo" ).css("opacity",1);
+        }
   </script>
 
 <style>
@@ -293,6 +426,12 @@
 
     }
 
+    #mobile-con {
+      max-width:1000px;
+      width:1000px;
+      margin:auto;
+    }
+
 @media only screen and (max-width: 600px) {
   main {
     width:100%;
@@ -314,9 +453,12 @@
     display:flex;
     flex-direction: column;
   }
-  .page-head h1, .page-head p{
+  #head h1, #head p{
     text-align:center;
     margin:20px auto;
+  }
+  #head p{
+    width:450px;
   }
   p, a, details, summary, li, ul {
     font-size:13.5pt;
@@ -327,7 +469,8 @@
     margin-top:0px;
   }
   #mobile-con {
-    padding:0px 25px;
+    width:85%;
+    padding:0px 7.5%;
     margin-top:20px;
     margin-bottom:-150px;
   }
@@ -338,6 +481,10 @@
 
   h2, h3 {
     font-size: 18pt;
+  }
+
+  .flex {
+    flex-direction: column;
   }
 
 }
