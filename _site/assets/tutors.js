@@ -2,7 +2,7 @@
 
 
 
-$.getJSON('http://gsx2json.com/api?id=15UJ5-Tg_3D3Eeg1VfY9XFiBphAVmQoBgxDKePPrSzHQ', (data)=>{
+$.getJSON('https://sheet.best/api/sheets/c82f0581-abd9-4b43-ba80-f0237a5656a5', (data)=>{
     (data.rows).forEach(t => {
         var c = $('<div>').addClass('tutor').appendTo('#tutor-con');
         if (t.image != ''){
