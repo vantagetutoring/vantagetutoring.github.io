@@ -4,28 +4,53 @@ layout: default
 
   {% include header.html %}
   <main>
-    <div class='padding page-head' style='width:700px;'>
-      <h1>{{page.title}}</h1>
-      <p>{{page.date | date: "%B %d, %Y" }} | by {{page.author}}</p> <br>
-      <hr>
-      <div class='content'>
-        {{content}}
+    <div class='padding page-head'>
+      <div id='page-con'>
+        <h1>{{page.title}}</h1>
+        <p>{{page.date | date: "%B %d, %Y" }} | by {{page.author}}</p> <br>
+        <hr>
+        <div class='content'>
+          {{content}}
+        </div>
       </div>
     </div>
     {% include footer.html %}
   </main>
 
   <script>
-      $("#mainnav").addClass("active");
+      
+      if ($(window).width() < 600) {
+            $(window).scroll(function() {     
+            var scroll = $(window).scrollTop();
+            if (scroll > 0) {
+                $("#mainnav").addClass("active");
+                
+            }
+            else {
+                $("#mainnav").removeClass("active");
+            }
+          });
+      } else {
+        $("#mainnav").addClass("active");
         $( "#title" ).css("opacity",0);
         $( "#logo" ).css("opacity",1);
+      }
   </script>
 
 <style>
     .page-head {
+      width:700px;
       margin-top:100px;
     }
     .content h1, .content h2, .content h3{
         margin-top:80px;
+    }
+    @media only screen and (max-width: 600px){
+      .page-head{
+        width:100%;
+      }
+      #page-con {
+        padding:0px 40px;
+      }
     }
 </style>

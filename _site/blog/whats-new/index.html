@@ -181,12 +181,13 @@
 	}
 </style>
   <main>
-    <div class='padding page-head' style='width:700px;'>
-      <h1>What's New?</h1>
-      <p>June 20, 2020 | by Jayson Tian</p> <br>
-      <hr>
-      <div class='content'>
-        <p>Vantage has just been launched a few weeks back, so we are working as best as we can to add more features and details to both our virtual and online programs, as well as the core structures of our service! We want to ensure that we are most prepared to teach and inspire students in meaningful ways. This page will be the changelog, consisting of news and updates - stay tuned and consider following us on social media!</p>
+    <div class='padding page-head'>
+      <div id='page-con'>
+        <h1>What's New?</h1>
+        <p>June 20, 2020 | by Jayson Tian</p> <br>
+        <hr>
+        <div class='content'>
+          <p>Vantage has just been launched a few weeks back, so we are working as best as we can to add more features and details to both our virtual and online programs, as well as the core structures of our service! We want to ensure that we are most prepared to teach and inspire students in meaningful ways. This page will be the changelog, consisting of news and updates - stay tuned and consider following us on social media!</p>
 
 <h2 id="july-29th-2020">July 29th, 2020</h2>
 
@@ -196,6 +197,7 @@
   <li>Free first trial class coupon - applied upon registration</li>
 </ul>
 
+        </div>
       </div>
     </div>
     <footer>
@@ -410,17 +412,40 @@ background-color:white;
   </main>
 
   <script>
-      $("#mainnav").addClass("active");
+      
+      if ($(window).width() < 600) {
+            $(window).scroll(function() {     
+            var scroll = $(window).scrollTop();
+            if (scroll > 0) {
+                $("#mainnav").addClass("active");
+                
+            }
+            else {
+                $("#mainnav").removeClass("active");
+            }
+          });
+      } else {
+        $("#mainnav").addClass("active");
         $( "#title" ).css("opacity",0);
         $( "#logo" ).css("opacity",1);
+      }
   </script>
 
 <style>
     .page-head {
+      width:700px;
       margin-top:100px;
     }
     .content h1, .content h2, .content h3{
         margin-top:80px;
+    }
+    @media only screen and (max-width: 600px){
+      .page-head{
+        width:100%;
+      }
+      #page-con {
+        padding:0px 40px;
+      }
     }
 </style>
 
