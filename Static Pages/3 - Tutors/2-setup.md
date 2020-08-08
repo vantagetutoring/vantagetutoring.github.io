@@ -37,5 +37,6 @@ Our organization team itself is **non-profit**. Our goal is to help inspire, sha
 <br>
 
 <p style='color:red'><b>By clicking the button below you agree to all the above terms. You will be redirected to the DASHBOARD SETUP page.</b></p>
+<br>
 
-<button>I Agree </button>
+<a class='btn' href='/tutor/dashboard'><b>I Agree To These Terms</b> </a>
