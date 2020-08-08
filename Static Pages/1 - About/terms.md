@@ -22,7 +22,7 @@ Vantage Tutoring controls and operates the site from various locations and makes
 You acknowledge and agree that Vantage Tutoring's services are provided for the purpose of learning, not cheating. You are not to inquire tutors to complete assignments, write papers, take quizzes or otherwise complete the work on your behalf. Also, you are not to use Vantage Tutoring's services for any purpose that violates the academic honesty policy or other conduct policies of your school, university, academic institution or workplace.
 
 ## D. CLIENT OBLIGATIONS AND CONDUCT
-In consideration of your use of this website, you agree: (1) that you are of legal age and have capacity to agree to these Terms; (2) to provide accurate, current, and complete information on your account about you as may be prompted by a registration form on the website ("Client Account"); (3) to maintain the security of your password and identification; (4) to maintain and promptly update the Client Account and any information you provide to Vantage Tutoring, to keep it accurate, current and complete; and (5) to accept all risks of unauthorized access to information and Client Account.
+In consideration of your use of this website, you agree: (1) to provide accurate, current, and complete information on your account about you as may be prompted by a registration form on the website ("Client Account"); (2) to maintain the security of your password and identification; (3) to maintain and promptly update the Client Account and any information you provide to Vantage Tutoring, to keep it accurate, current and complete; and (4) to accept all risks of unauthorized access to information and Client Account.
 
 You are entirely responsible for all the content that you upload, post, or otherwise transmit through your use of this site. You agree not to upload, post or otherwise transmit content that: (1) is inaccurate, harmful, obscene, pornographic, defamatory, racist, violent, offensive, harassing, or otherwise objectionable to Vantage Tutoring or other users of the website; (2) includes unauthorized disclosure of personal information; (3) violates or infringes anyone's intellectual property rights; or (4) contains software viruses or any other computer code, files or programs designed to interrupt, destroy or limit the functionality of any computer software or hardware or telecommunications equipment. Vantage Tutoring reserves the right to edit or remove content that violates these Terms, that contains third-party commercial advertisements, or for any other reason it deems necessary.
 
@@ -60,8 +60,6 @@ The preceding paragraph notwithstanding, you understand and agree Vantage Tutori
 
 Vantage Tutoring expressly disclaims, and you expressly release Vantage Tutoring from, any and all liability whatsoever for any controversies, claims, suits, injuries and/or damages arising from and/or in any way related to: (1) any inaccuracy, untimeliness or incompleteness regarding a user's Eligibility Conditions and/or (2) misstatements or misrepresentations made by any user.
 
-Vantage Tutoring reserves all of its rights under the Communications Decency Act, including without limitation its right to remove anything objectionable to Vantage Tutoring in its sole discretion. Alleged improprieties by any user may be reported to Vantage Tutoring by email at info@superiorlearning.ca
-
 ## E. THIRD PARTY REPORTS
 Vantage Tutoring may utilize third party consumer reporting agencies that perform, among other things, criminal background checks, sex offender registry checks, motor vehicle records checks, credit checks, and identification verifications ("consumer reports"). Vantage Tutoring does not endorse or make any representations or warranties regarding the reliability of such consumer reports or the accuracy, timeliness or completeness of any information in the consumer reports. Vantage Tutoring does not independently verify information in the consumer reports.
 
@@ -78,10 +76,10 @@ Vantage Tutoring does not claim ownership of the content that you place on the s
 ## H. TERMS OF TRANSACTING BUSINESS
 You understand and agree to abide by Vantage Tutoring's tutor and client payment policies. You agree that you are willing to pay all costs through Vantage Tutoring. These costs include but are not limited to: (1) hourly rate or package rates as listed; (2) travel and transportation fees; (3) cancellation fees as described in a tutor’s cancellation policy (found on a tutor’s profile on the site); and (4) the commission arrangement between the tutor and Vantage Tutoring.
 
-## ## I. THIRD PARTY VERIFICATION SERVICES
+## I. THIRD PARTY VERIFICATION SERVICES
 Vantage Tutoring may make available one or more third party verification services that enable users of the Site to inquire about information including, but not limited to, another user’s identity and criminal history. Use of a third party verification service is voluntary for both the party requesting the verification and the party undergoing the verification. You agree that Vantage Tutoring shall not be held responsible or liable in any way if any information provided by a third party verification service is inaccurate. When a third party verification service is used, you warrant that you will comply with The Credit Report Act as set out by the province of Ontario.
 
-J. MARKETING AND PROMOTIONS
+## J. MARKETING AND PROMOTIONS
 Vantage Tutoring may run ads and promotions from third parties on the Site. Your correspondence or business dealings with, or participation in promotions of, advertisers other than Vantage Tutoring found on or through the site, including payment and delivery of related goods or services, and any other terms, conditions, warranties or representations associated with such dealings, are solely between you and such advertiser. Vantage Tutoring is not responsible or liable for any loss or damage of any sort incurred as the result of any such dealings or as the result of the presence of such non-Vantage Tutoring advertisers on the site.
 
 ## K. PHYSICAL MATERIAL DISCLOSURE
