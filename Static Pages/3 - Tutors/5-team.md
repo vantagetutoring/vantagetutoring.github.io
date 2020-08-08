@@ -22,7 +22,7 @@ description: If you're interested in joining our backend team!
     - Must know how to communicate and write fluently in Mandarin, experience in article writing is preferred.
 - WeChat Manager
     - Must know Chinese and must be organized.
-- Head of Marketing
+- Marketer
     - Must understand buisness marketing concepts and have relations completely. Using a variety of social media and tools both virutal and physical to connecting students with our organization.
 - Admin and Tutor Management
     - Discuss quality and content of tutoring sessions and communicates between team. Must be organized and is observative.

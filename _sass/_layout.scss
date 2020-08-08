@@ -287,4 +287,22 @@ hr {
 }
 
 
+details {
+  outline:none;
+}
+
+summary {
+  outline:none;
+  cursor:pointer; 
+  padding:10px 15px;
+  border-radius:5px;
+}
+
+details p{
+  padding:10px 20px;
+}
+
+summary:hover {
+  background-color:rgb(231, 231, 231);
+}
 
