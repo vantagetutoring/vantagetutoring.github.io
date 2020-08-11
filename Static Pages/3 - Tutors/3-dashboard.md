@@ -7,7 +7,7 @@ image: /assets/setup-1.png
 link: [Dashboard, 'https://forms.gle/tX3kuWcmN2zvwwKx7']
 ---
 
-<p style='color:red'><b>NOTE: You have 3 days to fill out your profile on the dashboard upon the date you've recieved your invite email. We will assume you're no longer interested and give the opportunity to other interested tutors in the waiting list.</b></p>
+<p style='color:red'><b>NOTE: You have 3 days to fill out your profile from the date you've recieved your invite email. We will assume you're no longer interested and give the opportunity to other interested tutors in the waiting list.</b></p>
 
 ## If you agree, welcome to our team!
 
