@@ -17,7 +17,7 @@ layout: home
                         </div>
                         <br><br>
                         <p id='intro-lead'>Attend a trial class!  <a id='intro-btn' href='/enroll'>Try it Free</a></p>
-                        <p id='intro-lead'>Already registered?  <a id='intro-btn' href='/login'>Login</a></p>
+                        <p id='intro-lead' class='loginbtn'>Already registered?  <a id='intro-btn' href='/login'>Login</a></p>
                     </div>
                     
                 </div>
@@ -373,6 +373,9 @@ height:350px;
 }
 
 @media only screen and (max-width: 600px){
+    .loginbtn{
+        display:none;
+    }
 p {
     font-size:13.5pt;
 }
@@ -397,9 +400,10 @@ main {
     height:auto;
     padding-bottom:50px;
 }
-#s-intro p{
+#s-intro #intro-holder p{
     text-align:center;
     font-size:13.5pt;
+    margin:0px auto;
 }
 #s-intro h1{
     width:80%;
@@ -409,6 +413,8 @@ main {
     display:flex;
     width:90%;
     justify-content: space-between;
+    margin:10px auto;
+
 }
 #intro-lead p{
     width:200px;

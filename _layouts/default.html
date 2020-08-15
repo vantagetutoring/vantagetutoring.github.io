@@ -78,6 +78,10 @@
           text-decoration: none;
           background-color:white;
       }
+
+      #mobile-btn {
+        display:none;
+      }
   
   .tab {
     color:rgb(88, 88, 88);
@@ -127,6 +131,7 @@
       .dropdown:hover .dropdown-con {display: block;   text-decoration: none;}
   
       @media only screen and (max-width: 600px){
+        
           html::-webkit-scrollbar {
               display: none;
           }
@@ -140,26 +145,75 @@
               display:block;
               opacity:1;
           }
+          #mobile-btn{
+            display:block;
+            font-size:17pt;
+          }
           #mainnav{
               width:100%;
-              padding:0px 25px;
-              padding-top:10px;
+              padding:0px 0px;
+              padding-top:0px;
               transition: all .2s ease-in-out;
               padding-bottom: 15px;
               border-bottom:2px rgb(255, 255, 255) solid;
               background-color:white;
+              box-shadow:none;
           }
           #mainnav.active {
+              width:100%;
+              height:auto;
+              padding:0px 0px;
+              padding-top:0px;
               position:fixed;
-              top:0px;
               box-shadow: none;
-              border-bottom:2px rgb(228, 228, 228) solid;
-              padding-top: 10px;
-              padding-bottom: 15px;
-              height: 46px;
+              border-bottom:2px rgb(221, 221, 221) solid;
               background-color:white;
           }
+          #mainnav #mobile-menu {
+            border-bottom:2px rgb(221, 221, 221) solid;
+          }
+          #mainnav.active #mobile-menu {
+            border-bottom:none;
+          }
+          #mainnav-holder, #mainnav.active #mainnav-holder{
+            margin:0px auto;
+            width: 90%;
+            padding:10px 5%;
+            vertical-align: center;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          #mobile-menu {
+            width:90%;
+            padding:20px 5%;
+            margin:auto;
+            display:none;
+            flex-direction: column;
+          }
+          #mobile-menu #flex {
+            display:flex;
+            justify-content: space-between;
+          }
+          #mobile-menu #flex div{
+            width:30%;
+            display:flex;
+            flex-direction:column;
+            text-align:center;
+            font-size:13.5pt;
+          }
+          #mobile-menu #flex a{
+            margin-bottom:12px;
+          }
+          #mobile-menu .btn{
+            margin:0px auto;
+            margin-top:20px;
+            font-size:12.5pt;
+            font-weight:bold;
+            border-radius:5px;
+            padding:10px 15px;
+          }
       }
-      
+
 </style>
 
