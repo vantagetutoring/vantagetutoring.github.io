@@ -9,7 +9,7 @@ layout: home
             <!--<img id='s-intro-bg-white' src='assets/bg-white.png'>-->
         
             <div style='z-index:100;'>
-                <div class='flex'>
+                <div class='flex' id='main-splash'> 
                     <div>
                         <div id='intro-holder'>
                             <h1 id='title'><span class='black'>Vantage</span> Tutoring</h1><br>
@@ -19,10 +19,7 @@ layout: home
                         <p id='intro-lead'>Attend a trial class!  <a id='intro-btn' href='/enroll'>Try it Free</a></p>
                         <p id='intro-lead'>Already registered?  <a id='intro-btn' href='/login'>Login</a></p>
                     </div>
-                    <video id = 'splash' width="300" height="200" controls="false" autoplay="autoplay">
-                        <source src="assets/home/1.mp4" type="video/mp4" />
-                    </video> 
-                    <img src="/assets/home/splash.gif" id='splash-gif'>
+                    
                 </div>
                 
             </div>
@@ -149,382 +146,375 @@ layout: home
         </div>   
     </div>
 
+    <script>
+        if ($(window).width() < 600) {
+            $('<img>').attr({'src':'/assets/home/splash.gif','id':'splash-gif'}).appendTo('#main-splash');
+        } else {
+            $('<video id = "splash" width="300" height="200" controls="false" autoplay="autoplay"><source src="assets/home/1.mp4" type="video/mp4" /></video> ').appendTo('#main-splash');
+        }
+    </script>
+
+    <style>
+        html {
+    overflow-x:hidden;
+}
+#splash{
+    width:400px;
+    height:400px;
+    margin-top:150px;
+    outline:none;
+}
+#splash-gif{
+    width:400px;
+    height:400px;
+    margin-top:150px;
+    outline:none;
+}
+#splash::-webkit-media-controls {
+    display: none;
+}
+#intro-holder {
+    background-color:white;
+    padding:20px 0px;
+    margin-top:100px;
+    border-radius:20px;
+}
+#title {
+    transition: all 0.2s ease-in-out;
+    margin-top:20px;
+}
+#login-btn{
+    background-color:white;
+    color:#ec6f5b;
+    border:solid 2px #ec6f5b;
+    font-size:12pt;
+    font-weight:600;
+    padding: 8px 20px;
+    border-radius: 5px;
+    margin:0px;
+    cursor:pointer;
+}
+
+#s-intro-bg{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:-2;
+    min-height: 700px;
+    width:100%;
+    object-fit:cover;
+    width:100vw;
+    height:100vh;
+}
+#s-intro-bg-white{
+    position:absolute;
+    top:0px;
+    left:0px;
+    z-index:-1;
+    min-height: 700px;
+    width:100%;
+    object-fit:cover;
+}
 
 
-<style>
-    html {
-        overflow-x:hidden;
-    }
-    #splash{
-        width:400px;
-        height:400px;
-        margin-top:150px;
-        outline:none;
-    }
-    #splash-gif{
-        display:none;
-    }
-    #splash::-webkit-media-controls {
-        display: none;
-    }
-    #intro-holder {
-        background-color:white;
-        padding:20px 0px;
-        margin-top:100px;
-        border-radius:20px;
-    }
-    #title {
-        transition: all 0.2s ease-in-out;
-        margin-top:20px;
-    }
-    #login-btn{
-        background-color:white;
-        color:#ec6f5b;
-        border:solid 2px #ec6f5b;
-        font-size:12pt;
-        font-weight:600;
-        padding: 8px 20px;
-        border-radius: 5px;
-        margin:0px;
-        cursor:pointer;
-    }
 
-    #s-intro-bg{
-        position:absolute;
-        top:0px;
-        left:0px;
-        z-index:-2;
-        min-height: 700px;
-        width:100%;
-        object-fit:cover;
-        width:100vw;
-        height:100vh;
-    }
-    #s-intro-bg-white{
-        position:absolute;
-        top:0px;
-        left:0px;
-        z-index:-1;
-        min-height: 700px;
-        width:100%;
-        object-fit:cover;
-    }
-
-
-
-    #s-intro h1{
-        color: #ec6f5b;
-        font-size:35pt;
-    }
+#s-intro h1{
+    color: #ec6f5b;
+    font-size:35pt;
+}
 
 #s-intro p{
-  color: #2c373f;
-  font-size:12pt;
-  line-height: 1.5;
+color: #2c373f;
+font-size:12pt;
+line-height: 1.5;
 }
 #s-intro {
-    display:flex;
-  justify-content: space-between;
-  z-index:-1;
-  height: 100vh;
-  width: 100vw;
-  margin-top:50px;
+display:flex;
+justify-content: space-between;
+z-index:-1;
+height: 100vh;
+width: 100vw;
+margin-top:50px;
 }
 
 #intro-lead {
-  background-color:#fceada;
-  border-radius:30px;
-  padding:20px 0px;
-  padding-left:30px;
-  padding-right:10px;
-  width:340px;
+background-color:#fceada;
+border-radius:30px;
+padding:20px 0px;
+padding-left:30px;
+padding-right:10px;
+width:340px;
 }
 
 #intro-lead a {
-  float:right;
-  margin-top:-10px;
+float:right;
+margin-top:-10px;
 }
 
 #intro-btn {
-  margin-left:20px;
-  border:none;
-  background-color:#ec6f5b;
-  font-size: 12pt;
-  font-weight:600;
-  color: white;
-  padding: 10px 30px;
-  border-radius: 20pt;
-  z-index:100;
-  text-decoration: none;
+margin-left:20px;
+border:none;
+background-color:#ec6f5b;
+font-size: 12pt;
+font-weight:600;
+color: white;
+padding: 10px 30px;
+border-radius: 20pt;
+z-index:100;
+text-decoration: none;
 }
 
 .section {
-  display:flex;
-  justify-content: space-between;
-  background-color:white;
-  z-index:-1;
-  width: 100vw;
-  padding:100px 0px;
+display:flex;
+justify-content: space-between;
+background-color:white;
+z-index:-1;
+width: 100vw;
+padding:100px 0px;
 }
 
 #about {
-    background-color:#ffcdbe;
+background-color:#ffcdbe;
 }
 #about #info {
-    width:600px;
-    padding:10px 25px;
-    padding-left:75px;
+width:600px;
+padding:10px 25px;
+padding-left:75px;
 }
 
 #about img{
-    width:350px;
-    height:350px;
+width:350px;
+height:350px;
 }
 
 #why .heading {
-    text-align:center;
-    margin-bottom:30px;
-    font-size:25pt;
+text-align:center;
+margin-bottom:30px;
+font-size:25pt;
 }
 #why .flex-wrap div {
-    width:300px;
-    text-align: center;
+width:300px;
+text-align: center;
 }
 
 #why .flex-wrap {
-    margin:0px auto;
-    margin-top:75px;
+margin:0px auto;
+margin-top:75px;
 }
 
 #why .flex-wrap i {
-    background-color:#f9dac5;
-    border-radius: 100px;
-    font-size:18pt;
-    padding:15px;
-    color:#ec6f5b;
-    margin-bottom:40px;
+background-color:#f9dac5;
+border-radius: 100px;
+font-size:18pt;
+padding:15px;
+color:#ec6f5b;
+margin-bottom:40px;
 }
 
 #why .text {
-    width:700px;
-    margin:auto;
-    text-align:center
+width:700px;
+margin:auto;
+text-align:center
 }
 
 #tutors {
-    background-color:#ffcdbe;
+background-color:#ffcdbe;
 }
 
 #tutors .tutor {
-    display:flex;
-    justify-content: space-between;
-    padding: 10px 0px;
+display:flex;
+justify-content: space-between;
+padding: 10px 0px;
 }
 
 #tutors .tutor div {
-    padding: 20px 20px;
-    width:500px;
+padding: 20px 20px;
+width:500px;
 }
 
 #tutors .tutor img {
-    width:200px;
-    height:200px;
-    border-radius: 100%;
-    object-fit: cover;
+width:200px;
+height:200px;
+border-radius: 100%;
+object-fit: cover;
 }
 #tutors .padding {
-    max-width:800px;
-    width:800px;
+max-width:800px;
+width:800px;
 }
 
 #classes .flex-wrap{
-    justify-content: left;
+justify-content: left;
 }
 #classes .flex-wrap div{
-    background-color: #f9dac5;
-    color: #e76551;
-    font-size:12.5pt;
-    font-weight:bold;
-    padding:10px 20px;
-    margin-right:20px;
-    margin-bottom:30px;
-    border-radius:8px;
+background-color: #f9dac5;
+color: #e76551;
+font-size:12.5pt;
+font-weight:bold;
+padding:10px 20px;
+margin-right:20px;
+margin-bottom:30px;
+border-radius:8px;
 }
 
 #vision {
-    background-color:#ffcdbe;
+background-color:#ffcdbe;
 }
 #vision #info {
-    width:600px;
-    padding:10px 25px;
-    padding-right:75px;
+width:600px;
+padding:10px 25px;
+padding-right:75px;
 }
 
 #vision img{
-    width:350px;
-    height:350px;
+width:350px;
+height:350px;
 }
 
 @media only screen and (max-width: 600px){
-    p {
-        font-size:13.5pt;
-    }
-    main {
-        width:100%;
-        margin:0px;
-    }
-    .section {
-        height:auto;
-    }
-    #splash {
-        margin:0px auto;
-        margin-top:50px;
-        display:none;
-    }
-    #splash-gif {
-        display:block;
-        width:300px;
-        height:300px;
-        margin-top:50px;
-    }
-    #s-intro {
-        height:auto;
-        padding-bottom:50px;
-    }
-    #s-intro p{
-        text-align:center;
-        font-size:13.5pt;;
-    }
-    #title{
-        text-align:center;
-    }
-    #intro-holder {
-        margin-top:20px;
-    }
-    #s-intro .flex{
-        flex-direction: column-reverse;
-        width:100%;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-    #about {
-        width:100%;
-    }
-    .padding {
-        width:90%;
-        padding: 0px 5%;
-    }
-    #about .flex {
-        width:100%;
-        flex-direction: column;
-    }
-    #about #info {
-        width:100%;
-        margin:0px;
-        padding:0px;
-    }
-    #about #info p {
-        width:100%;
-    }
-    #about img {
-        margin: 0px auto;
-        margin-bottom:50px;
-    }
-    #why {
-        width:100%;
-    }
-    #why .padding {
-        width:100%;
-        /*padding: 0px 30px;*/
-    }
-    #why .text {
-        width:100%;
-    }
-    #why .flex-wrap div {
-    width:80%;
-    text-align: center;
-    margin:0px auto;
-    margin-top:30px;
+p {
+    font-size:13.5pt;
 }
-    #tutors .tutor div{
-        width:100%;
-        padding:0px;
-    }
-    #tutors .tutor img {
-        margin:auto;
-        margin-top:45px;
-    }
-    #tutors .tutor {
-        flex-direction: column;
-        padding:0px;
-        text-align:center;
-    }
-    #tutors .flip {
-        flex-direction: column-reverse;
-    }
-    #tutors .tutor h2 {
-        margin: 10px 0px;
-        margin-top:20px;
-        margin-bottom:25px;
-    }
-    #tutors .tutor p {
-        margin: 10px auto;
-        margin-bottom:50px;
-        width:95%;
-    }
-    #vision .flex{
-        flex-direction: column;
-    }
-    #vision #info{
-        width:100%;
-        padding:0px;
-        padding-left:0px;
-    }
-    #vision p {
-        width:90%;
-        margin:30px auto;
-    }
-    #vision img{
-        margin:30px auto;
-    }
+main {
+    width:100%;
+    margin:0px;
+}
+.section {
+    height:auto;
+}
+#splash {
+    margin:0px auto;
+    margin-top:50px;
+}
+#splash-gif {
+    display:block;
+    width:300px;
+    height:300px;
+    margin-top:50px;
+}
+#s-intro {
+    height:auto;
+    padding-bottom:50px;
+}
+#s-intro p{
+    text-align:center;
+    font-size:13.5pt;
+}
+#s-intro h1{
+    width:80%;
+    margin:auto;
+}
+#intro-lead{
+    display:flex;
+    width:90%;
+    justify-content: space-between;
+}
+#intro-lead p{
+    width:200px;
+}
+#title{
+    text-align:center;
+}
+#intro-holder {
+    margin-top:20px;
+}
+#s-intro .flex{
+    flex-direction: column-reverse;
+    width:100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#about {
+    width:100%;
+}
+.padding {
+    width:90%;
+    padding: 0px 5%;
+}
+#about .flex {
+    width:100%;
+    flex-direction: column;
+}
+#about #info {
+    width:100%;
+    margin:0px;
+    padding:0px;
+}
+#about #info p {
+    width:100%;
+}
+#about img {
+    margin: 0px auto;
+    margin-bottom:50px;
+}
+#why {
+    width:100%;
+}
+#why .padding {
+    width:100%;
+    /*padding: 0px 30px;*/
+}
+#why .text {
+    width:100%;
+}
+#why .flex-wrap div {
+width:80%;
+text-align: center;
+margin:0px auto;
+margin-top:30px;
+}
+#tutors .tutor div{
+    width:100%;
+    padding:0px;
+}
+#tutors .tutor img {
+    margin:auto;
+    margin-top:45px;
+}
+#tutors .tutor {
+    flex-direction: column;
+    padding:0px;
+    text-align:center;
+}
+#tutors .flip {
+    flex-direction: column-reverse;
+}
+#tutors .tutor h2 {
+    margin: 10px 0px;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+#tutors .tutor p {
+    margin: 10px auto;
+    margin-bottom:50px;
+    width:95%;
+}
+#vision .flex{
+    flex-direction: column;
+}
+#vision #info{
+    width:100%;
+    padding:0px;
+    padding-left:0px;
+}
+#vision p {
+    width:90%;
+    margin:30px auto;
+}
+#vision img{
+    margin:30px auto;
+}
 
 }   
 
 .btn {
-  background-color:#ec6f5b;
-  color:white;
-  border:none;
-  font-size: 11.5pt;
-  padding: 15px 20px;
-  border-radius: 50px;
-  margin-top:40px;
-  cursor:pointer;
+background-color:#ec6f5b;
+color:white;
+border:none;
+font-size: 11.5pt;
+padding: 15px 20px;
+border-radius: 50px;
+margin-top:40px;
+cursor:pointer;
 }
-
-
-</style>
-
-
-
-<!--
-
- 
-
-<div id='s-1'>
-    <div>
-        <img src='assets/hold.png'>
-        <h2>Hello</h2>
-        <p>Lorem ipsum blah blah fucus dominus plato.</p>
-    </div>
-    <div>
-        <img src='assets/hold.png'>
-        <h2>Hello</h2>
-        <p>Risus ut felis elementum malesuada varius tort u mot.</p>
-    </div>
-    <div>
-        <img src='assets/hold.png'>
-        <h2>Hello</h2>
-        <p>Lorem ipsum blah blah fucus dominus plato.</p>
-    </div>
-</div>
--->
+    </style>

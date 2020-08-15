@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   {% include head.html %}
+  <script src="https://kit.fontawesome.com/e8c8e8e543.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <body>
     {{content}}
   </body>
@@ -16,4 +18,148 @@
       background: transparent;
     }
   }
+
+  #mainnav {
+    padding-top:65px;
+    width:100%;
+    top: 0;
+    z-index:1000;
+    transition: all .5s ease-in-out;
+    position:fixed;
+  }
+  
+  #mainnav.active {
+    position:fixed;
+    top:0px;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, .2);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    height: 46px;
+    background-color:white;
+  }
+  
+  #mainnav-holder {
+    display:flex;
+    justify-content: space-between;
+    max-width:1000px;
+    margin:auto;
+    vertical-align: middle;
+  }
+  
+  #navlinks{
+    padding:10px;
+    z-index:1;
+    text-decoration: none;
+  }
+  
+  #logo{
+    font-weight: 700;
+    font-size:20pt;
+    margin:0px;
+    color:#ec6f5b;
+    text-decoration: none;
+    padding:5px 0px;
+    transition: all 0.2s ease-in-out;
+    opacity:0;
+  }
+  
+  #sign-up-btn{
+          background-color:#fceada;
+          border:solid 2px #fceada;
+          color:#ec6f5b;
+          font-size:12pt;
+          font-weight:600;
+          padding: 8px 20px;
+          border-radius: 5px;
+          margin:0px;
+          cursor:pointer;
+      }
+      #sign-up-btn:hover{
+          text-decoration: none;
+          background-color:white;
+      }
+  
+  .tab {
+    color:rgb(88, 88, 88);
+    font-weight:500;
+    font-size: 12.5pt;
+    text-decoration:none;
+    margin-right:30px;
+    cursor:pointer;
+    padding:10px 20px;
+    border-radius:10px;
+  }
+  .tab:hover {
+      text-decoration:none;
+      background-color:rgba(0, 0, 0, 0.034);
+  }
+  
+      .dropdown {
+          position: relative;
+            display: inline-block;
+            height:40px;
+            cursor:default;
+      }
+      .dropdown-con {
+          display:none;
+          position: absolute;
+          top: 40px;
+          left:-0px;
+          background-color: white;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.116);
+          border-radius:5px;
+          z-index: 1;
+      }
+      .dropdown-con a{
+          color: black;
+          padding: 8px 16px;
+          text-decoration: none;
+          display: block;
+          color:rgb(88, 88, 88);
+            font-weight:500;
+            font-size: 12.5pt;
+            text-decoration:none;
+          cursor:pointer;
+      }
+      .dropdown-con a:hover {background-color: rgb(236, 236, 236);   text-decoration: none;}
+  
+      .dropdown:hover .dropdown-con {display: block;   text-decoration: none;}
+  
+      @media only screen and (max-width: 600px){
+          html::-webkit-scrollbar {
+              display: none;
+          }
+          .dropdown {
+              display:none;
+          }
+          #navlinks{
+              display:none;
+          }
+          #logo {
+              display:block;
+              opacity:1;
+          }
+          #mainnav{
+              width:100%;
+              padding:0px 25px;
+              padding-top:10px;
+              transition: all .2s ease-in-out;
+              padding-bottom: 15px;
+              border-bottom:2px rgb(255, 255, 255) solid;
+              background-color:white;
+          }
+          #mainnav.active {
+              position:fixed;
+              top:0px;
+              box-shadow: none;
+              border-bottom:2px rgb(228, 228, 228) solid;
+              padding-top: 10px;
+              padding-bottom: 15px;
+              height: 46px;
+              background-color:white;
+          }
+      }
+      
 </style>
+
