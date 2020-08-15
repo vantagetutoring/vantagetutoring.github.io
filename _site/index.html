@@ -221,6 +221,7 @@
                     <video id = 'splash' width="300" height="200" controls="false" autoplay="autoplay">
                         <source src="assets/home/1.mp4" type="video/mp4" />
                     </video> 
+                    <img src="/assets/home/splash.gif" id='splash-gif'>
                 </div>
                 
             </div>
@@ -358,6 +359,9 @@
         height:400px;
         margin-top:150px;
         outline:none;
+    }
+    #splash-gif{
+        display:none;
     }
     #splash::-webkit-media-controls {
         display: none;
@@ -574,6 +578,13 @@
     #splash {
         margin:0px auto;
         margin-top:50px;
+        display:none;
+    }
+    #splash-gif {
+        display:block;
+        width:300px;
+        height:300px;
+        margin-top:50px;
     }
     #s-intro {
         height:auto;
@@ -599,8 +610,8 @@
         width:100%;
     }
     .padding {
-        width:100%;
-        padding:0px 30px;
+        width:90%;
+        padding: 0px 5%;
     }
     #about .flex {
         width:100%;
