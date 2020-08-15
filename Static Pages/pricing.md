@@ -2,45 +2,48 @@
 layout: page
 permalink: /pricing
 title: Pricing
-description: An affordable and considerate model. Trial class anytime.
+description: An affordable and considerate model. Trial class anytime. Please see program for more information on each course type.
+link: [Program Info, '/program']
 ---
 
 <br>
 <div id='pricing'>
     <div>
-        <img src='./assets/pricing-p.png'>
+        <img src='./assets/enroll/write.png'>
         <h2>Homework Help</h2>
-        <h1>$ <span> / hr</span></h1>
-        <button>Try it Free</button>
+        <h1>$ 8 - 15 <span> / hr</span></h1>
+        <button onclick='window.location.href = "enroll"'>Try it Free</button>
         <ul>
             <li>Tutors help with extracurricular or school based homework</li>
         </ul>
     </div>
     <div>
-        <img src='./assets/pricing-1.png'>
+        <img src='./assets/enroll/book.png'>
         <h2>Standard Courses</h2>
-        <h1>$ <span> / hr</span></h1>
-        <button>Try it Free</button>
+        <h1>$ 12 - 20 <span> / hr</span></h1>
+        <button onclick='window.location.href = "enroll"'>Try it Free</button>
         <ul>
-            <li>Tutors help with extracurricular or school based homework</li>
+            <li>School subject lessons</li>
+            <li>Notes, resources, and homework provided</li>
         </ul>
     </div>
     <div>
-        <img src='./assets/pricing-p.png'>
-        <h2>Select Premium Courses</h2>
-        <h1>$ <span> / hr</span></h1>
-        <button>Enroll Now</button>
+        <img src='./assets/enroll/books.png'>
+        <h2>Premium Courses</h2>
+        <h1>$ 12 - 25 <span> / hr</span></h1>
+        <button onclick='window.location.href = "enroll"'>Try it Free</button>
         <ul>
-            <li>Tutors help with extracurricular or school based homework</li>
+            <li>Skilled courses or difficult extracurricular couses</li>
+            <li>After-class support by tutors between lessons</li>
         </ul>
     </div>
     <div>
-        <img src='./assets/pricing-p.png'>
-        <h2>8 Class Bundle</h2>
-        <h1>% <span>Off</span></h1>
-        <button>Enroll Now</button>
+        <img src='./assets/enroll/work.png'>
+        <h2>Workshop</h2>
+        <h1>$ 25 <span>session</span></h1>
+        <button onclick='window.location.href = "enroll"'>Enroll Now</button>
         <ul>
-            <li>Tutors help with extracurricular or school based homework</li>
+            <li>Test, high school, program entrence prep or Q&A</li>
         </ul>
     </div>
 </div>
@@ -90,6 +93,7 @@ description: An affordable and considerate model. Trial class anytime.
         color:rgba(0,0,0,0.45);
         position: relative;
         padding-left: 1.5em;
+        width:200px;
     }
      #pricing div li:before{
         content: '✓';

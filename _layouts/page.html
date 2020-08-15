@@ -13,17 +13,17 @@ layout: default
                 <h1>{{page.title}}</h1>
                 <p>{{page.description}}</p> <br>
                 {% if page.link %}
-                  <a class='header-btn'  href='{{page.link[1]}}'>{{page.link[0]}}</a>
+                  <a class='header-btn' href='{{page.link[1]}}'>{{page.link[0]}}</a><br><br>
                 {% endif %}
               </div>
               <img id='header-image' src='{{page.image}}'>
             </div>
       {% else %}
-            <div>
+            <div class='flex'>
               <h1>{{page.title}}</h1>
               <p>{{page.description}}</p> <br>
               {% if page.link %}
-                <a class='header-btn' href='{{page.link[1]}}'>{{page.link[0]}}</a>
+                <a class='header-btn' href='{{page.link[1]}}'>{{page.link[0]}}</a><br><br>
               {% endif %}
             </div>
       {% endif %}
@@ -64,6 +64,10 @@ layout: default
     img {
       object-fit: cover;
     }
+    #head .flex {
+      display:block;
+      flex-direction: column;
+    }
     .page-head {
       margin-top:150px;
     }
@@ -78,9 +82,11 @@ layout: default
       border-radius: 5px;
       margin-top:40px;
       cursor:pointer;
+      text-decoration:none;
     }
     .header-btn:hover{
-
+      opacity:0.7;
+      text-decoration:none;
     }
 
     #mobile-con {
@@ -96,15 +102,19 @@ layout: default
   main {
     width:100%;
   }
+  #head .flex {
+      display:flex;
+      flex-direction: column;
+    }
  
   .page-head {
     min-width:100%;
     width:100%;
-    margin-top:50px;
+    margin-top:150px;
   }
   .page-head .flex {
     display:flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .header-btn{
     margin:auto;

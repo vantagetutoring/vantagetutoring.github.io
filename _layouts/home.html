@@ -8,20 +8,37 @@ layout: default
     </main>
   </html>
   <style>
-    html {
-      scroll-snap-type: y mandatory;
-    }
   </style>
 
+
+
   <script>
-    $(window).scroll(function() {     
-      var scroll = $(window).scrollTop();
-      if (scroll > 0) {
-          $("#mainnav").addClass("active");
-          
-      }
-      else {
-          $("#mainnav").removeClass("active");
-      }
-    });
+    if ($(window).width() < 600) {
+          $(window).scroll(function() {     
+          var scroll = $(window).scrollTop();
+          if (scroll > 0) {
+              $("#mainnav").addClass("active");
+              
+          }
+          else {
+              $("#mainnav").removeClass("active");
+          }
+        });
+    } else {
+      $('#mainnav').removeClass('active');
+      $(window).scroll(function() {     
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $("#mainnav").addClass("active");
+            $("#mainnav").addClass("active");
+            $( "#title" ).css("opacity",0);
+            $( "#logo" ).css("opacity",1);
+        }
+        else {
+            $("#mainnav").removeClass("active");
+            $( "#title" ).css("opacity",1);
+            $( "#logo" ).css("opacity",0);
+        }
+      });
+    }
   </script>

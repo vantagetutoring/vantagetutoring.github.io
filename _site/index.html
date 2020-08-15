@@ -37,7 +37,7 @@
 			<div class='dropdown'>
 				<a class='tab'>About Us</a>
 				<div class='dropdown-con'>
-					<a href='/about'>Who We Are</a>
+					<a href='/#about'>Who We Are</a>
 					<a href='/team'>Our Team</a>
 					<a href='/blog'>The Blog</a>
 					<a href='/blog/whats-new'>What's New</a>
@@ -89,6 +89,7 @@
 #navlinks{
   padding:10px;
   z-index:1;
+  text-decoration: none;
 }
 
 #logo{
@@ -102,10 +103,21 @@
   opacity:0;
 }
 
-#title {
-  margin-top:150px;
-  transition: all 0.2s ease-in-out;
-}
+#sign-up-btn{
+        background-color:#fceada;
+        border:solid 2px #fceada;
+        color:#ec6f5b;
+        font-size:12pt;
+        font-weight:600;
+        padding: 8px 20px;
+        border-radius: 5px;
+        margin:0px;
+        cursor:pointer;
+	}
+	#sign-up-btn:hover{
+		text-decoration: none;
+		background-color:white;
+	}
 
 .tab {
   color:rgb(88, 88, 88);
@@ -113,6 +125,13 @@
   font-size: 12.5pt;
   text-decoration:none;
   margin-right:30px;
+  cursor:pointer;
+  padding:10px 20px;
+  border-radius:10px;
+}
+.tab:hover {
+	text-decoration:none;
+	background-color:rgba(0, 0, 0, 0.034);
 }
 
 	.dropdown {
@@ -125,7 +144,7 @@
 		display:none;
 		position: absolute;
 		top: 40px;
-		left:-40px;
+		left:-0px;
 		background-color: white;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.116);
@@ -143,9 +162,9 @@
   		text-decoration:none;
 		cursor:pointer;
 	}
-	.dropdown-con a:hover {background-color: rgb(236, 236, 236);}
+	.dropdown-con a:hover {background-color: rgb(236, 236, 236);   text-decoration: none;}
 
-	.dropdown:hover .dropdown-con {display: block;}
+	.dropdown:hover .dropdown-con {display: block;   text-decoration: none;}
 
 	@media only screen and (max-width: 600px){
 		html::-webkit-scrollbar {
@@ -168,6 +187,7 @@
 			transition: all .2s ease-in-out;
 			padding-bottom: 15px;
 			border-bottom:2px rgb(255, 255, 255) solid;
+			background-color:white;
 		}
 		#mainnav.active {
 			position:fixed;
@@ -182,59 +202,495 @@
 	}
 </style>
     <main>
-            <div class='section' id='s-intro'>
+            <div id='s-intro'>
         <div class='padding'>
             <div id='s-intro-bg'></div>
-            <img id='s-intro-bg-white' src='assets/bg-white.png'>
+            <!--<img id='s-intro-bg-white' src='assets/bg-white.png'>-->
         
             <div style='z-index:100;'>
-                <h1 id='title'><span class='black'>Vantage</span> Tutoring</h1><br>
-                <p>For students, by students. We're a Toronto <br> based company providing lessons for <br> elementry and middle schoolers.</p>
-                <br><br>
-                <p id='intro-lead'>Attend a trial class!  <a id='intro-btn' href='/enroll'>Try it Free</a></p>
-                <p id='intro-lead'>Already registered?  <a id='intro-btn' href='/login'>Login</a></p>
+                <div class='flex'>
+                    <div>
+                        <div id='intro-holder'>
+                            <h1 id='title'><span class='black'>Vantage</span> Tutoring</h1><br>
+                            <p>For students, by students. We're a Toronto <br> based non-profit providing lessons for <br> elementry and middle schoolers.</p>
+                        </div>
+                        <br><br>
+                        <p id='intro-lead'>Attend a trial class!  <a id='intro-btn' href='/enroll'>Try it Free</a></p>
+                        <p id='intro-lead'>Already registered?  <a id='intro-btn' href='/login'>Login</a></p>
+                    </div>
+                    <video id = 'splash' width="300" height="200" controls="false" autoplay="autoplay">
+                        <source src="assets/home/1.mp4" type="video/mp4" />
+                    </video> 
+                </div>
+                
             </div>
         </div>
     </div>
 
-
-
-<div class='section s2'>
-    <img class='bg' src='assets/bg2.png'>
-    <div class='padding'>
-        <div class='content'>
-            <div style='width:30%;margin-top:50px;'>
-                <h1>Why Choose Us</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae accumsan nisl, id molestie sem. Cras elementum leo in pretium feugiat.</p>
-                <div style='margin-top:50px;'><a class='btn' href='/about'><b>Who Are We?</b> <i class='fas fa-arrow-right' style='margin-left:20px'></i></a></div>
-            </div>
-            <div class='grid'>
-                <div>
-                    <i class='fas fa-eye'></i>
-                    <h2>Intuition</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae accumsan nisl, id molestie sem.</p>
+    <div class='section' id='about'>
+        <div class='padding'>
+            <div class='flex'>
+                <img src='assets/home/2.png'>
+                <div id='info'>
+                    <h1>Who Are We?</h1>
+                    <br>
+                    <p>We're a group of high-achieving students from the top high schools and programs around Canada. We want to share our knowledge and experiences with younger students, and help them excel in both their academic courses at school and skills outside the classroom.</p>
+                    <p>We offer curriculum courses like math, science, and french, as well as skill courses such as debate, game development, coding, and visual arts. All of our tutors have an academic grade higher than an A (90) and are part of programs like the International Baccalaureate (IB), Gifted, TOPS, MACS, Advanced Placement (AP) and more.</p>
                 </div>
+            </div>
+        </div>   
+    </div>
+
+    <div class='section' id='why'>
+        <div class='padding'>
+            <h1 class='heading'>Why Choose Us?</h1>
+            <p class='text'>Some traits about our tutoring and organization make us unique - we combine both our experience and skills to craft unique sessions to maximize learning and interest. </p>
+            <div class='flex-wrap'>
                 <div>
                     <i class='fas fa-shopping-cart'></i>
                     <h2>Affordability</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae accumsan nisl, id molestie sem.</p>
+                    <p>Our sessions are affordable because we understand how money can be a challenge for families. Our goal is helping students and fundraising for education, not profit.</p>
                 </div>
                 <div>
                     <i class='fas fa-key'></i>
                     <h2>Specialization</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae accumsan nisl, id molestie sem.</p>
+                    <p>Tutors are experienced in the subject they teach. They've won outstanding awards, achievements and some have represented the country in competitions of that subject.</p>
                 </div>
                 <div>
                     <i class='fas fa-heart'></i>
                     <h2>Relatability</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vitae accumsan nisl, id molestie sem.</p>
+                    <p>We have passion and believe in performace-oriented learning. Our approach to teaching is unique as we're also students and know how some concepts can be taught more effectively.</p>
                 </div>
             </div>
         </div>
     </div>
-</div>
+
+    <div class='section' id='tutors'>
+        <div class='padding'>
+            <h1>Our Tutors</h1>
+            <p>Take a look at some of our tutors! We have over 50 tutors from a variety of schools across the GTA that are ready to teach!</p> <br> <br>
+            <div>
+                <div class='tutor'>
+                    <img src='assets/tutor/1.jpg'>
+                    <div>
+                        <h2>Andrew Shi</h2>
+                        <p>Andrew is a debate and public speaking tutor at Vantage. He’s won a variety of debate tournaments at the international and national level. Last year, he was a finalist in Canadian junior nationals and the Saskatoon world school tournament.</p>
+                    </div>
+                </div>
+                <div class='tutor flip'>
+                    <div>
+                        <h2>Vanessa Poiana</h2>
+                        <p>Vanessa is a math and science tutor at Vantage. She has made honor roll in a variety of math, logic, writing contests and medals in DECA and mock trial. She was accepted in the CTY program at Johns Hopkins University and other programs.</p>
+                    </div>
+                    <img src='assets/tutor/2.jpg'>
+                </div>
+                <div class='tutor'>
+                    <img src='assets/tutor/3.jpg'>
+                    <div>
+                        <h2>Cheryl Geng</h2>
+                        <p>Cheryl is tutoring visual and digital arts at Vantage! She has been drawing and doing art for over 8 years and has experience in digital, watercolour, acrylic, surrealism art and a vast knowledge base of techniques and skills!</p>
+                    </div>
+                </div>
+                <div class='tutor flip'>
+                    <div>
+                        <h2>Jayson Tian</h2>
+                        <p>Jayson is a coding and english tutor at Vantage. He has won awards in both coding, and creative writing competitions. This year, he will be representing Canada in taking part of the  International Biology Olympiad virtual challenge. Fun fact: he also coded this website from scratch!</p>
+                    </div>
+                    <img src='assets/tutor/4.jpg'>
+                </div>
+                <div class='tutor'>
+                    <img src='assets/tutor/5.png'>
+                    <div>
+                        <h2>Patrick Nova</h2>
+                        <p>Patrick is a french tutor at Vantage. He has over 11 years of french speaking and learning experience. He also had a three-month exchange trip to Bordeaux last year, which helped him become fully fluent in the language. </p>
+                    </div>
+                </div>
+            </div><br>
+            <p>Please click the button below to look at all of our tutors!</p>
+            <button style='margin:10px 0px;' onclick="window.location.href='/tutors'" class='btn'>View All</button>
+        </div>
+    </div>
+
+    <div class='section' id='classes'>
+        <div class='padding'>
+            <h2 class='heading'>What do we teach?</h2>
+            <p class='text'>We teach a variety of courses grouped into four categories - standard, skills, premium, and workshops! </p><br>
+            <div class='flex-wrap'>
+                <div>Math</div>
+                <div>Science</div>
+                <div>French</div>
+                <div>Homework Help</div>
+                <div>Robotics</div>
+                <div>Coding</div>
+                <div>Game Design</div>
+                <div>Public Speaking</div>
+                <div>Visual & Digital Art</div>
+                <div>SSAT Prep</div>
+                <div>IB Program Workshop</div>
+                <div>UTS Workshop</div>
+            </div>
+            <button style='margin:10px 0px;' onclick="window.location.href='/program'" class='btn'>View All</button>
+        </div>
+    </div>
+
+    <div class='section' id='vision'>
+        <div class='padding'>
+            <div class='flex'>
+                <div id='info'>
+                    <h1>Why did we start this?</h1>
+                    <br>
+                    <p>Around the world and also in Canada, many students in certain communities do not have access to proper education, like new immigrants, the lower class, and indigenous communities. Our goal is to raise money for those students and provide them with resources and opportunities.</p>
+                    <p>Especially during these difficult times, many students are not able to receive proper education due to a variety of reasons. We want to change that. Education should be accessible to everyone.</p>
+                </div>
+                <img src='assets/home/3.png'>
+            </div>
+        </div>   
+    </div>
 
 
+
+<style>
+    html {
+        overflow-x:hidden;
+    }
+    #splash{
+        width:400px;
+        height:400px;
+        margin-top:150px;
+        outline:none;
+    }
+    #splash::-webkit-media-controls {
+        display: none;
+    }
+    #intro-holder {
+        background-color:white;
+        padding:20px 0px;
+        margin-top:100px;
+        border-radius:20px;
+    }
+    #title {
+        transition: all 0.2s ease-in-out;
+        margin-top:20px;
+    }
+    #login-btn{
+        background-color:white;
+        color:#ec6f5b;
+        border:solid 2px #ec6f5b;
+        font-size:12pt;
+        font-weight:600;
+        padding: 8px 20px;
+        border-radius: 5px;
+        margin:0px;
+        cursor:pointer;
+    }
+
+    #s-intro-bg{
+        position:absolute;
+        top:0px;
+        left:0px;
+        z-index:-2;
+        min-height: 700px;
+        width:100%;
+        object-fit:cover;
+        width:100vw;
+        height:100vh;
+    }
+    #s-intro-bg-white{
+        position:absolute;
+        top:0px;
+        left:0px;
+        z-index:-1;
+        min-height: 700px;
+        width:100%;
+        object-fit:cover;
+    }
+
+
+
+    #s-intro h1{
+        color: #ec6f5b;
+        font-size:35pt;
+    }
+
+#s-intro p{
+  color: #2c373f;
+  font-size:12pt;
+  line-height: 1.5;
+}
+#s-intro {
+    display:flex;
+  justify-content: space-between;
+  z-index:-1;
+  height: 100vh;
+  width: 100vw;
+  margin-top:50px;
+}
+
+#intro-lead {
+  background-color:#fceada;
+  border-radius:30px;
+  padding:20px 0px;
+  padding-left:30px;
+  padding-right:10px;
+  width:340px;
+}
+
+#intro-lead a {
+  float:right;
+  margin-top:-10px;
+}
+
+#intro-btn {
+  margin-left:20px;
+  border:none;
+  background-color:#ec6f5b;
+  font-size: 12pt;
+  font-weight:600;
+  color: white;
+  padding: 10px 30px;
+  border-radius: 20pt;
+  z-index:100;
+  text-decoration: none;
+}
+
+.section {
+  display:flex;
+  justify-content: space-between;
+  background-color:white;
+  z-index:-1;
+  width: 100vw;
+  padding:100px 0px;
+}
+
+#about {
+    background-color:#ffcdbe;
+}
+#about #info {
+    width:600px;
+    padding:10px 25px;
+    padding-left:75px;
+}
+
+#about img{
+    width:350px;
+    height:350px;
+}
+
+#why .heading {
+    text-align:center;
+    margin-bottom:30px;
+    font-size:25pt;
+}
+#why .flex-wrap div {
+    width:300px;
+    text-align: center;
+}
+
+#why .flex-wrap {
+    margin:0px auto;
+    margin-top:75px;
+}
+
+#why .flex-wrap i {
+    background-color:#f9dac5;
+    border-radius: 100px;
+    font-size:18pt;
+    padding:15px;
+    color:#ec6f5b;
+    margin-bottom:40px;
+}
+
+#why .text {
+    width:700px;
+    margin:auto;
+    text-align:center
+}
+
+#tutors {
+    background-color:#ffcdbe;
+}
+
+#tutors .tutor {
+    display:flex;
+    justify-content: space-between;
+    padding: 10px 0px;
+}
+
+#tutors .tutor div {
+    padding: 20px 20px;
+    width:500px;
+}
+
+#tutors .tutor img {
+    width:200px;
+    height:200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+#tutors .padding {
+    max-width:800px;
+    width:800px;
+}
+
+#classes .flex-wrap{
+    justify-content: left;
+}
+#classes .flex-wrap div{
+    background-color: #f9dac5;
+    color: #e76551;
+    font-size:12.5pt;
+    font-weight:bold;
+    padding:10px 20px;
+    margin-right:20px;
+    margin-bottom:30px;
+    border-radius:8px;
+}
+
+#vision {
+    background-color:#ffcdbe;
+}
+#vision #info {
+    width:600px;
+    padding:10px 25px;
+    padding-right:75px;
+}
+
+#vision img{
+    width:350px;
+    height:350px;
+}
+
+@media only screen and (max-width: 600px){
+    p {
+        font-size:13.5pt;
+    }
+    main {
+        width:100%;
+        margin:0px;
+    }
+    .section {
+        height:auto;
+    }
+    #splash {
+        margin:0px auto;
+        margin-top:50px;
+    }
+    #s-intro {
+        height:auto;
+        padding-bottom:50px;
+    }
+    #s-intro p{
+        text-align:center;
+        font-size:13.5pt;;
+    }
+    #title{
+        text-align:center;
+    }
+    #intro-holder {
+        margin-top:20px;
+    }
+    #s-intro .flex{
+        flex-direction: column-reverse;
+        width:100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #about {
+        width:100%;
+    }
+    .padding {
+        width:100%;
+        padding:0px 30px;
+    }
+    #about .flex {
+        width:100%;
+        flex-direction: column;
+    }
+    #about #info {
+        width:100%;
+        margin:0px;
+        padding:0px;
+    }
+    #about #info p {
+        width:100%;
+    }
+    #about img {
+        margin: 0px auto;
+        margin-bottom:50px;
+    }
+    #why {
+        width:100%;
+    }
+    #why .padding {
+        width:100%;
+        /*padding: 0px 30px;*/
+    }
+    #why .text {
+        width:100%;
+    }
+    #why .flex-wrap div {
+    width:80%;
+    text-align: center;
+    margin:0px auto;
+    margin-top:30px;
+}
+    #tutors .tutor div{
+        width:100%;
+        padding:0px;
+    }
+    #tutors .tutor img {
+        margin:auto;
+        margin-top:45px;
+    }
+    #tutors .tutor {
+        flex-direction: column;
+        padding:0px;
+        text-align:center;
+    }
+    #tutors .flip {
+        flex-direction: column-reverse;
+    }
+    #tutors .tutor h2 {
+        margin: 10px 0px;
+        margin-top:20px;
+        margin-bottom:25px;
+    }
+    #tutors .tutor p {
+        margin: 10px auto;
+        margin-bottom:50px;
+        width:95%;
+    }
+    #vision .flex{
+        flex-direction: column;
+    }
+    #vision #info{
+        width:100%;
+        padding:0px;
+        padding-left:0px;
+    }
+    #vision p {
+        width:90%;
+        margin:30px auto;
+    }
+    #vision img{
+        margin:30px auto;
+    }
+
+}   
+
+.btn {
+  background-color:#ec6f5b;
+  color:white;
+  border:none;
+  font-size: 11.5pt;
+  padding: 15px 20px;
+  border-radius: 50px;
+  margin-top:40px;
+  cursor:pointer;
+}
+
+
+</style>
 
 
 
@@ -263,22 +719,39 @@
     </main>
   </html>
   <style>
-    html {
-      scroll-snap-type: y mandatory;
-    }
   </style>
 
+
+
   <script>
-    $(window).scroll(function() {     
-      var scroll = $(window).scrollTop();
-      if (scroll > 0) {
-          $("#mainnav").addClass("active");
-          
-      }
-      else {
-          $("#mainnav").removeClass("active");
-      }
-    });
+    if ($(window).width() < 600) {
+          $(window).scroll(function() {     
+          var scroll = $(window).scrollTop();
+          if (scroll > 0) {
+              $("#mainnav").addClass("active");
+              
+          }
+          else {
+              $("#mainnav").removeClass("active");
+          }
+        });
+    } else {
+      $('#mainnav').removeClass('active');
+      $(window).scroll(function() {     
+        var scroll = $(window).scrollTop();
+        if (scroll > 0) {
+            $("#mainnav").addClass("active");
+            $("#mainnav").addClass("active");
+            $( "#title" ).css("opacity",0);
+            $( "#logo" ).css("opacity",1);
+        }
+        else {
+            $("#mainnav").removeClass("active");
+            $( "#title" ).css("opacity",1);
+            $( "#logo" ).css("opacity",0);
+        }
+      });
+    }
   </script>
 
   </body>
@@ -304,11 +777,11 @@
 				<div class='link-col'>
 					<h2>Links</h2>
 					<a href='/'>Home</a>
-					<a href='/about'>About</a>
+					<a href='/#about'>About</a>
 					<a href='/blog'>Blog</a>
 					<a href='/blog/whats-new/'>What's New</a>
 					<a href='/login'>Login</a>
-					<a href='/'>Sign Up</a>
+					<!--<a href='/'>Sign Up</a>-->
 				</div>
 				<div class='link-col'>
 					<h2>Program</h2>
@@ -316,17 +789,18 @@
 					<a href='/classes'>Classes</a>
 					<a href='/tutors'>Tutors</a>
 					<a href='/pricing'>Pricing</a>
-					<a href='/q+a'>Q&A</a>
+					<a href='/enroll'>Enroll</a>
+					<!--<a href='/q+a'>Q&A</a>-->
 				</div>
 				<div class='link-col'>
-					<h2>Company</h2>
-					<a href='/'>Help & Support</a>
+					<h2>Organization</h2>
+					<!--<a href='/'>Help & Support</a>-->
 					<a href='/tutor/hire'>Join Our Team</a>
-					<a href='/'>Volunteer</a>
-					<a href='/'>Privacy Policy</a>
-					<a href='/terms'>Terms & Agreement</a>
-					<a href='/'>Twitter</a>
-					<a v>Email Us</a>
+					<!--<a href='/'>Volunteer</a>-->
+					<a href='/terms'>Terms & Policy</a>
+					<a href='https://www.instagram.com/vantagetutoring/'>Instagram</a>
+					<!--<a href='/'>Twitter</a>-->
+					<a href="mailto:tutoring.vantage@gmail.com">Email Us</a>
 				</div>
 			</div>
 			
@@ -402,7 +876,7 @@ footer #info h1{
 
 .link-col a{
 	margin-right:20px;
-	width:160px;
+	width:125px;
 	padding:4px 10px;
 	cursor:pointer;
 	border-radius:3px;

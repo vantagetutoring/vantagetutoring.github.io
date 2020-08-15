@@ -6,15 +6,15 @@ description: Thank you for your interest! <br> There are a variety of ways in wh
 ---
 
 <div id='enroll'>
-    <div>
+    <div onclick='window.location.href="mailto:tutoring.vantage@gmail.com"'>
         <i class="fa fa-envelope" aria-hidden="true"></i>
         <p>Email</p>
     </div>
-    <div>
+    <div onclick='window.open("https://forms.gle/XwZ5AkbGQtwDhWK37")'>
         <i class="fa fa-globe-americas" aria-hidden="true"></i>
         <p>Online</p>
     </div>
-    <div>
+    <div onclick='window.location.href="/wechat"'>
         <i class="fa fa-weixin" aria-hidden="true"></i>
         <p>Wechat</p>
     </div>

@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Who We Are</title>
+  <title>WeChat Enrollment</title>
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
@@ -36,7 +36,7 @@
 			<div class='dropdown'>
 				<a class='tab'>About Us</a>
 				<div class='dropdown-con'>
-					<a href='/about'>Who We Are</a>
+					<a href='/#about'>Who We Are</a>
 					<a href='/team'>Our Team</a>
 					<a href='/blog'>The Blog</a>
 					<a href='/blog/whats-new'>What's New</a>
@@ -88,6 +88,7 @@
 #navlinks{
   padding:10px;
   z-index:1;
+  text-decoration: none;
 }
 
 #logo{
@@ -101,10 +102,21 @@
   opacity:0;
 }
 
-#title {
-  margin-top:150px;
-  transition: all 0.2s ease-in-out;
-}
+#sign-up-btn{
+        background-color:#fceada;
+        border:solid 2px #fceada;
+        color:#ec6f5b;
+        font-size:12pt;
+        font-weight:600;
+        padding: 8px 20px;
+        border-radius: 5px;
+        margin:0px;
+        cursor:pointer;
+	}
+	#sign-up-btn:hover{
+		text-decoration: none;
+		background-color:white;
+	}
 
 .tab {
   color:rgb(88, 88, 88);
@@ -112,6 +124,13 @@
   font-size: 12.5pt;
   text-decoration:none;
   margin-right:30px;
+  cursor:pointer;
+  padding:10px 20px;
+  border-radius:10px;
+}
+.tab:hover {
+	text-decoration:none;
+	background-color:rgba(0, 0, 0, 0.034);
 }
 
 	.dropdown {
@@ -124,7 +143,7 @@
 		display:none;
 		position: absolute;
 		top: 40px;
-		left:-40px;
+		left:-0px;
 		background-color: white;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.116);
@@ -142,9 +161,9 @@
   		text-decoration:none;
 		cursor:pointer;
 	}
-	.dropdown-con a:hover {background-color: rgb(236, 236, 236);}
+	.dropdown-con a:hover {background-color: rgb(236, 236, 236);   text-decoration: none;}
 
-	.dropdown:hover .dropdown-con {display: block;}
+	.dropdown:hover .dropdown-con {display: block;   text-decoration: none;}
 
 	@media only screen and (max-width: 600px){
 		html::-webkit-scrollbar {
@@ -167,6 +186,7 @@
 			transition: all .2s ease-in-out;
 			padding-bottom: 15px;
 			border-bottom:2px rgb(255, 255, 255) solid;
+			background-color:white;
 		}
 		#mainnav.active {
 			position:fixed;
@@ -185,9 +205,9 @@
 
       <div id='head'>
         
-            <div>
-              <h1>Who We Are</h1>
-              <p></p> <br>
+            <div class='flex'>
+              <h1>WeChat Enrollment</h1>
+              <p>Please scan the QR code below to contact our organizer for inquiries or for enrollment.</p> <br>
               
             </div>
       
@@ -200,24 +220,11 @@
       <br>
     </div>
     <div id='mobile-con'>
-      <br>
+      请扫以下二维码去加组织老师-注册或咨询课程询问。<br>
 
-<div class='flex'>
-    <div>
-            <h2>Our company</h2><br>
-        We are a group of high schoolers based in Toronto who want to provide both high quality and relatable learning for students. Our team is a dedicated group of high schoolers who enjoy teaching and helping the younger generation. We want to make a platform
-        where we, as high schoolers, can help shape the academic paths of younger students with our experience and passion for learning - so that they embark on an easier, more effective, and enjoyable learning journey.
-    </div>
-    <img src='/assets/about.jpeg'>
-</div>
+<img src="/assets/enroll/qr.jpg">
 
-
-<style>
-    img {
-        width:400px;
-    }
-</style>
-    
+<p>也可以扫一下关注我们的公众号 - 新闻，课程，中文资料都在哪里！</p>
     </div>
 
   </main>
@@ -245,6 +252,10 @@
     img {
       object-fit: cover;
     }
+    #head .flex {
+      display:block;
+      flex-direction: column;
+    }
     .page-head {
       margin-top:150px;
     }
@@ -259,9 +270,11 @@
       border-radius: 5px;
       margin-top:40px;
       cursor:pointer;
+      text-decoration:none;
     }
     .header-btn:hover{
-
+      opacity:0.7;
+      text-decoration:none;
     }
 
     #mobile-con {
@@ -277,15 +290,19 @@
   main {
     width:100%;
   }
+  #head .flex {
+      display:flex;
+      flex-direction: column;
+    }
  
   .page-head {
     min-width:100%;
     width:100%;
-    margin-top:50px;
+    margin-top:150px;
   }
   .page-head .flex {
     display:flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .header-btn{
     margin:auto;
@@ -356,11 +373,11 @@
 				<div class='link-col'>
 					<h2>Links</h2>
 					<a href='/'>Home</a>
-					<a href='/about'>About</a>
+					<a href='/#about'>About</a>
 					<a href='/blog'>Blog</a>
 					<a href='/blog/whats-new/'>What's New</a>
 					<a href='/login'>Login</a>
-					<a href='/'>Sign Up</a>
+					<!--<a href='/'>Sign Up</a>-->
 				</div>
 				<div class='link-col'>
 					<h2>Program</h2>
@@ -368,17 +385,18 @@
 					<a href='/classes'>Classes</a>
 					<a href='/tutors'>Tutors</a>
 					<a href='/pricing'>Pricing</a>
-					<a href='/q+a'>Q&A</a>
+					<a href='/enroll'>Enroll</a>
+					<!--<a href='/q+a'>Q&A</a>-->
 				</div>
 				<div class='link-col'>
-					<h2>Company</h2>
-					<a href='/'>Help & Support</a>
+					<h2>Organization</h2>
+					<!--<a href='/'>Help & Support</a>-->
 					<a href='/tutor/hire'>Join Our Team</a>
-					<a href='/'>Volunteer</a>
-					<a href='/'>Privacy Policy</a>
-					<a href='/terms'>Terms & Agreement</a>
-					<a href='/'>Twitter</a>
-					<a v>Email Us</a>
+					<!--<a href='/'>Volunteer</a>-->
+					<a href='/terms'>Terms & Policy</a>
+					<a href='https://www.instagram.com/vantagetutoring/'>Instagram</a>
+					<!--<a href='/'>Twitter</a>-->
+					<a href="mailto:tutoring.vantage@gmail.com">Email Us</a>
 				</div>
 			</div>
 			
@@ -454,7 +472,7 @@ footer #info h1{
 
 .link-col a{
 	margin-right:20px;
-	width:160px;
+	width:125px;
 	padding:4px 10px;
 	cursor:pointer;
 	border-radius:3px;

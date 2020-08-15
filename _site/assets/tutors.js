@@ -3,6 +3,7 @@
 
 
 $.getJSON('https://sheet.best/api/sheets/c82f0581-abd9-4b43-ba80-f0237a5656a5', (data)=>{
+    $('#tutor-con').empty();
     (data).forEach(t => {
         var con = $('<div>').addClass('tutor').appendTo('#tutor-con');
         var c = $('<div>').attr('id','first').appendTo(con);

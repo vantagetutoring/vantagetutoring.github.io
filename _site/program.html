@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Program Overview</title>
+  <title>Program</title>
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
@@ -36,7 +36,7 @@
 			<div class='dropdown'>
 				<a class='tab'>About Us</a>
 				<div class='dropdown-con'>
-					<a href='/about'>Who We Are</a>
+					<a href='/#about'>Who We Are</a>
 					<a href='/team'>Our Team</a>
 					<a href='/blog'>The Blog</a>
 					<a href='/blog/whats-new'>What's New</a>
@@ -88,6 +88,7 @@
 #navlinks{
   padding:10px;
   z-index:1;
+  text-decoration: none;
 }
 
 #logo{
@@ -101,10 +102,21 @@
   opacity:0;
 }
 
-#title {
-  margin-top:150px;
-  transition: all 0.2s ease-in-out;
-}
+#sign-up-btn{
+        background-color:#fceada;
+        border:solid 2px #fceada;
+        color:#ec6f5b;
+        font-size:12pt;
+        font-weight:600;
+        padding: 8px 20px;
+        border-radius: 5px;
+        margin:0px;
+        cursor:pointer;
+	}
+	#sign-up-btn:hover{
+		text-decoration: none;
+		background-color:white;
+	}
 
 .tab {
   color:rgb(88, 88, 88);
@@ -112,6 +124,13 @@
   font-size: 12.5pt;
   text-decoration:none;
   margin-right:30px;
+  cursor:pointer;
+  padding:10px 20px;
+  border-radius:10px;
+}
+.tab:hover {
+	text-decoration:none;
+	background-color:rgba(0, 0, 0, 0.034);
 }
 
 	.dropdown {
@@ -124,7 +143,7 @@
 		display:none;
 		position: absolute;
 		top: 40px;
-		left:-40px;
+		left:-0px;
 		background-color: white;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.116);
@@ -142,9 +161,9 @@
   		text-decoration:none;
 		cursor:pointer;
 	}
-	.dropdown-con a:hover {background-color: rgb(236, 236, 236);}
+	.dropdown-con a:hover {background-color: rgb(236, 236, 236);   text-decoration: none;}
 
-	.dropdown:hover .dropdown-con {display: block;}
+	.dropdown:hover .dropdown-con {display: block;   text-decoration: none;}
 
 	@media only screen and (max-width: 600px){
 		html::-webkit-scrollbar {
@@ -167,6 +186,7 @@
 			transition: all .2s ease-in-out;
 			padding-bottom: 15px;
 			border-bottom:2px rgb(255, 255, 255) solid;
+			background-color:white;
 		}
 		#mainnav.active {
 			position:fixed;
@@ -185,9 +205,9 @@
 
       <div id='head'>
         
-            <div>
-              <h1>Program Overview</h1>
-              <p>Learn more about our services and what makes it unique.</p> <br>
+            <div class='flex'>
+              <h1>Program</h1>
+              <p>Here's our program table. Scroll down to read course descriptions.</p> <br>
               
             </div>
       
@@ -200,7 +220,34 @@
       <br>
     </div>
     <div id='mobile-con'>
-      
+      <details>
+    <summary><b>Sessions</b></summary>
+    <p>Courses are divided into 8 class long sessions depending on availability of the tutor. 8 classes can span from two weeks to two months depending on how much time you want in between lessons.</p>
+    <p>After the completion of a session you can choose to start another one. Some courses span for multiple sessions and each session may cover a new unit, you can choose to enroll for multiple sessions or stop after the completion of one and continue in the future.</p>
+</details>
+
+<details>
+    <summary><b>Private and Group Classes</b></summary>
+    <p>Lessons can be made private or group upon availability or request. We try to match students up with other students of the same level and subject when available.</p>
+    <p>Rates on charts are for private lessons. Grouped lessons are cheaper and the maximum student per group is 2-4 depending on subject. Grouped lessons start at a rate of $8.5 per student however vary depending on student count and subject.</p>
+</details>
+<br>
+
+<h2>Program Chart</h2>
+<img style='width:100%;'src="/assets/program/course.png">
+
+<h2>Homework Help</h2>
+
+<p>What tutoring is all about! We help students with their work from school or another extracurricular. We assist them in a range of subjects and provide them with support. We also use technology (interactions / games) to better enhance learning and interest.</p>
+
+<h2>Standard Courses</h2>
+<p>We provide a custom course based on the students level and experience in the subject. Standard courses cover school subjects and all content is based on the official Ontario Curriculum, however we do use many textbooks and other resources for reference. We design our homework and lesson notes from scratch and use our personal notes if we've taken the course before. We can connect students with tutors so they can questions regarding the lesson or homework outside of class.</p>
+
+<h2>Premium Courses</h2>
+<p>Premium courses focus on a specific skill of extracurricular commonly seen outside of the typical academic classroom. We offer skill based courses like debate, arts (visual and digital), and coding. Our tutors are experienced with these subjects as they're our hobbies and we have probably worked in that subject to achieve something outside the classroom! We're design these courses based on experience as well as guidance from our professional teachers.</p>
+
+<h2>Workshops</h2>
+<p>Workshops are for students who want to get a better glance at what a certain high school or high school program is like. We offer Q&A sessions, and workshops for certain entrance exams like the IB entrance, TOPS, MACS, UTS, and SSAT exam. We have students who are in the programs and have first hand experience of what's it like and how to get in. We provide notes and worksheets in our workshop sessions and offer group communication and discussion.</p>
     </div>
 
   </main>
@@ -228,6 +275,10 @@
     img {
       object-fit: cover;
     }
+    #head .flex {
+      display:block;
+      flex-direction: column;
+    }
     .page-head {
       margin-top:150px;
     }
@@ -242,9 +293,11 @@
       border-radius: 5px;
       margin-top:40px;
       cursor:pointer;
+      text-decoration:none;
     }
     .header-btn:hover{
-
+      opacity:0.7;
+      text-decoration:none;
     }
 
     #mobile-con {
@@ -260,15 +313,19 @@
   main {
     width:100%;
   }
+  #head .flex {
+      display:flex;
+      flex-direction: column;
+    }
  
   .page-head {
     min-width:100%;
     width:100%;
-    margin-top:50px;
+    margin-top:150px;
   }
   .page-head .flex {
     display:flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .header-btn{
     margin:auto;
@@ -339,11 +396,11 @@
 				<div class='link-col'>
 					<h2>Links</h2>
 					<a href='/'>Home</a>
-					<a href='/about'>About</a>
+					<a href='/#about'>About</a>
 					<a href='/blog'>Blog</a>
 					<a href='/blog/whats-new/'>What's New</a>
 					<a href='/login'>Login</a>
-					<a href='/'>Sign Up</a>
+					<!--<a href='/'>Sign Up</a>-->
 				</div>
 				<div class='link-col'>
 					<h2>Program</h2>
@@ -351,17 +408,18 @@
 					<a href='/classes'>Classes</a>
 					<a href='/tutors'>Tutors</a>
 					<a href='/pricing'>Pricing</a>
-					<a href='/q+a'>Q&A</a>
+					<a href='/enroll'>Enroll</a>
+					<!--<a href='/q+a'>Q&A</a>-->
 				</div>
 				<div class='link-col'>
-					<h2>Company</h2>
-					<a href='/'>Help & Support</a>
+					<h2>Organization</h2>
+					<!--<a href='/'>Help & Support</a>-->
 					<a href='/tutor/hire'>Join Our Team</a>
-					<a href='/'>Volunteer</a>
-					<a href='/'>Privacy Policy</a>
-					<a href='/terms'>Terms & Agreement</a>
-					<a href='/'>Twitter</a>
-					<a v>Email Us</a>
+					<!--<a href='/'>Volunteer</a>-->
+					<a href='/terms'>Terms & Policy</a>
+					<a href='https://www.instagram.com/vantagetutoring/'>Instagram</a>
+					<!--<a href='/'>Twitter</a>-->
+					<a href="mailto:tutoring.vantage@gmail.com">Email Us</a>
 				</div>
 			</div>
 			
@@ -437,7 +495,7 @@ footer #info h1{
 
 .link-col a{
 	margin-right:20px;
-	width:160px;
+	width:125px;
 	padding:4px 10px;
 	cursor:pointer;
 	border-radius:3px;

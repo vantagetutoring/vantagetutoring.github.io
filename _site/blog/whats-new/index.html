@@ -36,7 +36,7 @@
 			<div class='dropdown'>
 				<a class='tab'>About Us</a>
 				<div class='dropdown-con'>
-					<a href='/about'>Who We Are</a>
+					<a href='/#about'>Who We Are</a>
 					<a href='/team'>Our Team</a>
 					<a href='/blog'>The Blog</a>
 					<a href='/blog/whats-new'>What's New</a>
@@ -88,6 +88,7 @@
 #navlinks{
   padding:10px;
   z-index:1;
+  text-decoration: none;
 }
 
 #logo{
@@ -101,10 +102,21 @@
   opacity:0;
 }
 
-#title {
-  margin-top:150px;
-  transition: all 0.2s ease-in-out;
-}
+#sign-up-btn{
+        background-color:#fceada;
+        border:solid 2px #fceada;
+        color:#ec6f5b;
+        font-size:12pt;
+        font-weight:600;
+        padding: 8px 20px;
+        border-radius: 5px;
+        margin:0px;
+        cursor:pointer;
+	}
+	#sign-up-btn:hover{
+		text-decoration: none;
+		background-color:white;
+	}
 
 .tab {
   color:rgb(88, 88, 88);
@@ -112,6 +124,13 @@
   font-size: 12.5pt;
   text-decoration:none;
   margin-right:30px;
+  cursor:pointer;
+  padding:10px 20px;
+  border-radius:10px;
+}
+.tab:hover {
+	text-decoration:none;
+	background-color:rgba(0, 0, 0, 0.034);
 }
 
 	.dropdown {
@@ -124,7 +143,7 @@
 		display:none;
 		position: absolute;
 		top: 40px;
-		left:-40px;
+		left:-0px;
 		background-color: white;
 		min-width: 160px;
 		box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.116);
@@ -142,9 +161,9 @@
   		text-decoration:none;
 		cursor:pointer;
 	}
-	.dropdown-con a:hover {background-color: rgb(236, 236, 236);}
+	.dropdown-con a:hover {background-color: rgb(236, 236, 236);   text-decoration: none;}
 
-	.dropdown:hover .dropdown-con {display: block;}
+	.dropdown:hover .dropdown-con {display: block;   text-decoration: none;}
 
 	@media only screen and (max-width: 600px){
 		html::-webkit-scrollbar {
@@ -167,6 +186,7 @@
 			transition: all .2s ease-in-out;
 			padding-bottom: 15px;
 			border-bottom:2px rgb(255, 255, 255) solid;
+			background-color:white;
 		}
 		#mainnav.active {
 			position:fixed;
@@ -188,6 +208,18 @@
         <hr>
         <div class='content'>
           <p>Vantage has just been launched a few weeks back, so we are working as best as we can to add more features and details to both our virtual and online programs, as well as the core structures of our service! We want to ensure that we are most prepared to teach and inspire students in meaningful ways. This page will be the changelog, consisting of news and updates - stay tuned and consider following us on social media!</p>
+
+<h2 id="august-14th-2020">August 14th, 2020</h2>
+
+<ul>
+  <li>We have now 20 tutors on our team and recieved over 60 applications</li>
+  <li>Our new hiring model is by student demand and each tutor is assigned a specific subject to teach</li>
+  <li>Our program is divded into sessions, in which one session consists of 8 classes, usually finishing a unit in one subject.</li>
+  <li>Packages are offered for core pricing models and courses are now grouped into 4 categories.</li>
+  <li>The website is done.</li>
+  <li>Application forms are updated and available through -&gt; enroll -&gt; form</li>
+  <li>WeChat account is compeletely finished. Ad articles and about articles have been posted.</li>
+</ul>
 
 <h2 id="july-29th-2020">July 29th, 2020</h2>
 
@@ -263,11 +295,11 @@
 				<div class='link-col'>
 					<h2>Links</h2>
 					<a href='/'>Home</a>
-					<a href='/about'>About</a>
+					<a href='/#about'>About</a>
 					<a href='/blog'>Blog</a>
 					<a href='/blog/whats-new/'>What's New</a>
 					<a href='/login'>Login</a>
-					<a href='/'>Sign Up</a>
+					<!--<a href='/'>Sign Up</a>-->
 				</div>
 				<div class='link-col'>
 					<h2>Program</h2>
@@ -275,17 +307,18 @@
 					<a href='/classes'>Classes</a>
 					<a href='/tutors'>Tutors</a>
 					<a href='/pricing'>Pricing</a>
-					<a href='/q+a'>Q&A</a>
+					<a href='/enroll'>Enroll</a>
+					<!--<a href='/q+a'>Q&A</a>-->
 				</div>
 				<div class='link-col'>
-					<h2>Company</h2>
-					<a href='/'>Help & Support</a>
+					<h2>Organization</h2>
+					<!--<a href='/'>Help & Support</a>-->
 					<a href='/tutor/hire'>Join Our Team</a>
-					<a href='/'>Volunteer</a>
-					<a href='/'>Privacy Policy</a>
-					<a href='/terms'>Terms & Agreement</a>
-					<a href='/'>Twitter</a>
-					<a v>Email Us</a>
+					<!--<a href='/'>Volunteer</a>-->
+					<a href='/terms'>Terms & Policy</a>
+					<a href='https://www.instagram.com/vantagetutoring/'>Instagram</a>
+					<!--<a href='/'>Twitter</a>-->
+					<a href="mailto:tutoring.vantage@gmail.com">Email Us</a>
 				</div>
 			</div>
 			
@@ -361,7 +394,7 @@ footer #info h1{
 
 .link-col a{
 	margin-right:20px;
-	width:160px;
+	width:125px;
 	padding:4px 10px;
 	cursor:pointer;
 	border-radius:3px;
