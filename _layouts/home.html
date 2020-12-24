@@ -13,6 +13,7 @@ layout: default
 
 
   <script>
+    /*
     if ($(window).width() < 600) {
           $(window).scroll(function() {     
           var scroll = $(window).scrollTop();
@@ -40,12 +41,10 @@ layout: default
             $( "#logo" ).css("opacity",0);
         }
       });
-    }
+    }*/
 
         if ($(window).width() < 600) {
-            $('<img>').attr({'src':'/assets/home/splash.gif','id':'splash-gif'}).appendTo('#main-splash');
-        } else {
-            $('<video id = "splash" width="300" height="200" controls="false" autoplay="autoplay"><source src="assets/home/1.mp4" type="video/mp4" /></video> ').appendTo('#main-splash');
+            $('<img>').attr({'src':'/assets/home/splash.png','id':'splash-gif'}).appendTo('#main-splash');
         }
  
   </script>

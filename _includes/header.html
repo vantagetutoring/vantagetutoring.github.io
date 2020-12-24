@@ -1,15 +1,21 @@
 
-<nav id='mainnav'>
+<nav id='mainnav' class='active'>
 	<div id='mainnav-holder'>
-		<a id='logo' href='/'><span class='black'>Van</span>tage</a>
+		<div class='flex' style='width:165px;'>
+			<img src='/assets/general/logo.png' id='logo-img'>
+			<a id='logo' href='/'><span class='black'>Vantage</span></a>
+		</div>
 		<div id='navlinks'>
+			<a class='tab' href="/about">About</a>
+			<a class='tab' href="/program">Program</a>
+			<a class='tab' href="/team">Team</a>
+			<a id='sign-up-btn' href='/contact'>Trial Class</a>
+			<!--
 			<div class='dropdown'>
 				<a class='tab'>About Us</a>
 				<div class='dropdown-con'>
 					<a href='/#about'>Who We Are</a>
 					<a href='/team'>Our Team</a>
-					<a href='/blog'>The Blog</a>
-					<a href='/blog/whats-new'>What's New</a>
 				</div>
 			</div>
 			<div class='dropdown'>
@@ -18,11 +24,9 @@
 					<a href='/program'>Overview</a>
 					<a href='/classes'>Classes</a>
 					<a href='/tutors'>Tutors</a>
-					<!--<a href='/q+a'>Q&A</a>-->
+					<a href='/q+a'>Q&A</a>
 				</div>
-			</div>
-			<a class='tab' href="/pricing">Pricing</a>
-			<a id='sign-up-btn' href='/enroll'>Enroll Now</a>
+			</div>-->
 		</div>
 		<a id='mobile-btn' onclick='toggleMobileMenu()' data-open='false'><i id='mobileicon' class='fas fa-bars'></i></a>
 	</div>
@@ -48,7 +52,7 @@
 				<a href='/tutors'>Hiring</a>
 			</div>
 		</div>
-		<button class='btn' onclick="window.location.href='/enroll'">Enroll Now</button>
+		<button class='btn' onclick="window.location.href='/enroll'">Contact Us</button>
 	</div>
 </nav>
 

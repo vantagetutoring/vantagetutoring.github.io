@@ -13,14 +13,13 @@ layout: home
                     <div>
                         <div id='intro-holder'>
                             <h1 id='title'><span class='black'>Vantage</span> Tutoring</h1><br>
-                            <p>For students, by students. We're a Toronto based non-profit providing lessons for elementry and middle schoolers.</p>
+                            <p>Vantage is a not-for-profit organization that offers affordable high-quality tutoring. Our goal is to raise awareness about education equality and inspire younger students to do the same.</p>
+                            <!--<p>For students, by students. We're a Toronto based non-profit providing lessons for elementry and middle schoolers.</p>-->
                         </div>
-                        <br><br>
-                        <p id='intro-lead'>Attend a trial class!  <a id='intro-btn' href='/enroll'>Try it Free</a></p>
-                        <p id='intro-lead' class='loginbtn'>Already registered?  <a id='intro-btn' href='/login'>Login</a></p>
+                        <div id='intro-lead'>Have any questions? <a id='intro-btn' href='/contact'>Contact Us</a></div>
                     </div>
                     
-                    <video id = "splash" width="300" height="200" controls="false" autoplay="autoplay"><source src="assets/home/1.mp4" type="video/mp4" /></video>
+                    <img src="/assets/home/splash.png" id='splash'>
                     
                 </div>
                 
@@ -115,7 +114,7 @@ layout: home
     <div class='section' id='classes'>
         <div class='padding'>
             <h2 class='heading'>What do we teach?</h2>
-            <p class='text'>We teach a variety of courses grouped into four categories - standard, skills, premium, and workshops! </p><br>
+            <p class='text'>Here are some - but not all - of the subjects we teach! </p><br>
             <div class='flex-wrap'>
                 <div>Math</div>
                 <div>Science</div>
@@ -130,7 +129,7 @@ layout: home
                 <div>IB Program Workshop</div>
                 <div>UTS Workshop</div>
             </div>
-            <button style='margin:10px 0px;' onclick="window.location.href='/program'" class='btn'>View All</button>
+            <button style='margin:10px 0px;' onclick="window.location.href='/program'" class='btn'>Our Program</button>
         </div>
     </div>
 
@@ -156,7 +155,7 @@ layout: home
 #splash{
     width:400px;
     height:400px;
-    margin-top:150px;
+    margin-top:50px;
     outline:none;
 }
 #splash-gif{
@@ -171,7 +170,7 @@ layout: home
 #intro-holder {
     background-color:white;
     padding:20px 0px;
-    margin-top:100px;
+    margin-top:50px;
     border-radius:20px;
 }
 #title {
@@ -195,11 +194,9 @@ layout: home
     top:0px;
     left:0px;
     z-index:-2;
-    min-height: 700px;
     width:100%;
     object-fit:cover;
     width:100vw;
-    height:100vh;
 }
 #s-intro-bg-white{
     position:absolute;
@@ -222,20 +219,20 @@ layout: home
 color: #2c373f;
 font-size:12pt;
 line-height: 1.5;
-width:300px;
+width:400px;
 }
 #s-intro {
 display:flex;
 justify-content: space-between;
 z-index:-1;
-height: 100vh;
 width: 100vw;
-margin-top:50px;
+margin-top:75px;
+padding-bottom:50px;
 }
 
 #intro-lead {
 background-color:#fceada;
-border-radius:30px;
+border-radius:10px;
 padding:20px 0px;
 padding-left:30px;
 padding-right:10px;
@@ -255,7 +252,7 @@ font-size: 12pt;
 font-weight:600;
 color: white;
 padding: 10px 30px;
-border-radius: 20pt;
+border-radius: 5pt;
 z-index:100;
 text-decoration: none;
 }

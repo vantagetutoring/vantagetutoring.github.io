@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
   <link rel="stylesheet" href="https://use.typekit.net/gtu7ugu.css">
+  <link rel="shortcut icon" href="/assets/general/favicon.png" type="image/x-icon">
 </head>
 
   <script src="https://kit.fontawesome.com/e8c8e8e543.js" crossorigin="anonymous"></script>
@@ -17,17 +18,23 @@
   <body>
       <html>
     
-<nav id='mainnav'>
+<nav id='mainnav' class='active'>
 	<div id='mainnav-holder'>
-		<a id='logo' href='/'><span class='black'>Van</span>tage</a>
+		<div class='flex' style='width:165px;'>
+			<img src='/assets/general/logo.png' id='logo-img'>
+			<a id='logo' href='/'><span class='black'>Vantage</span></a>
+		</div>
 		<div id='navlinks'>
+			<a class='tab' href="/about">About</a>
+			<a class='tab' href="/program">Program</a>
+			<a class='tab' href="/team">Team</a>
+			<a id='sign-up-btn' href='/contact'>Trial Class</a>
+			<!--
 			<div class='dropdown'>
 				<a class='tab'>About Us</a>
 				<div class='dropdown-con'>
 					<a href='/#about'>Who We Are</a>
 					<a href='/team'>Our Team</a>
-					<a href='/blog'>The Blog</a>
-					<a href='/blog/whats-new'>What's New</a>
 				</div>
 			</div>
 			<div class='dropdown'>
@@ -36,11 +43,9 @@
 					<a href='/program'>Overview</a>
 					<a href='/classes'>Classes</a>
 					<a href='/tutors'>Tutors</a>
-					<!--<a href='/q+a'>Q&A</a>-->
+					<a href='/q+a'>Q&A</a>
 				</div>
-			</div>
-			<a class='tab' href="/pricing">Pricing</a>
-			<a id='sign-up-btn' href='/enroll'>Enroll Now</a>
+			</div>-->
 		</div>
 		<a id='mobile-btn' onclick='toggleMobileMenu()' data-open='false'><i id='mobileicon' class='fas fa-bars'></i></a>
 	</div>
@@ -66,7 +71,7 @@
 				<a href='/tutors'>Hiring</a>
 			</div>
 		</div>
-		<button class='btn' onclick="window.location.href='/enroll'">Enroll Now</button>
+		<button class='btn' onclick="window.location.href='/enroll'">Contact Us</button>
 	</div>
 </nav>
 
@@ -94,12 +99,13 @@
                     <div>
                         <div id='intro-holder'>
                             <h1 id='title'><span class='black'>Vantage</span> Tutoring</h1><br>
-                            <p>For students, by students. We're a Toronto based non-profit providing lessons for elementry and middle schoolers.</p>
+                            <p>Vantage is a not-for-profit organization that offers affordable high-quality tutoring. Our goal is to raise awareness about education equality and inspire younger students to do the same.</p>
+                            <!--<p>For students, by students. We're a Toronto based non-profit providing lessons for elementry and middle schoolers.</p>-->
                         </div>
-                        <br><br>
-                        <p id='intro-lead'>Attend a trial class!  <a id='intro-btn' href='/enroll'>Try it Free</a></p>
-                        <p id='intro-lead' class='loginbtn'>Already registered?  <a id='intro-btn' href='/login'>Login</a></p>
+                        <div id='intro-lead'>Have any questions? <a id='intro-btn' href='/contact'>Contact Us</a></div>
                     </div>
+                    
+                    <img src="/assets/home/splash.png" id='splash'>
                     
                 </div>
                 
@@ -194,7 +200,7 @@
     <div class='section' id='classes'>
         <div class='padding'>
             <h2 class='heading'>What do we teach?</h2>
-            <p class='text'>We teach a variety of courses grouped into four categories - standard, skills, premium, and workshops! </p><br>
+            <p class='text'>Here are some - but not all - of the subjects we teach! </p><br>
             <div class='flex-wrap'>
                 <div>Math</div>
                 <div>Science</div>
@@ -209,7 +215,7 @@
                 <div>IB Program Workshop</div>
                 <div>UTS Workshop</div>
             </div>
-            <button style='margin:10px 0px;' onclick="window.location.href='/program'" class='btn'>View All</button>
+            <button style='margin:10px 0px;' onclick="window.location.href='/program'" class='btn'>Our Program</button>
         </div>
     </div>
 
@@ -227,13 +233,6 @@
         </div>   
     </div>
 
-    <script>
-        if ($(window).width() < 600) {
-            $('<img>').attr({'src':'/assets/home/splash.gif','id':'splash-gif'}).appendTo('#main-splash');
-        } else {
-            $('<video id = "splash" width="300" height="200" controls="false" autoplay="autoplay"><source src="assets/home/1.mp4" type="video/mp4" /></video> ').appendTo('#main-splash');
-        }
-    </script>
 
     <style>
         html {
@@ -242,7 +241,7 @@
 #splash{
     width:400px;
     height:400px;
-    margin-top:150px;
+    margin-top:50px;
     outline:none;
 }
 #splash-gif{
@@ -257,7 +256,7 @@
 #intro-holder {
     background-color:white;
     padding:20px 0px;
-    margin-top:100px;
+    margin-top:50px;
     border-radius:20px;
 }
 #title {
@@ -281,11 +280,9 @@
     top:0px;
     left:0px;
     z-index:-2;
-    min-height: 700px;
     width:100%;
     object-fit:cover;
     width:100vw;
-    height:100vh;
 }
 #s-intro-bg-white{
     position:absolute;
@@ -308,20 +305,20 @@
 color: #2c373f;
 font-size:12pt;
 line-height: 1.5;
-width:300px;
+width:400px;
 }
 #s-intro {
 display:flex;
 justify-content: space-between;
 z-index:-1;
-height: 100vh;
 width: 100vw;
-margin-top:50px;
+margin-top:75px;
+padding-bottom:50px;
 }
 
 #intro-lead {
 background-color:#fceada;
-border-radius:30px;
+border-radius:10px;
 padding:20px 0px;
 padding-left:30px;
 padding-right:10px;
@@ -341,7 +338,7 @@ font-size: 12pt;
 font-weight:600;
 color: white;
 padding: 10px 30px;
-border-radius: 20pt;
+border-radius: 5pt;
 z-index:100;
 text-decoration: none;
 }
@@ -606,6 +603,7 @@ margin-top:40px;
 cursor:pointer;
 }
     </style>
+
     </main>
   </html>
   <style>
@@ -614,6 +612,7 @@ cursor:pointer;
 
 
   <script>
+    /*
     if ($(window).width() < 600) {
           $(window).scroll(function() {     
           var scroll = $(window).scrollTop();
@@ -641,7 +640,12 @@ cursor:pointer;
             $( "#logo" ).css("opacity",0);
         }
       });
-    }
+    }*/
+
+        if ($(window).width() < 600) {
+            $('<img>').attr({'src':'/assets/home/splash.png','id':'splash-gif'}).appendTo('#main-splash');
+        }
+ 
   </script>
 
   </body>
@@ -659,37 +663,27 @@ cursor:pointer;
 
 			<div id='info'>
 				<h1>Vantage Tutoring</h1> <br>
-				<p>For students, by students. A tutoring and teaching service connecting high schoolers with younger kids.</p>
-				<p>© 2020 Vantage Tutoring, Inc.</p>
-				<a>Terms and Policy</a>
+				<p>For students, by students. Empowering younger students through education.</p>
+				<p>© 2020 Vantage Tutoring</p>
 			</div>
 			<div class='link-con'>
 				<div class='link-col'>
 					<h2>Links</h2>
 					<a href='/'>Home</a>
-					<a href='/#about'>About</a>
-					<a href='/blog'>Blog</a>
-					<a href='/blog/whats-new/'>What's New</a>
-					<a href='/login'>Login</a>
+					<a href='/about'>About</a>
+					<a href='/team'>Our Team</a>
+					<a href='/program'>Program</a>
+					<a href='/contact'>Contact</a>
+
 					<!--<a href='/'>Sign Up</a>-->
-				</div>
-				<div class='link-col'>
-					<h2>Program</h2>
-					<a href='/program'>Overview</a>
-					<a href='/classes'>Classes</a>
-					<a href='/tutors'>Tutors</a>
-					<a href='/pricing'>Pricing</a>
-					<a href='/enroll'>Enroll</a>
-					<!--<a href='/q+a'>Q&A</a>-->
 				</div>
 				<div class='link-col'>
 					<h2>Organization</h2>
 					<!--<a href='/'>Help & Support</a>-->
-					<a href='/tutor/hire'>Join Our Team</a>
 					<!--<a href='/'>Volunteer</a>-->
-					<a href='/terms'>Terms & Policy</a>
-					<a href='https://www.instagram.com/vantagetutoring/'>Instagram</a>
 					<!--<a href='/'>Twitter</a>-->
+					<a href='/tutor/hire'>Join Us</a>
+					<a href='https://www.instagram.com/vantagetutoring/'>Instagram</a>
 					<a href="mailto:tutoring.vantage@gmail.com">Email Us</a>
 				</div>
 			</div>
@@ -713,6 +707,7 @@ footer {
 }
 
 #footer-con{
+	border-radius:8px;
 	margin:auto;
 	width:70%;
 	max-width:1000px;
@@ -876,7 +871,7 @@ background-color:white;
     width:100%;
     top: 0;
     z-index:1000;
-    transition: all .5s ease-in-out;
+    transition: none;
     position:fixed;
   }
   
@@ -902,6 +897,7 @@ background-color:white;
     padding:10px;
     z-index:1;
     text-decoration: none;
+    font-weight:bold;
   }
   
   #logo{
@@ -911,8 +907,14 @@ background-color:white;
     color:#ec6f5b;
     text-decoration: none;
     padding:5px 0px;
-    transition: all 0.2s ease-in-out;
-    opacity:0;
+    opacity:1;
+    margin-top:-3px;
+  }
+
+  #logo-img {
+    height:60px;
+    margin-top:-6px;
+    margin-right:-40px;
   }
   
   #sign-up-btn{
@@ -925,6 +927,7 @@ background-color:white;
           border-radius: 5px;
           margin:0px;
           cursor:pointer;
+          margin-left:20px;
       }
       #sign-up-btn:hover{
           text-decoration: none;
@@ -940,7 +943,7 @@ background-color:white;
     font-weight:500;
     font-size: 12.5pt;
     text-decoration:none;
-    margin-right:30px;
+    margin-right:0px;
     cursor:pointer;
     padding:10px 20px;
     border-radius:10px;
