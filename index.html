@@ -16,7 +16,7 @@ layout: home
                             <p>Vantage is a not-for-profit organization that offers affordable high-quality tutoring. Our goal is to raise awareness about education equality and inspire younger students to do the same.</p>
                             <!--<p>For students, by students. We're a Toronto based non-profit providing lessons for elementry and middle schoolers.</p>-->
                         </div>
-                        <div id='intro-lead'>Have any questions? <a id='intro-btn' href='/contact'>Contact Us</a></div>
+                        <div id='intro-lead'><p>Have any questions?</p> <a id='intro-btn' href='/contact'>Contact Us</a></div>
                     </div>
                     
                     <img src="/assets/home/splash.png" id='splash'>
@@ -233,19 +233,22 @@ padding-bottom:50px;
 #intro-lead {
 background-color:#fceada;
 border-radius:10px;
-padding:20px 0px;
-padding-left:30px;
-padding-right:10px;
-width:340px;
+padding:15px 15px;
+width:360px;
+display:flex;
+justify-content: space-between;
 }
 
+#intro-lead p {
+    margin:0px;
+    width:auto;
+    padding:10px 0px;;
+}
 #intro-lead a {
 float:right;
-margin-top:-10px;
 }
 
 #intro-btn {
-margin-left:20px;
 border:none;
 background-color:#ec6f5b;
 font-size: 12pt;
@@ -379,8 +382,10 @@ main {
     height:auto;
 }
 #splash {
+    width:70%;
+    height:auto;
     margin:0px auto;
-    margin-top:50px;
+    margin-top:20px;
 }
 #splash-gif {
     display:block;
@@ -394,22 +399,34 @@ main {
 }
 #s-intro #intro-holder p{
     text-align:center;
-    font-size:13.5pt;
+    font-size:12pt;
     margin:0px auto;
+    width:100%;
 }
 #s-intro h1{
     width:80%;
     margin:auto;
+    font-size:22pt;
+    margin-top:-25px;
 }
 #intro-lead{
     display:flex;
     width:90%;
     justify-content: space-between;
     margin:10px auto;
-
+    font-size:10pt;
+    align-content:left;
+    padding:10px 20px;
+    
 }
 #intro-lead p{
-    width:200px;
+    width:150px;
+    text-align: left;
+}
+#intro-lead a{
+    font-size:10pt;
+    margin-top:0px;
+    text-align: center;
 }
 #title{
     text-align:center;
