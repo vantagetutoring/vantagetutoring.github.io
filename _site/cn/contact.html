@@ -5,7 +5,7 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Question and Answers</title>
+  <title>Vantage Tutoring</title>
 
   <link rel="stylesheet" href="/assets/css/main.css">
   <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
@@ -15,19 +15,20 @@
 
   <script src="https://kit.fontawesome.com/e8c8e8e543.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
   <body>
-      
+    
 <nav id='mainnav' class='active'>
 	<div id='mainnav-holder'>
 		<div class='flex' style='width:165px;'>
-			<img src='/assets/general/logo.png' onclick='window.location.href="/"' id='logo-img'>
-			<a id='logo' href='/'><span class='black'>Vantage</span></a>
+			<img src='/assets/general/logo.png' onclick='window.location.href="/cn"' id='logo-img'>
+			<a id='logo' href='/cn/'><span class='black'>Vantage</span></a>
 		</div>
 		<div id='navlinks'>
-			<a class='tab' href="/about">About</a>
-			<a class='tab' href="/program">Program</a>
-			<a class='tab' href="/team">Team</a>
-			<a id='sign-up-btn' href='/contact'>Trial Class</a>
+			<!--<a class='tab' href="/cn/about">关于我们</a>
+			<a class='tab' href="/cn/program">组织项目</a>-->
+			<a class='tab' href="/cn/tutors">团队导师</a>
+			<a id='sign-up-btn' href='/cn/contact'>免费试听</a>
 			<!--
 			<div class='dropdown'>
 				<a class='tab'>About Us</a>
@@ -51,16 +52,16 @@
 	<div id='mobile-menu'>
 		<div id='flex'>
 			<div>
-				<a href='/about'>About</a>
+				<a href='/cn/about'>关于我们</a>
 			</div>
 			<div>
-				<a href='/program'>Program</a>
+				<a href='/cn/program'>组织项目</a>
 			</div>
 			<div>
-				<a href='/team'>Our Team</a>
+				<a href='/cn/team'>团队导师</a>
 			</div>
 		</div>
-		<button class='btn' onclick="window.location.href='/contact'">Contact Us</button>
+		<button class='btn' onclick="window.location.href='/cn/contact'">免费试听</button>
 	</div>
 </nav>
 
@@ -80,6 +81,11 @@
 
 
 <style>
+	.chinese-head{
+		width:90%;
+		text-align:center;
+		margin:auto;
+	}
 	@media only screen and (max-width: 600px){
 	  ::-webkit-scrollbar{
 		display:none;
@@ -305,156 +311,85 @@
   
   </style>
   
-  <main>
-    <div class='padding page-head'>
+    <br>
+<br>
+<br>
+<br>
+<br>
 
-      <div id='head'>
-        
-            <div class='flex'>
-              <div>
-                <h1>Question and Answers</h1>
-                <p>Commonly asked questions and our responses.</p> <br>
-                
-              </div>
-            </div>
-      
-      </div>
-      
+<div class='chinese-head'>
+    <h2>联系</h2>
 
+    <p>如果您希望和我们安排一次免费的试听课，或者如果有任何的问题，请联系我们！</p>
+    <br>
+    
+</div>
 
-
-      <hr id='divider'>
-      <br>
+<div id='enroll'>
+    <div>
+        <img src='wechat.jpg' class='qr'>
+        <p>微信</p>
     </div>
-    <div id='mobile-con'>
-      
+    <div>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <p>(647)-588-6288</p>
     </div>
+    <div>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <p><a onclick='window.location.href="mailto:tutoring.vantage@gmail.com"'>tutoring.vantage@gmail.com</a></p>
+    </div>
+</div>
 
-  </main>
-  <script>
-      
-    if ($(window).width() < 600) {
-          $(window).scroll(function() {     
-          var scroll = $(window).scrollTop();
-          if (scroll > 0) {
-              $("#mainnav").addClass("active");
-              
-          }
-          else {
-              $("#mainnav").removeClass("active");
-          }
-        });
-    } else {
-      $("#mainnav").addClass("active");
-      $( "#title" ).css("opacity",0);
-      $( "#logo" ).css("opacity",1);
-    }
-</script>
+<br>
+
+
 
 <style>
-    img {
-      object-fit: cover;
+    .qr {
+        width:150px;
     }
-    #head .flex {
-      display:flex;
-      flex-direction: row;
+    #enroll {
+        display:flex;
+        justify-content:space-around;
+        margin-top:0px;
+        width:80%;
+        margin:auto;
     }
-    .page-head {
-      margin-top:110px;
+    #enroll div{
+        height:200px;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-around;
+        border-radius:20px;
+        transition: all 0.1s ease-in-out
     }
-    #header-image{
-      margin-top:-135px;
+    #enroll a {
+        cursor:pointer;
     }
-    .header-btn{
-      background-color:var(--main);
-      color:white;
-      font-size: 13pt;
-      padding: 10px 20px;
-      border-radius: 5px;
-      margin-top:40px;
-      cursor:pointer;
-      text-decoration:none;
+    #enroll i{
+        color:var(--text-dark);
+        font-size:50pt;
+        margin:auto;
     }
-    .header-btn:hover{
-      opacity:0.7;
-      text-decoration:none;
+    #enroll p{
+        font-size:16pt;
+        font-weight:bold;
+        text-align:center;
+        margin-top:20px;
     }
-
-    #mobile-con {
-      max-width:1000px;
-      width:1000px;
-      margin:auto;
+    @media only screen and (max-width: 600px) {
+        #enroll {
+            flex-direction:column;
+        }
+        #enroll div {
+            margin:auto;
+            margin-bottom:50px;
+        }
+        #enroll p{
+            width: 100%;
+        }
     }
-    #mobile-con h1, #mobile-con h2{
-      margin: 1em 0px;
-    }
-    #head p {z-index:1;}
-
-@media only screen and (max-width: 600px) {
-  main {
-    width:100%;
-  }
-  #head .flex {
-      display:flex;
-      flex-direction: column;
-    }
- 
-  .page-head {
-    min-width:100%;
-    width:100%;
-    margin-top:150px;
-    z-index:1;
-  }
-  .page-head .flex {
-    display:flex;
-    flex-direction: column;
-  }
-  .header-btn{
-    margin:auto;
-    margin-bottom:50px;
-  }
-  .flex div {
-    display:flex;
-    flex-direction: column;
-  }
-  #head h1, #head p{
-    text-align:center;
-    margin:20px auto;
-  }
-  #head p{
-    width:80%;
-  }
-  p, a, details, summary, li, ul {
-    font-size:13.5pt;
-  }
-  #header-image {
-    width:40vh;
-    margin:0px auto;
-    margin-top:0px;
-  }
-  #mobile-con {
-    width:85%;
-    padding:0px 7.5%;
-    margin-top:20px;
-    margin-bottom:-150px;
-  }
-
-  hr {
-    width:80%;
-  }
-
-  h2, h3 {
-    font-size: 18pt;
-  }
-
-  .flex {
-    flex-direction: column;
-  }
-
-}
-
 </style>
-
   </body>
   <footer>
 	<div id='footer-con'>
@@ -469,30 +404,27 @@
 			</div>-->
 
 			<div id='info'>
-				<h1>Vantage Tutoring</h1> <br>
-				<p>For students, by students. Empowering younger students through education.</p>
+				<h1>Vantage 学生帮</h1> <br>
+				<p>647-588-6288</p>
 				<p>© 2020 Vantage Tutoring</p>
 			</div>
 			<div class='link-con'>
 				<div class='link-col'>
-					<h2>Links</h2>
-					<a href='/'>Home</a>
-					<a href='/about'>About</a>
-					<a href='/team'>Our Team</a>
-					<a href='/program'>Program</a>
-					<a href='/contact'>Contact</a>
+					<h2>链接</h2>
+					<a href='/'>首页</a>
+					<a href='/about'>关于我们</a>
+					<a href='/team'>团队导师</a>
+					<a href='/program'>组织项目</a>
+					<a href='/contact'>联系我们</a>
 
 					<!--<a href='/'>Sign Up</a>-->
 				</div>
 				<div class='link-col'>
-					<h2>Organization</h2>
-					<!--<a href='/'>Help & Support</a>-->
-					<!--<a href='/'>Volunteer</a>-->
-					<!--<a href='/'>Twitter</a>-->
-					<a href='/tutor/hire'>Join Us</a>
-					<a href='https://www.facebook.com/tutoringvantage'>Facebook</a>
+					<h2>社交媒体</h2>
+					<a href='/cn/contact'>微信 ｜Wechat</a>
+					<a href='https://www.facebook.com/tutoringvantage'>脸书 ｜Facebook</a>
 					<a href='https://www.instagram.com/vantagetutoring/'>Instagram</a>
-					<a href="mailto:tutoring.vantage@gmail.com">Email Us</a>
+					<a href="mailto:tutoring.vantage@gmail.com">电子邮件</a>
 				</div>
 			</div>
 			
@@ -507,7 +439,6 @@
 footer {
 	background-image:url('/assets/footer.png');
 	background-size:cover;
-	margin-top:100px;
 	padding-top:150px;
 	padding-bottom:75px;
 	scroll-snap-align: end;

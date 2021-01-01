@@ -1,0 +1,191 @@
+---
+layout: cn
+permalink: /cn/tutors
+title: 导师
+description: 点击导师读详细介绍。
+---
+<br><br><br><br><br><br>
+<html>
+    <div class='chinese-head'>
+        <h2>团队导师</h2>
+        <p>点击导师读详细介绍。</p>
+    </div>
+    <div id='tutor-con'>
+        <h3>稍等一下，正在寻找需要的资料。。。</h3>
+    </div>
+
+</html>
+
+<style>
+    #tutor-con {
+        width:85%;
+        margin:auto;
+        margin-top:10px;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .tutor{
+        text-align:center;
+        width:250px;
+        padding: 20px 0px;
+        border-radius:7px;
+        cursor:pointer;
+        display:flex;
+        justify-content: space-between;
+    }
+    .tutor #first{
+        margin:auto;
+        padding:0px 30px;
+    }
+    #first p{
+        height:40px;
+    }
+    #second {
+        text-align:left;
+        width:100%;
+        height:100%;
+        top:0px;
+        left:0px;
+        position:fixed;
+        background-color:rgba(0, 0, 0, 0.199);
+        z-index:700;
+    }
+    #second-con{
+        background-color:white;
+        width:800px;
+        height:400px;
+        margin:10% auto;
+        border-radius:10px;
+        display:flex;
+        justify-content: space-between;
+        padding:50px 40px;
+        overflow:hidden;
+    }
+    #second-con-1 {
+        width:30%;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    button {
+        margin:0px auto;
+        margin-bottom:20px;
+        background-color:var(--main);
+        color:white;
+        border:none;
+        font-size: 11.5pt;
+        padding: 15px 20px;
+        border-radius: 10px;
+        margin-top:40px;
+        cursor:pointer;
+        width:200px;
+        outline:none;
+        
+    }
+    #second-con-1 img{
+        width:220px;
+        height:220px;
+        object-fit:cover;
+        border-radius:200px;
+    }
+    #second h2{
+        text-align:center;
+        margin-top:20px;
+    }
+    #second-con-2{
+        width:100%;
+        text-align:left;
+        margin:0px;
+        padding-left:60px;
+        overflow:scroll;
+        overflow-y: scroll;
+        padding-right:10px;
+    }
+    #second-con-2::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+        }
+
+        #second-con-2::-webkit-scrollbar-thumb {
+        border-radius: 4px;
+        background-color: rgba(0, 0, 0, 0.274);
+        box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+        }
+    .tutor:hover {
+        background-color:rgb(238, 238, 238);
+    }
+    .tutor h2{
+        font-size:18pt;
+        margin-top:10px;
+
+    }
+    .tutor img{
+        width:150px;
+        height:150px;
+        object-fit:cover;
+        border-radius:200px;
+        margin: 10px;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .tutor{
+            margin:auto;
+            width:250px;
+        }
+        #first img{
+            width:150px;
+            height:150px;
+        }
+        #first h2 {
+            font-size:18pt;
+            width:100%;
+            height:auto;
+        }
+        #first p {
+            font-size:13pt;
+            width:100%;
+            height:auto;
+        }
+        #second-con{
+            position:fixed;
+            width:100%;
+            height:100%;
+            margin:0px;
+            z-index: 900;
+            top:0px;
+            left:0px;
+            display:flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding:0px 0px;
+            padding-bottom:100px;
+            overflow-y:scroll;
+        }
+        #second-con-1{
+            width:100%;
+        }
+        #second-con-1 img{
+            margin:auto;
+            width:130px;
+            height:130px;
+            margin-top:100px;
+        }
+        #second-con-2{
+
+            padding-left:0px;
+            width:100%;
+            overflow: visible;
+        }
+        #second-con-2 p {
+            padding:0px 30px;;
+        }
+        #mainnav {
+            background-color:white;
+        }
+        
+    }
+</style>
+
+
+<script src="../assets/tutors.js" type="text/javascript"></script>

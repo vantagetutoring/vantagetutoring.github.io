@@ -15,20 +15,20 @@
 
   <script src="https://kit.fontawesome.com/e8c8e8e543.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
   <body>
-      <html>
     
 <nav id='mainnav' class='active'>
 	<div id='mainnav-holder'>
 		<div class='flex' style='width:165px;'>
-			<img src='/assets/general/logo.png' onclick='window.location.href="/"' id='logo-img'>
-			<a id='logo' href='/'><span class='black'>Vantage</span></a>
+			<img src='/assets/general/logo.png' onclick='window.location.href="/cn"' id='logo-img'>
+			<a id='logo' href='/cn/'><span class='black'>Vantage</span></a>
 		</div>
 		<div id='navlinks'>
-			<a class='tab' href="/about">About</a>
-			<a class='tab' href="/program">Program</a>
-			<a class='tab' href="/team">Team</a>
-			<a id='sign-up-btn' href='/contact'>Trial Class</a>
+			<!--<a class='tab' href="/cn/about">关于我们</a>
+			<a class='tab' href="/cn/program">组织项目</a>-->
+			<a class='tab' href="/cn/tutors">团队导师</a>
+			<a id='sign-up-btn' href='/cn/contact'>免费试听</a>
 			<!--
 			<div class='dropdown'>
 				<a class='tab'>About Us</a>
@@ -52,16 +52,16 @@
 	<div id='mobile-menu'>
 		<div id='flex'>
 			<div>
-				<a href='/about'>About</a>
+				<a href='/cn/about'>关于我们</a>
 			</div>
 			<div>
-				<a href='/program'>Program</a>
+				<a href='/cn/program'>组织项目</a>
 			</div>
 			<div>
-				<a href='/team'>Our Team</a>
+				<a href='/cn/team'>团队导师</a>
 			</div>
 		</div>
-		<button class='btn' onclick="window.location.href='/contact'">Contact Us</button>
+		<button class='btn' onclick="window.location.href='/cn/contact'">免费试听</button>
 	</div>
 </nav>
 
@@ -81,6 +81,11 @@
 
 
 <style>
+	.chinese-head{
+		width:90%;
+		text-align:center;
+		margin:auto;
+	}
 	@media only screen and (max-width: 600px){
 	  ::-webkit-scrollbar{
 		display:none;
@@ -306,8 +311,7 @@
   
   </style>
   
-    <main>
-            <div id='s-intro'>
+        <div id='s-intro'>
         <div class='padding'>
             <div id='s-intro-bg'></div>
             <!--<img id='s-intro-bg-white' src='assets/bg-white.png'>-->
@@ -316,11 +320,11 @@
                 <div class='flex' id='main-splash'> 
                     <div>
                         <div id='intro-holder'>
-                            <h1 id='title'><span class='black'>Vantage</span> Tutoring</h1><br>
-                            <p>Vantage is a not-for-profit organization that offers affordable high-quality tutoring. Our goal is to raise awareness about education equality and inspire younger students to do the same.</p>
+                            <h1 id='title'><span class='black'>Vantage</span>学生帮</h1><br>
+                            <p>我们是一个高中生成立的辅导组织，来自于大多伦多 UTS，UCC，和 Bayview SS 等顶级公私立高中 11 年级以上的学生。我们是不以营利为目的，希望能帮到学弟学妹们，引导他们对学习产生兴趣，而与此同时我们也要用辅导的盈利回馈社会，帮助有需要的人。</p>
                             <!--<p>For students, by students. We're a Toronto based non-profit providing lessons for elementry and middle schoolers.</p>-->
                         </div>
-                        <div id='intro-lead'><p>Have any questions?</p> <a id='intro-btn' href='/contact'>Contact Us</a></div>
+                        <div id='intro-lead'><p>安排一节免费的试听课吧！</p> <a id='intro-btn' href='/cn/contact'>联系我们</a></div>
                     </div>
                     
                     <img src="/assets/home/splash.png" id='splash'>
@@ -330,7 +334,7 @@
             </div>
         </div>
     </div>
-
+<!--
     <div class='section' id='about'>
         <div class='padding'>
             <div class='flex'>
@@ -367,77 +371,76 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <div class='section' id='tutors'>
         <div class='padding'>
-            <h1>Our Tutors</h1>
-            <p>Take a look at some of our tutors! We have over 50 tutors from a variety of schools across the GTA that are ready to teach!</p> <br> <br>
+            <h1>教师简介</h1>
+            <p>我们的团队有 70 多个导师。导师们都是多伦多不同的 program 和高中的学生。</p> <br> <br>
             <div>
                 <div class='tutor'>
-                    <img src='assets/tutor/1.jpg'>
+                    <img src='../assets/tutor/1.jpg'>
                     <div>
                         <h2>Andrew Shi</h2>
-                        <p>Andrew is a debate and public speaking tutor at Vantage. He’s won a variety of debate tournaments at the international and national level. Last year, he was a finalist in Canadian junior nationals and the Saskatoon world school tournament.</p>
+                        <p>Andrew 是学生帮的辩论和公众演讲教师。他赢得了 20 多个国际、国家和省级的辩论比赛。 他有超过 8 年的演讲经验，也有辅导小学生的经验。去年，他赢得了加拿大国家级辩论赛和萨斯卡通的世界学校锦标赛 (Saskatoon World School Tournament)</p>
                     </div>
                 </div>
                 <div class='tutor flip'>
                     <div>
                         <h2>Vanessa Poiana</h2>
-                        <p>Vanessa is a math and science tutor at Vantage. She has made honor roll in a variety of math, logic, writing contests and medals in DECA and mock trial. She was accepted in the CTY program at Johns Hopkins University and other programs.</p>
+                        <p>Vanessa 是学生帮中的数学和科学教师。她在校内与校外中的数学、逻辑、写作与科学竞赛中都获得了名次。同时在 DECA 竞赛和 Mock Trial 辩论赛中取得一等奖。她还被约翰霍普金斯大学 CYT Program 和杜克大学 TIP program 录取。</p>
                     </div>
-                    <img src='assets/tutor/2.jpg'>
+                    <img src='../assets/tutor/2.jpg'>
                 </div>
                 <div class='tutor'>
-                    <img src='assets/tutor/3.jpg'>
+                    <img src='../assets/tutor/3.jpg'>
                     <div>
                         <h2>Cheryl Geng</h2>
-                        <p>Cheryl is tutoring visual and digital arts at Vantage! She has been drawing and doing art for over 8 years and has experience in digital, watercolour, acrylic, surrealism art and a vast knowledge base of techniques and skills!</p>
+                        <p>Cheryl 是学生帮的绘画导师。她已经有超过 8 年的绘画经验，和多种绘画艺术风格：数码、水彩、丙烯、超现实主义、油画。她拥有丰富的艺术技巧知识和教学能力。</p>
                     </div>
                 </div>
                 <div class='tutor flip'>
                     <div>
                         <h2>Jayson Tian</h2>
-                        <p>Jayson is a coding and english tutor at Vantage. He has won awards in both coding, and creative writing competitions. This year, he will be representing Canada in taking part of the  International Biology Olympiad virtual challenge. Fun fact: he also coded this website from scratch!</p>
+                        <p>Jayson 是学生帮的编程和英文教师。他在许多编程、数学、英文写作、中文和生物竞赛中取得了名次。他的业余爱好是绘画，漫画制作，音乐制作，而用 C# 和 Javascript 编程游戏。今年，他会代表加拿大参加国际奥林匹克生物竞赛。</p>
                     </div>
-                    <img src='assets/tutor/4.jpg'>
+                    <img src='../assets/tutor/4.jpg'>
                 </div>
                 <div class='tutor'>
-                    <img src='assets/tutor/5.png'>
+                    <img src='../assets/tutor/5.png'>
                     <div>
                         <h2>Patrick Nova</h2>
-                        <p>Patrick is a french tutor at Vantage. He has over 11 years of french speaking and learning experience. He also had a three-month exchange trip to Bordeaux last year, which helped him become fully fluent in the language. </p>
+                        <p>Patrick 是学生帮中的法语教师之一. 他有超过 11 年的法语交流与学习经验。他去年在法国的波尔多留学与度假了三个月，帮助了他大大提高他对法语的流利度而让他学到了很多法国的文化。除了法语，他还会英文、中文、西班牙语、和罗马尼亚语。 </p>
                     </div>
                 </div>
             </div><br>
-            <p>Please click the button below to look at all of our tutors!</p>
-            <button style='margin:10px 0px;' onclick="window.location.href='/tutors'" class='btn'>View All</button>
+            <p>按下面的按钮看一看我们所有的导师！</p>
+            <button style='margin:10px 0px;' onclick="window.location.href='/tutors'" class='btn'>Vantage 导师</button>
         </div>
     </div>
 
     <div class='section' id='classes'>
         <div class='padding'>
-            <h2 class='heading'>What do we teach?</h2>
-            <p class='text'>Here are some - but not all - of the subjects we teach! </p><br>
+            <h2 class='heading'>课程与项目</h2>
+            <p class='text'>我们教很多的项目，但是我们的目的是给学弟学妹们一个适合他们，量身定制的课程。</p><br>
             <div class='flex-wrap'>
-                <div>Math</div>
-                <div>Science</div>
-                <div>French</div>
-                <div>Homework Help</div>
-                <div>Robotics</div>
-                <div>Coding</div>
-                <div>Game Design</div>
-                <div>Public Speaking</div>
-                <div>Visual & Digital Art</div>
-                <div>SSAT Prep</div>
-                <div>IB Program Workshop</div>
-                <div>UTS Workshop</div>
+                <div>数学竞赛</div>
+                <div>科学</div>
+                <div>法语</div>
+                <div>作业辅导</div>
+                <div>编程竞赛</div>
+                <div>游戏制造</div>
+                <div>演讲/辩论</div>
+                <div>绘画/卡通</div>
+                <div>SSAT 准备</div>
+                <div>IB Program 辅导</div>
+                <div>UTS 面试辅导</div>
             </div>
-            <button style='margin:10px 0px;' onclick="window.location.href='/program'" class='btn'>Our Program</button>
+            <button style='margin:10px 0px;' onclick="window.location.href='/program'" class='btn'>组织项目</button>
         </div>
     </div>
 
-    <div class='section' id='vision'>
+    <!--<div class='section' id='vision'>
         <div class='padding'>
             <div class='flex'>
                 <div id='info'>
@@ -449,7 +452,7 @@
                 <img src='assets/home/3.png'>
             </div>
         </div>   
-    </div>
+    </div>-->
 
 
     <style>
@@ -724,11 +727,10 @@ main {
     
 }
 #intro-lead p{
-    width:150px;
+    width:auto;
     text-align: left;
 }
 #intro-lead a{
-    font-size:10pt;
     margin-top:0px;
     text-align: center;
 }
@@ -839,47 +841,6 @@ cursor:pointer;
 }
     </style>
 
-    </main>
-  </html>
-  <style>
-  </style>
-
-
-
-  <script>
-    /*
-    if ($(window).width() < 600) {
-          $(window).scroll(function() {     
-          var scroll = $(window).scrollTop();
-          if (scroll > 0) {
-              $("#mainnav").addClass("active");
-              
-          }
-          else {
-              $("#mainnav").removeClass("active");
-          }
-        });
-    } else {
-      $('#mainnav').removeClass('active');
-      $(window).scroll(function() {     
-        var scroll = $(window).scrollTop();
-        if (scroll > 0) {
-            $("#mainnav").addClass("active");
-            $("#mainnav").addClass("active");
-            $( "#title" ).css("opacity",0);
-            $( "#logo" ).css("opacity",1);
-        }
-        else {
-            $("#mainnav").removeClass("active");
-            $( "#title" ).css("opacity",1);
-            $( "#logo" ).css("opacity",0);
-        }
-      });
-    }*/
-
- 
-  </script>
-
   </body>
   <footer>
 	<div id='footer-con'>
@@ -894,30 +855,27 @@ cursor:pointer;
 			</div>-->
 
 			<div id='info'>
-				<h1>Vantage Tutoring</h1> <br>
-				<p>For students, by students. Empowering younger students through education.</p>
+				<h1>Vantage 学生帮</h1> <br>
+				<p>647-588-6288</p>
 				<p>© 2020 Vantage Tutoring</p>
 			</div>
 			<div class='link-con'>
 				<div class='link-col'>
-					<h2>Links</h2>
-					<a href='/'>Home</a>
-					<a href='/about'>About</a>
-					<a href='/team'>Our Team</a>
-					<a href='/program'>Program</a>
-					<a href='/contact'>Contact</a>
+					<h2>链接</h2>
+					<a href='/'>首页</a>
+					<a href='/about'>关于我们</a>
+					<a href='/team'>团队导师</a>
+					<a href='/program'>组织项目</a>
+					<a href='/contact'>联系我们</a>
 
 					<!--<a href='/'>Sign Up</a>-->
 				</div>
 				<div class='link-col'>
-					<h2>Organization</h2>
-					<!--<a href='/'>Help & Support</a>-->
-					<!--<a href='/'>Volunteer</a>-->
-					<!--<a href='/'>Twitter</a>-->
-					<a href='/tutor/hire'>Join Us</a>
-					<a href='https://www.facebook.com/tutoringvantage'>Facebook</a>
+					<h2>社交媒体</h2>
+					<a href='/cn/contact'>微信 ｜Wechat</a>
+					<a href='https://www.facebook.com/tutoringvantage'>脸书 ｜Facebook</a>
 					<a href='https://www.instagram.com/vantagetutoring/'>Instagram</a>
-					<a href="mailto:tutoring.vantage@gmail.com">Email Us</a>
+					<a href="mailto:tutoring.vantage@gmail.com">电子邮件</a>
 				</div>
 			</div>
 			
@@ -932,7 +890,6 @@ cursor:pointer;
 footer {
 	background-image:url('/assets/footer.png');
 	background-size:cover;
-	margin-top:100px;
 	padding-top:150px;
 	padding-bottom:75px;
 	scroll-snap-align: end;
