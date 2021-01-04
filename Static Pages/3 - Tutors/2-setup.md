@@ -35,8 +35,6 @@ You will access the class link, student notes, teaching resources, thorugh our D
 Our organization team itself is **non-profit**. Our goal is to help inspire, share our experiences and knowledge with younger students. You **must have a passion to teach** and are friendly with younger students. Simultaneously, we are raising money to support education for new-immigrant, indigenous, and low income communities. By agreeing to join our team, you confirm that you fit within the scope of what our team strives for, and are willing to contribute.
 <br>
 <br>
-
+<!--
 <p style='color:red'><b>By clicking the button below you agree to all the above terms. You will be redirected to the DASHBOARD SETUP page.</b></p>
-<br>
-
-<a class='btn' href='/tutor/dashboard'><b>I Agree To These Terms</b> </a>
+<br><a class='btn' href='/tutor/dashboard'><b>I Agree To These Terms</b> </a>-->
