@@ -9,7 +9,7 @@ image: /assets/setup-1.png
 
 ## Team Terms and Conditions
 
-<p style='color:red'><b>NOTE: Please read the following carefully and make sure you agree to all terms before signing into the dashboard.</b></p>
+<p style='color:red'><b>NOTE: Please read the following carefully and make sure you agree to all terms before creating a profile.</b></p>
 
 
 
