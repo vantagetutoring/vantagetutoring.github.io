@@ -1,92 +1,168 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-01T18:35:03-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vantage Tutoring</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">How Do I Remember Things Better?</title><link href="http://localhost:4000/blog/memory-retention/" rel="alternate" type="text/html" title="How Do I Remember Things Better?" /><published>2020-07-28T00:00:00-04:00</published><updated>2020-07-28T00:00:00-04:00</updated><id>http://localhost:4000/blog/memory-retention</id><content type="html" xml:base="http://localhost:4000/blog/memory-retention/">&lt;p&gt;Let’s face it, nobody really likes memorizing things. Even in school, we were always told that memorizing is rather “bad” when you are exposed to new information. Yet it is somewhat essential if you are looking to continue learning. How can you speak a language if you don’t know the words, right? How can you make the right decisions in your daily life if you are not fully cognizant of the impact of your actions?&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.7">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-01-18T03:10:40-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Vantage Tutoring</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Tutor Homepage</title><link href="http://localhost:4000/doc/home" rel="alternate" type="text/html" title="Tutor Homepage" /><published>2020-01-02T00:00:00-05:00</published><updated>2020-01-02T00:00:00-05:00</updated><id>http://localhost:4000/doc/homepage</id><content type="html" xml:base="http://localhost:4000/doc/home">&lt;h2 id=&quot;welcome&quot;&gt;Welcome&lt;/h2&gt;
 
-&lt;p&gt;As the Mindhood family, our goal is to become the micro-learning platform for 21st-century global citizens and future change-makers. We want a community of knowledgeable people willing to take simple, daily actions to create change. But in order to act with purpose, we need to be more aware and more educated. To this end, we have been searching for ways to facilitate learning, improve recall, and enhance memory. So, we continued to test the time-honored and the new ways to commit things into memory to determine what works best.&lt;/p&gt;
+&lt;p&gt;These docs are a homepage to everything related to Vantage, updates, notices, and organizational functions.&lt;/p&gt;
 
-&lt;p&gt;We found that while most strategies give you some improvement in memory and recall, they are just not powerful enough. One strategy, however, stood out from the rest, and we realized it was one of the oldest strategies for memorizing. Having stood the test of time, Spaced Repetition drastically changed the way we retained knowledge. As a team, we were amazed by how powerful and simple this tool really was. It also had a wide range of applications, from memorizing vocabulary to learning general facts, and could easily be adapted to a mobile environment. So, we started our implementation process.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/hire.png&quot; alt=&quot;image tooltip here&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">Welcome</summary></entry><entry><title type="html">Update</title><link href="http://localhost:4000/update/" rel="alternate" type="text/html" title="Update" /><published>2020-01-01T00:00:00-05:00</published><updated>2020-01-01T00:00:00-05:00</updated><id>http://localhost:4000/update</id><content type="html" xml:base="http://localhost:4000/update/"></content><author><name></name></author><summary type="html"></summary></entry><entry><title type="html">Join Us</title><link href="http://localhost:4000/doc/joinus" rel="alternate" type="text/html" title="Join Us" /><published>2019-12-30T00:00:00-05:00</published><updated>2019-12-30T00:00:00-05:00</updated><id>http://localhost:4000/doc/join-us</id><content type="html" xml:base="http://localhost:4000/doc/joinus">&lt;p&gt;&lt;button onclick=&quot;window.open(&amp;quot;https://forms.gle/tX3kuWcmN2zvwwKx7&amp;quot;)&quot;&gt;Application Form&lt;/button&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;what-is-this-simple-yet-very-powerful-tool-that-we-call-spaced-repetition&quot;&gt;What is this simple yet very powerful tool that we call spaced repetition?&lt;/h3&gt;
+&lt;h2&gt;🤔 What is Vantage?&lt;/h2&gt;
+&lt;div class=&quot;flex&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;We are a group of skilled students from the top high schools in the GTA offering tutoring.&lt;/li&gt;
+        &lt;li&gt;The company and management is non-profit.&lt;/li&gt;
+        &lt;li&gt;We want to help younger students in a range of subjects and raise money to provide less fortunate students with educational opportunities.&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;img src=&quot;/assets/hire.png&quot; /&gt; 
+&lt;/div&gt;
 
-&lt;p&gt;Spaced repetition, in short, is testing yourself on a fact repeatedly while spacing out the repetitions over time. Spaced repetition uses spacing effects which “demonstrate that learning is more effective when study sessions are spaced out.” You might be wondering who came up with this idea and how. Here’s is the history in a nutshell:&lt;/p&gt;
+&lt;div class=&quot;flex&quot;&gt;
+    &lt;div&gt;
+        &lt;h3&gt;👩‍💻 How We Work&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;We offer tutoring sessions, workshops, seminars for both elementry and middle school students&lt;/li&gt;
+            &lt;li&gt;80% of profit proceeds to paying tutors and 20% goes towards supporting educational charities and donations.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;h3&gt;🎓 Am I qualified?&lt;/h3&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Have an average mark higher than an A (&amp;gt;85%)&lt;/li&gt;
+            &lt;li&gt;Has advanced experience and knowledge in either an academic subject, extracurricular, or arts.&lt;/li&gt;
+            &lt;li&gt;Likes to teach younger students and is patient.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;h2&gt;📚 What Are the Benefits?&lt;/h2&gt;
+&lt;div id=&quot;grid-con&quot;&gt;
+    &lt;div&gt;
+        &lt;i class=&quot;fa fa-money&quot;&gt;&lt;/i&gt;
+        &lt;h4&gt;Earn Money&lt;/h4&gt;
+        &lt;p&gt;A variety of course types with earnings from $12 - $20 per hour plus bonus salary and commissions.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;i class=&quot;fa fa-clock-o&quot;&gt;&lt;/i&gt;
+        &lt;h4&gt;Volunteer Hours&lt;/h4&gt;
+        &lt;p&gt;You can earn volunteer hours by teaching students for free with financial needs.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;
+        &lt;h4&gt;Towards A Good Cause&lt;/h4&gt;
+        &lt;p&gt;You're simultaneously raising money for underprivileged students and charities, and it doesn't come out of your salary.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;i class=&quot;fa fa-book&quot;&gt;&lt;/i&gt;
+        &lt;h4&gt;Prepared Teaching Material&lt;/h4&gt;
+        &lt;p&gt;We have prepared outlines and content ready to go so you don't have to prep sessions and waste time searching curriculum.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;i class=&quot;fa fa-globe&quot;&gt;&lt;/i&gt;
+        &lt;h4&gt;Teach International Students&lt;/h4&gt;
+        &lt;p&gt;We also have students from China, the US, and other countries. You can earn additional if you know your second language.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+        &lt;i class=&quot;fa fa-tags&quot;&gt;&lt;/i&gt;
+        &lt;h4&gt;Customizable Courses&lt;/h4&gt;
+        &lt;p&gt;You can propose non-existant courses based on your skills and create designated premium courses (more pay).&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Hermann Ebbinghaus, a German psychologic, discovered during his studies a phenomenon he called ‘the forgetting curve’. The forgetting curve shows how the memory of new information decays in the brain as time passes. However, he also realized that there were ways to fight this forgetting curve. He noted that we can stop this process of decay by reminding ourselves of the memory in different time intervals (“The Spacing Effect”).&lt;/p&gt;
+&lt;div class=&quot;flex&quot;&gt;
+    &lt;div&gt;
+        &lt;h2&gt;🔗 We Want You! &lt;/h2&gt;
+        &lt;ul&gt;
+            &lt;li&gt;Fill out this &lt;a href=&quot;https://forms.gle/tX3kuWcmN2zvwwKx7&quot;&gt;quick application form&lt;/a&gt;.&lt;/li&gt;
+            &lt;li&gt;We'll review your application and get back to you ASAP with next steps if we think you're suitable for the job. Dw it'll be fast, we're glued to our phones 24/7.&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;img id=&quot;img2&quot; src=&quot;/assets/hire-2.png&quot; /&gt;
+&lt;/div&gt;
 
-&lt;p&gt;Forgetting and remembering are more linked to each other than one might think. After each repetition, it will take more time to forget the information, that is why we “space out” our repetitions. Check out the following forgetting curves to understand the effect of spaced repetition on our memory:&lt;/p&gt;
-
-&lt;p&gt;In the first forgetting curve, you can see that the percentage retained decays over time, yet in the second one through spaced repetition the forgetting curve changes. In general, a memory’s “rate of decay” slows down each time you actively recall it. But when should we do this recalling process? To best recall and remember something, “you need to recall it just as you’re about to forget it.” These recalls have to spaced out in time because each time you recall something, the memory’s decay slows down meaning that it’ll take more time for you to forget it. (How To Remember Anything Forever-Ish).&lt;/p&gt;
-
-&lt;h3 id=&quot;how-can-we-implement-spaced-repetition-in-our-daily-lives&quot;&gt;How can we implement spaced repetition in our daily lives?&lt;/h3&gt;
-
-&lt;p&gt;So, the mechanics are simple: you take a box, divide it into 7 levels (or use 7 different boxes). All of your cards start at the first level, and when you review a card and get it correct, the card goes up to the next level, and so on. The card retires when you reach your final level. You review by doubling the gap (number of days between reviews) for each level. For example, you will be reviewing level 1 cards every day, level two cards every 2 days, level three cards every four days, level four cards every eight days, and so on.&lt;/p&gt;
-
-&lt;p&gt;It seems easy enough, right? However, there are some important tricks when it comes to spaced repetition: Our memory is not an accumulation of different pieces: every bit of information we have in our brain is connected to each other and they cannot be considered separately. “Thus, to get the most out of Spaced Repetition, you must make your cards small, connected, and meaningful” (How To Remember Anything Forever-Ish)&lt;/p&gt;
-
-&lt;p&gt;All in all, spaced repetition is a learning life-hack and what makes it more interesting is that it is very easy to implement in our daily lives. Setting aside thirty-minutes every day to learn can change your mindset and approach. We remember in order to change, grow, and learn more. With spaced repetition, we can adopt a lifelong and continuous learning habit which is the most important skill of the 21st century. As Alvin Toffler wrote: “The illiterate of the 21st century will not be those who cannot read and write, but those who cannot learn, unlearn, and relearn.”&lt;/p&gt;
-
-&lt;h2 id=&quot;why-it-is-important-to-remember&quot;&gt;Why it is important to remember?&lt;/h2&gt;
-&lt;p&gt;The worst part of learning new things is that sooner or later, we forget. The system in which we live is designed to make us forget and become indifferent, benumbed, and less aware. After some time, we even forget some meaningful events and experiences that we have had. Days, weeks, and months pass and get so overburdened with new and shiny information, that we start forgetting.
-Last year, gun violence was a big issue that took a lot of media coverage. We were bombarded with images of kids crying, and we met some very courageous young kids who, after a horrific event, decided to try and move an entire country into action. Yet today, even though the situation is not solved, we have moved the conversation to the back burner and we have started slowly forgetting about the countless lives that were lost. And the media constantly switches gears to keep us “entertained” and glued to the TV. Personally, I am constantly traumatized when I see the news regarding sexual assault, harassment, and rape. However, even I start to forget as time passes by.&lt;/p&gt;
-
-&lt;p&gt;Yet, it is so wrong to forget: When we forget, we don’t take action, and when we don’t take action, nothing changes and increasingly more lives are affected by these situations. We have to remember to act in order to have an impact. Activism derives from never forgetting and taking action to build on the memory of that pain and anger. We achieve remembrance through spaced repetition because we break that cycle of continuous chaos and we remember what is important. We become active and responsible rather than passive and forgetful. We stop being bystanders and open ourselves up to feel and to take control. As the Mindhood family, we invite you to remember and act!&lt;/p&gt;
-
-&lt;p&gt;If you’re looking to start forming a new habit this month, try spaced repetition! You can use the most basic shoebox method or you can download our mobile application. When you start discovering how much your brain can learn and recall with such short, spaced-out repetitions, you’ll be happy you did!&lt;/p&gt;</content><author><name>Jayson Tian</name></author><summary type="html">Let’s face it, nobody really likes memorizing things. Even in school, we were always told that memorizing is rather “bad” when you are exposed to new information. Yet it is somewhat essential if you are looking to continue learning. How can you speak a language if you don’t know the words, right? How can you make the right decisions in your daily life if you are not fully cognizant of the impact of your actions?</summary></entry><entry><title type="html">Tips to Learning Online</title><link href="http://localhost:4000/blog/online-learning/" rel="alternate" type="text/html" title="Tips to Learning Online" /><published>2020-07-27T00:00:00-04:00</published><updated>2020-07-27T00:00:00-04:00</updated><id>http://localhost:4000/blog/online-learning</id><content type="html" xml:base="http://localhost:4000/blog/online-learning/">&lt;p&gt;Keeping Productive&lt;/p&gt;</content><author><name>Jayson Tian</name></author><summary type="html">Keeping Productive</summary></entry><entry><title type="html">Upcoming Courses This Fall</title><link href="http://localhost:4000/blog/upcoming-courses/" rel="alternate" type="text/html" title="Upcoming Courses This Fall" /><published>2020-07-27T00:00:00-04:00</published><updated>2020-07-27T00:00:00-04:00</updated><id>http://localhost:4000/blog/upcoming-courses</id><content type="html" xml:base="http://localhost:4000/blog/upcoming-courses/">&lt;p&gt;Keeping Productive&lt;/p&gt;</content><author><name>Jayson Tian</name></author><summary type="html">Keeping Productive</summary></entry><entry><title type="html">Weird Button Challenge</title><link href="http://localhost:4000/blog/weird-button/" rel="alternate" type="text/html" title="Weird Button Challenge" /><published>2020-07-27T00:00:00-04:00</published><updated>2020-07-27T00:00:00-04:00</updated><id>http://localhost:4000/blog/weird-button</id><content type="html" xml:base="http://localhost:4000/blog/weird-button/">&lt;p&gt;Win this challenge by pressing the green button.&lt;/p&gt;
-
-&lt;p&gt;&lt;button id=&quot;s1&quot; onclick=&quot;greendie()&quot;&gt;HOVER OVER ME, don’t click.&lt;/button&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;button id=&quot;s2&quot; onclick=&quot;win()&quot;&gt;CLICK HERE TO WIN &lt;/button&gt;&lt;/p&gt;
+&lt;h2&gt;Questions &amp;amp; Answers&lt;/h2&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;details&gt;
+    &lt;summary&gt;How much do I get paid?&lt;/summary&gt;
+    &lt;p&gt;Depending on the course type that you choose you earn a minimum rate of 12-20 dollars. On top of that, there are comissions and rates from parents, as well as bonus salary if you are a popular and verified tutor.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+    &lt;summary&gt;How will I get paid?&lt;/summary&gt;
+    &lt;p&gt;You get paid based on a course quantity and season based schedule. We can pay you through paypal, email transfer, and cash once the pandemic ends.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+    &lt;summary&gt;Are you accepting jobs non-related to tutoring?&lt;/summary&gt;
+    &lt;p&gt;Well we are mainly a tutoring business, and we already have a full team. However, once september comes we are looking for more people to help with management and back end web development positions. Please email us if you're interested.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+    &lt;summary&gt;How do custom courses work?&lt;/summary&gt;
+    &lt;p&gt;Well we are mainly a tutoring business, but we are accepting back end management and those interested in filling management related positions. Please email us if you're interested.&lt;/p&gt;
+&lt;/details&gt;
+&lt;details&gt;
+    &lt;summary&gt;Will there be more Q&amp;amp;A?&lt;/summary&gt;
+    &lt;p&gt;Yes. We're thinking of more questions. Or ask us by emailing us.&lt;/p&gt;
+&lt;/details&gt;
 
 &lt;style&gt;
-    button {
-        position: fixed;
-        font-size:20pt;
-        padding:20px 30px;
+    #grid-con{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top:100px;
     }
-    #s1 {
-        background-color: red;
-        color:white;
-        top:400px;
-        left:50px;
+    #grid-con div{
+        width:300px;
+        padding:0px;
+        display:flex;
+        flex-direction: column;
     }
-    #s2 {
-        background-color: green;
-        color:white;
-        top:400px;
-        right:50px;
+    #grid-con div p{
+        width:90%;
+        text-align:center;
+        font-size:11.5pt;
+        margin:0px auto;
+        min-height:150px;
+    }
+    #grid-con div h4{
+        font-size:15pt;
+        text-align: center;
+        margin:13px 0px;
+    }
+    #grid-con div i{
+        font-size:30pt;
+        background-color:rgba(255, 139, 97, 0.712);
+        border-radius:100px;
+        margin:0px auto;
+        height:45px;
+        width:45px;
+        padding:25px;
     }
 
-&lt;/style&gt;
 
-&lt;script&gt;
-    $('#s2').hide();
-    function greendie(){
-        $('#s2').remove();
-        $('#s1').text(&quot;You just killed the green button.&quot;);
-    }
-    $('#s1').mouseover(function(){
-        $('#s2').show()   })
-        $('#s1').mouseleave(function(){
-        $('#s2').hide()   })
-
-        function win(){
-            alert('yay congrats you won.')
+    @media only screen and (max-width: 600px){
+        #grid-con div i{
+            font-size:50pt;
+            background-color:rgba(255, 139, 97, 0.712);
+            border-radius:100px;
+            margin:0px auto;
+            height:70px;
+            width:70px;
+            padding:28px;
         }
-    &lt;/script&gt;</content><author><name>Jayson Tian</name></author><summary type="html">Win this challenge by pressing the green button.</summary></entry><entry><title type="html">Being More Prouctive at Home</title><link href="http://localhost:4000/blog/being-productive-at-home/" rel="alternate" type="text/html" title="Being More Prouctive at Home" /><published>2020-07-01T00:00:00-04:00</published><updated>2020-07-01T00:00:00-04:00</updated><id>http://localhost:4000/blog/being-productive-at-home</id><content type="html" xml:base="http://localhost:4000/blog/being-productive-at-home/">&lt;p&gt;Keeping Productive&lt;/p&gt;</content><author><name>Jayson Tian</name></author><summary type="html">Keeping Productive</summary></entry><entry><title type="html">What’s New?</title><link href="http://localhost:4000/blog/whats-new/" rel="alternate" type="text/html" title="What's New?" /><published>2020-06-20T00:00:00-04:00</published><updated>2020-06-20T00:00:00-04:00</updated><id>http://localhost:4000/blog/whats-new</id><content type="html" xml:base="http://localhost:4000/blog/whats-new/">&lt;p&gt;Vantage has just been launched a few weeks back, so we are working as best as we can to add more features and details to both our virtual and online programs, as well as the core structures of our service! We want to ensure that we are most prepared to teach and inspire students in meaningful ways. This page will be the changelog, consisting of news and updates - stay tuned and consider following us on social media!&lt;/p&gt;
+        #grid-con div p{
+            width:100%;
+            text-align:center;
+            font-size:13.5pt;
+            margin:0px auto;
+            min-height:150px;
+        }
+        #grid-con div h4{
+            font-size:18pt;
+            text-align: center;
+            margin:25px 0px;
+        }
 
-&lt;h2 id=&quot;august-14th-2020&quot;&gt;August 14th, 2020&lt;/h2&gt;
+        #img2 {
+            width:300px;
+            margin:50px auto;
+        }
 
-&lt;ul&gt;
-  &lt;li&gt;We have now 20 tutors on our team and recieved over 60 applications&lt;/li&gt;
-  &lt;li&gt;Our new hiring model is by student demand and each tutor is assigned a specific subject to teach&lt;/li&gt;
-  &lt;li&gt;Our program is divded into sessions, in which one session consists of 8 classes, usually finishing a unit in one subject.&lt;/li&gt;
-  &lt;li&gt;Packages are offered for core pricing models and courses are now grouped into 4 categories.&lt;/li&gt;
-  &lt;li&gt;The website is done.&lt;/li&gt;
-  &lt;li&gt;Application forms are updated and available through -&amp;gt; enroll -&amp;gt; form&lt;/li&gt;
-  &lt;li&gt;WeChat account is compeletely finished. Ad articles and about articles have been posted.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;july-29th-2020&quot;&gt;July 29th, 2020&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;New website update, the final version will be submitted.&lt;/li&gt;
-  &lt;li&gt;3 core &lt;a href=&quot;/pricing&quot;&gt;pricing models&lt;/a&gt; with a 8 class bundle offer&lt;/li&gt;
-  &lt;li&gt;Free first trial class coupon - applied upon registration&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Jayson Tian</name></author><summary type="html">Vantage has just been launched a few weeks back, so we are working as best as we can to add more features and details to both our virtual and online programs, as well as the core structures of our service! We want to ensure that we are most prepared to teach and inspire students in meaningful ways. This page will be the changelog, consisting of news and updates - stay tuned and consider following us on social media!</summary></entry></feed>
+    }
+&lt;/style&gt;</content><author><name></name></author><summary type="html">Application Form</summary></entry></feed>
