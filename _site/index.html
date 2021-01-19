@@ -355,6 +355,26 @@
         </div>
         
     </div>
+    
+    <div class='section' id='s-intro'>
+        <div class='padding'>
+            <div id='s-intro-bg'></div>
+            <!--<img id='s-intro-bg-white' src='assets/bg-white.png'>-->
+            <div style='z-index:100;'>
+                <div class='flex' id='main-splash'> 
+                    <div>
+                        <div id='intro-holder'>
+                            <h1 id='title'><span class='black'>Vantage</span> Tutoring</h1><br>
+                            <p>Vantage is a not-for-profit organization dedicated to making education accessible for all students. By providing affordable tutoring and hosting events like seminars and funraisers, we hope to raise awareness about education equality and inspire younger students to do the same.</p>
+                            <!--<p>For students, by students. We're a Toronto based non-profit providing lessons for elementry and middle schoolers.</p>-->
+                        </div>
+                        <div id='intro-lead'><p>Have any questions?</p> <a id='intro-btn' href='/contact'>Contact Us</a></div>
+                    </div>
+                    <img src="/assets/home/splash.png" id='splash'>    
+                </div> 
+            </div>
+        </div>
+    </div>  
 
     <div class='section' id='about'>
         <div class='padding'>
@@ -551,7 +571,7 @@ line-height: 1.5;
 width:400px;
 }
 #s-intro {
-display:flex;
+display:none;
 justify-content: space-between;
 z-index:-1;
 width: 100vw;
@@ -696,162 +716,6 @@ width:350px;
 height:350px;
 }
 
-@media only screen and (max-width: 600px){
-    .loginbtn{
-        display:none;
-    }
-p {
-    font-size:13.5pt;
-}
-main {
-    width:100%;
-    margin:0px;
-}
-.section {
-    height:auto;
-}
-#splash {
-    width:70%;
-    height:auto;
-    margin:0px auto;
-    margin-top:20px;
-}
-#splash-gif {
-    display:block;
-    width:300px;
-    height:300px;
-    margin-top:50px;
-}
-#s-intro {
-    height:auto;
-    padding-bottom:50px;
-}
-#s-intro #intro-holder p{
-    text-align:center;
-    font-size:12pt;
-    margin:0px auto;
-    width:100%;
-}
-#s-intro h1{
-    width:80%;
-    margin:auto;
-    font-size:22pt;
-    margin-top:-25px;
-}
-#intro-lead{
-    display:flex;
-    width:90%;
-    justify-content: space-between;
-    margin:10px auto;
-    font-size:10pt;
-    align-content:left;
-    padding:10px 20px;
-    
-}
-#intro-lead p{
-    width:150px;
-    text-align: left;
-}
-#intro-lead a{
-    font-size:10pt;
-    margin-top:0px;
-    text-align: center;
-}
-#title{
-    text-align:center;
-}
-#intro-holder {
-    margin-top:20px;
-}
-#s-intro .flex{
-    flex-direction: column-reverse;
-    width:100%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#about {
-    width:100%;
-}
-.padding {
-    width:90%;
-    padding: 0px 5%;
-}
-#about .flex {
-    width:100%;
-    flex-direction: column;
-}
-#about #info {
-    width:100%;
-    margin:0px;
-    padding:0px;
-}
-#about #info p {
-    width:100%;
-}
-#about img {
-    margin: 0px auto;
-    margin-bottom:50px;
-}
-#why {
-    width:100%;
-}
-#why .padding {
-    width:100%;
-    /*padding: 0px 30px;*/
-}
-#why .text {
-    width:100%;
-}
-#why .flex-wrap div {
-width:80%;
-text-align: center;
-margin:0px auto;
-margin-top:30px;
-}
-#tutors .tutor div{
-    width:100%;
-    padding:0px;
-}
-#tutors .tutor img {
-    margin:auto;
-    margin-top:45px;
-}
-#tutors .tutor {
-    flex-direction: column;
-    padding:0px;
-    text-align:center;
-}
-#tutors .flip {
-    flex-direction: column-reverse;
-}
-#tutors .tutor h2 {
-    margin: 10px 0px;
-    margin-top:20px;
-    margin-bottom:25px;
-}
-#tutors .tutor p {
-    margin: 10px auto;
-    margin-bottom:50px;
-    width:95%;
-}
-#vision .flex{
-    flex-direction: column;
-}
-#vision #info{
-    width:100%;
-    padding:0px;
-    padding-left:0px;
-}
-#vision p {
-    width:90%;
-    margin:30px auto;
-}
-#vision img{
-    margin:30px auto;
-}
-
-}   
-
 .btn {
 background-color:#ec6f5b;
 color:white;
@@ -863,7 +727,6 @@ margin-top:40px;
 cursor:pointer;
 }
 
-
 /************************ THE NEW CAROUSEL ***********************************/
 
 .mySlides {display: none; height:100%;}
@@ -871,6 +734,7 @@ cursor:pointer;
 
 /* Slideshow container */
 .slideshow-container {
+display:block;
   max-width: 100%;
   height: 500px;
   overflow:hidden;
@@ -950,53 +814,218 @@ cursor:pointer;
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
+
+
+/**************************************** PHONE CONFIGURATION ******************************************/
+
+
+@media only screen and (max-width: 600px){
+    #s-intro{display:block};
+    .slideshow-container{
+        display:none;
+        opacity:0;
+        background-color:red;
+    }
+    .mySlides{
+        display:none;
+    }
+    .loginbtn{
+        display:none;
+    }
+    p {
+        font-size:13.5pt;
+    }
+    main {
+        width:100%;
+        margin:0px;
+    }
+    .section {
+        height:auto;
+    }
+    #splash {
+        width:70%;
+        height:auto;
+        margin:0px auto;
+        margin-top:20px;
+    }
+    #splash-gif {
+        display:block;
+        width:300px;
+        height:300px;
+        margin-top:50px;
+    }
+    #s-intro {
+        height:auto;
+        padding-bottom:50px;
+    }
+    #s-intro #intro-holder p{
+        text-align:center;
+        font-size:12pt;
+        margin:0px auto;
+        width:100%;
+    }
+    #s-intro h1{
+        width:80%;
+        margin:auto;
+        font-size:22pt;
+        margin-top:-25px;
+    }
+    #intro-lead{
+        display:flex;
+        width:90%;
+        justify-content: space-between;
+        margin:10px auto;
+        font-size:10pt;
+        align-content:left;
+        padding:10px 20px;
+        
+    }
+    #intro-lead p{
+        width:150px;
+        text-align: left;
+    }
+    #intro-lead a{
+        font-size:10pt;
+        margin-top:0px;
+        text-align: center;
+    }
+    #title{
+        text-align:center;
+    }
+    #intro-holder {
+        margin-top:20px;
+    }
+    #s-intro .flex{
+        flex-direction: column-reverse;
+        width:100%;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    #about {
+        width:100%;
+    }
+    .padding {
+        width:90%;
+        padding: 0px 5%;
+    }
+    #about .flex {
+        width:100%;
+        flex-direction: column;
+    }
+    #about #info {
+        width:100%;
+        margin:0px;
+        padding:0px;
+    }
+    #about #info p {
+        width:100%;
+    }
+    #about img {
+        margin: 0px auto;
+        margin-bottom:50px;
+    }
+    #why {
+        width:100%;
+    }
+    #why .padding {
+        width:100%;
+        /*padding: 0px 30px;*/
+    }
+    #why .text {
+        width:100%;
+    }
+    #why .flex-wrap div {
+    width:80%;
+    text-align: center;
+    margin:0px auto;
+    margin-top:30px;
+    }
+    #tutors .tutor div{
+        width:100%;
+        padding:0px;
+    }
+    #tutors .tutor img {
+        margin:auto;
+        margin-top:45px;
+    }
+    #tutors .tutor {
+        flex-direction: column;
+        padding:0px;
+        text-align:center;
+    }
+    #tutors .flip {
+        flex-direction: column-reverse;
+    }
+    #tutors .tutor h2 {
+        margin: 10px 0px;
+        margin-top:20px;
+        margin-bottom:25px;
+    }
+    #tutors .tutor p {
+        margin: 10px auto;
+        margin-bottom:50px;
+        width:95%;
+    }
+    #vision .flex{
+        flex-direction: column;
+    }
+    #vision #info{
+        width:100%;
+        padding:0px;
+        padding-left:0px;
+    }
+    #vision p {
+        width:90%;
+        margin:30px auto;
+    }
+    #vision img{
+        margin:30px auto;
+    }
+
+}   
 
 </style>
 
 <script>
-    var interval = setInterval(function() {
-        plusSlides(1)
-    }, 5000);
+     var interval = setInterval(function() {
+            plusSlides(1)
+        }, 5000);
 
-    var slideIndex = 1;
-    showSlides(slideIndex);
-    
-    function plusSlides(n) {
-        clearInterval(interval);
-        interval = setInterval(function() {
-            plusSlides(1)
-        }, 5000);
-        showSlides(slideIndex += n);
-    }
-    
-    function currentSlide(n) {
-        clearInterval(interval);
-        interval = setInterval(function() {
-            plusSlides(1)
-        }, 5000);
-      showSlides(slideIndex = n);
-    }
-    
-    function showSlides(n) {
-      var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("dot");
-      if (n > slides.length) {slideIndex = 1}    
-      if (n < 1) {slideIndex = slides.length}
-      for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";  
-      }
-      for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex-1].style.display = "block";  
-      dots[slideIndex-1].className += " active";
-    }
-    </script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            clearInterval(interval);
+            interval = setInterval(function() {
+                plusSlides(1)
+            }, 5000);
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            clearInterval(interval);
+            interval = setInterval(function() {
+                plusSlides(1)
+            }, 5000);
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+</script>
     </main>
   </html>
   <style>
@@ -1243,9 +1272,9 @@ background-color:white;
 
 </style>
     <script>
-        window.onload = function(){
-            $('.cover').remove();
-        }
+        window.addEventListener("load", () => {
+          $('.cover').remove();
+        });
     </script>
     <style>
       .cover{
