@@ -1,7 +1,7 @@
 ---
 firstname: "Cheryl"
 lastname: "Geng"
-title: "Design Lead"
+role: "Design Lead"
 group: "exec"
 img: "cgeng.jpg"
 grade: 11

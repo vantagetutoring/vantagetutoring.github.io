@@ -1,7 +1,7 @@
 ---
 firstname: "Vanessa"
 lastname: "Poiana"
-title: "Management Lead"
+role: "Management Lead"
 group: "exec"
 img: "vpoiana.jpg"
 grade: 11

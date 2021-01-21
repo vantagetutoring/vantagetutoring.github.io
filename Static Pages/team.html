@@ -21,9 +21,9 @@ description: Here are all of the amazing people that make Vantage happen! We are
         <div class="grid-col">
             <div class="team-member-content">
                 <h3 class="no-margin title">{{ member.firstname }} {{ member.lastname }}</h3>
-                <p>{{ member.title }}</p>
+                <p>{{ member.role }}</p>
                 <p>{{ member.school }}</p>
-                <p><a class = "tla-link" href='{{ site.baseurl }}/team/{{ member.slug }}'><span class = "fas fa-arrow-circle-right"></span> More Info</a></p>
+                <p class='linkmore'><a class = "tla-link" href='{{ site.baseurl }}/team/{{ member.slug }}'><span class = "fas fa-arrow-circle-right"></span> More Info</a></p>
             </div>
         </div>
     </div>
@@ -50,8 +50,8 @@ description: Here are all of the amazing people that make Vantage happen! We are
         <div class="grid-col">
             <div class="team-member-content">
                 <h3 class="no-margin title">{{ member.firstname }} {{ member.lastname }}</h3>
-                <p></p>{{ member.school }}
-                <p><a class = "tla-link" href='{{ site.baseurl }}/team/{{ member.slug }}'><span class = "fas fa-arrow-circle-right"></span> More Info</a></p>
+                <p>{{ member.school }}</p>
+                <p class='linkmore'><a class = "tla-link" href='{{ site.baseurl }}/team/{{ member.slug }}'><span class = "fas fa-arrow-circle-right"></span> More Info</a></p>
             </div>
         </div>
     </div>
@@ -136,8 +136,40 @@ description: Here are all of the amazing people that make Vantage happen! We are
         .grid-row{
             margin:30px 0px;
             display:flex;
+            /*flex-direction: column;*/
             width:100%;
         }
+        .exec-grid .profile-img, .team-member-grid .profile-img{
+            width:100px;
+            height:100px;
+        }
+        .team-member-content h3{
+            font-size:14pt;
+        }
+        .team-member-content p {
+            font-size:11pt;
+        }
+        .tla-link{
+            font-size:12pt;
+        }
+
+        /*
+        .grid-col {
+            width:100%;
+            text-align:center;
+        }
+        .grid-col img, .grid-col h3, .grid-col p,  .grid-col a {
+            margin:auto;
+        }
+        .grid-col h3{
+            margin: 20px 0px;
+        }
+        .grid-col p{
+            margin-bottom:10px;
+        }
+        .grid-col a{
+            padding-top:40px;
+        }*/
     }
 
 </style>

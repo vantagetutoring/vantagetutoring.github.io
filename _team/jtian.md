@@ -1,7 +1,7 @@
 ---
 firstname: "Jayson"
 lastname: "Tian"
-title: "Founder & Director"
+role: "Founder & Director"
 group: "director"
 img: "jtian.jpg"
 email: "jayson.tian@ucc.on.ca"

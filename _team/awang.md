@@ -1,7 +1,7 @@
 ---
 firstname: "Alex"
 lastname: "Wang"
-title: "Tutor Lead"
+role: "Tutor Lead"
 group: "exec"
 img: "placeholder.png"
 grade: 11

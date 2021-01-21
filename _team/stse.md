@@ -1,7 +1,7 @@
 ---
 firstname: "Shelby"
 lastname: "Tse"
-title: "Vice Director"
+role: "Vice Director"
 group: "vicedirector"
 img: "stse.jpg"
 email: "stse"

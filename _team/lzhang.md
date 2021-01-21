@@ -1,7 +1,7 @@
 ---
 firstname: "Leo"
 lastname: "Zhang"
-title: "Content Lead"
+role: "Content Lead"
 group: "exec"
 img: "placeholder.png"
 grade: 11
