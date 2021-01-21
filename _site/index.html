@@ -340,7 +340,7 @@
 
         <div class="mySlides fade" style='background-color:#F4825E'>
             
-            <img src="assets/general/jan21banner.jpg" style="width:100%">
+            <img src="assets/general/jan21banner.jpg" style="width:100%; cursor:pointer;" onclick='window.location.href="/docs/2-updates"'>
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -420,7 +420,7 @@
             <p>Take a look at some of our tutors! We have over 50 tutors from a variety of schools across the GTA that are ready to teach!</p> <br> <br>
             <div>
                 <div class='tutor'>
-                    <img src='assets/tutor/1.jpg'>
+                    <img src='assets/tutorphotos/ashi.jpg'>
                     <div>
                         <h2>Andrew Shi</h2>
                         <p>Andrew is a debate and public speaking tutor at Vantage. He’s won a variety of debate tournaments at the international and national level. Last year, he was a finalist in Canadian junior nationals and the Saskatoon world school tournament.</p>
@@ -431,10 +431,10 @@
                         <h2>Vanessa Poiana</h2>
                         <p>Vanessa is a math and science tutor at Vantage. She has made honor roll in a variety of math, logic, writing contests and medals in DECA and mock trial. She was accepted in the CTY program at Johns Hopkins University and other programs.</p>
                     </div>
-                    <img src='assets/tutor/2.jpg'>
+                    <img src='assets/tutorphotos/vpoiana.jpg'>
                 </div>
                 <div class='tutor'>
-                    <img src='assets/tutor/3.jpg'>
+                    <img src='assets/tutorphotos/cgeng.jpg'>
                     <div>
                         <h2>Cheryl Geng</h2>
                         <p>Cheryl is tutoring visual and digital arts at Vantage! She has been drawing and doing art for over 8 years and has experience in digital, watercolour, acrylic, surrealism art and a vast knowledge base of techniques and skills!</p>
@@ -445,10 +445,10 @@
                         <h2>Jayson Tian</h2>
                         <p>Jayson is a coding and english tutor at Vantage. He has won awards in both coding, and creative writing competitions. This year, he will be representing Canada in taking part of the  International Biology Olympiad virtual challenge. Fun fact: he also coded this website from scratch!</p>
                     </div>
-                    <img src='assets/tutor/4.jpg'>
+                    <img src='assets/tutorphotos/jtian.jpg'>
                 </div>
                 <div class='tutor'>
-                    <img src='assets/tutor/5.png'>
+                    <img src='assets/tutorphotos/pnova.png'>
                     <div>
                         <h2>Patrick Nova</h2>
                         <p>Patrick is a french tutor at Vantage. He has over 11 years of french speaking and learning experience. He also had a three-month exchange trip to Bordeaux last year, which helped him become fully fluent in the language. </p>
@@ -456,7 +456,7 @@
                 </div>
             </div><br>
             <p>Please click the button below to look at all of our tutors!</p>
-            <button style='margin:10px 0px;' onclick="window.location.href='/tutors'" class='btn'>View All</button>
+            <button style='margin:10px 0px;' onclick="window.location.href='/team'" class='btn'>View All</button>
         </div>
     </div>
 
@@ -820,7 +820,7 @@ display:block;
 
 
 @media only screen and (max-width: 600px){
-    #s-intro{display:block};
+    #s-intro{display:block; margin-top:-20px;};
     .slideshow-container{
         display:none;
         opacity:0;
@@ -1034,6 +1034,9 @@ display:block;
 
 
   <script>
+    if ($(window).width() < 600) {
+      $('.slideshow-container').hide();
+    }
     /*
     if ($(window).width() < 600) {
           $(window).scroll(function() {     
@@ -1093,6 +1096,7 @@ display:block;
 					<a href='/team'>Our Team</a>
 					<a href='/program'>Program</a>
 					<a href='/contact'>Contact</a>
+					<a href='/docs/1-homepage'>Docs</a>
 
 					<!--<a href='/'>Sign Up</a>-->
 				</div>
@@ -1281,6 +1285,7 @@ background-color:white;
         position:fixed;
         background-color:white;
         top:0px;left:0px;height:100%;width:100%;
+        z-index:10000000000;
       }
     </style>
 </html>

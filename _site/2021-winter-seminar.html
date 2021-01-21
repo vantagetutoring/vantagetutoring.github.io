@@ -342,6 +342,9 @@ iframe {
 
 
   <script>
+    if ($(window).width() < 600) {
+      $('.slideshow-container').hide();
+    }
     /*
     if ($(window).width() < 600) {
           $(window).scroll(function() {     
@@ -401,6 +404,7 @@ iframe {
 					<a href='/team'>Our Team</a>
 					<a href='/program'>Program</a>
 					<a href='/contact'>Contact</a>
+					<a href='/docs/1-homepage'>Docs</a>
 
 					<!--<a href='/'>Sign Up</a>-->
 				</div>
@@ -589,6 +593,7 @@ background-color:white;
         position:fixed;
         background-color:white;
         top:0px;left:0px;height:100%;width:100%;
+        z-index:10000000000;
       }
     </style>
 </html>

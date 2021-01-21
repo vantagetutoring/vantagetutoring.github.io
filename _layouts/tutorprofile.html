@@ -1,0 +1,80 @@
+---
+layout: home
+---
+
+<br><br><br><br><br><br>
+<div class='padding'>
+  <div class='profile-con'>
+    <img class='profile-photo' src="{{site.baseurl}}/assets/tutorphotos/{{page.img}}" alt="">
+    <div class='spacer' style='width:70px; min-width:70px;'></div>
+    <div class='profile-info'>
+      <h1>{{page.firstname}} {{page.lastname}} 
+        {% if page.title %}
+          <br class='line'><span class='title'>({{page.title}})</span>
+        {% endif %}
+      </h1>
+      
+      <h3>Grade {{page.grade}} student at {{page.school}}</h3>
+      <h3><span>{{page.subject}} Tutor</span></h3>
+      <p>{{page.content}}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .profile-con{
+    display:flex;
+    flex-direction:row;
+  }
+  .profile-photo{
+    width:180px;
+    height:180px;
+    border-radius:10px;
+    object-fit: cover;
+  }
+  .profile-info {
+    width:auto;
+  }
+  .profile-info .title{
+    color:var(--text-light);
+  }
+  .profile-info h3{
+    font-weight:400;
+  }
+  .profile-info span{
+    font-weight:bold;
+    color:var(--main);
+    font-size:20px;
+  }
+  .line{display:none;}
+  @media only screen and (max-width: 600px) {
+    .padding{
+      width:100vw;
+    }
+    .line {display:block;}
+    .profile-con{
+      width:100vw;
+    }
+    .spacer{
+      display:none;
+    }
+    .profile-photo{
+      margin:auto;
+    }
+    .profile-con{
+      flex-direction: column;
+      width:100%;
+    }
+    .profile-info h1{
+      margin-top:40px;
+      margin-bottom:30px;
+      text-align:center;
+      width:90%;
+      padding:0px 5%;
+    }
+    .profile-info p, .profile-info h3{
+      width:90%;
+      padding:0px 5%;
+    }
+  }
+</style>

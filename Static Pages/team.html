@@ -2,52 +2,73 @@
 layout: page
 permalink: /team
 title: Our Team
-description: Here are all of the amazing people that make Vantage happen! We are all high school or university students in Ontario who are dedicated to creating change in education equality.
+description: Here are all of the amazing people that make Vantage happen! We are all high school or university students in Ontario who are dedicated to inspiring younger students.
 ---
 <h2 style='margin-top:-40px;'>Executive Team</h2>
+<p>Our directors and section leads that work in the backend to make this all happen. Feel free to reach out to any one of us to learn more about what we do! If you are interested in joining our exec team, click here!</p>
 
-<div class='flex-wrap'>
-    <div>
-        <img src='/assets/team/jtian.jpg'>
-        <h1>Jayson Tian</h1>
-        <p>Director | Web Developer</p>
+{% assign director = site.team | where_exp:"person", "person.group == 'director'"%}
+{% assign vice = site.team | where_exp:"person", "person.group == 'vicedirector'"%}
+{% assign exec = site.team | where_exp:"person", "person.group == 'exec'" | sort: "lastname" %}
+{% assign leadership = director | concat: vice | concat: exec %}
+
+<div class="exec-grid">
+    {% for member in leadership %}
+    <div class="grid-row" id="{{ member.slug }}">
+        <div class="grid-col">
+            <img class="profile-img" src="{{ site.baseurl }}/assets/tutorphotos/{{ member.img }}" alt="picture of {{ member.firstname }} {{ member.lastname }}"/>
+        </div>
+        <div class="grid-col">
+            <div class="team-member-content">
+                <h3 class="no-margin title">{{ member.firstname }} {{ member.lastname }}</h3>
+                <p>{{ member.title }}</p>
+                <p>{{ member.school }}</p>
+                <p><a class = "tla-link" href='{{ site.baseurl }}/team/{{ member.slug }}'><span class = "fas fa-arrow-circle-right"></span> More Info</a></p>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src='/assets/team/stse.jpg'>
-        <h1>Shelby Tse</h1>
-        <p>Vice Director</p>
-    </div>
-    <div>
-        <img src='/assets/team/cgeng.jpg'>
-        <h1>Cheryl Geng</h1>
-        <p>Design Lead</p>
-    </div>
-    <div>
-        <img src='https://t4.ftcdn.net/jpg/01/07/43/45/360_F_107434511_iarF2z88c6Ds6AlgtwotHSAktWCdYOn7.jpg'>
-        <h1>Alex Wang</h1>
-        <p>Tutor Lead</p>
-    </div>
-    <div>
-        <img src='/assets/team/vpoiana.jpg'>
-        <h1>Vanessa Poiana</h1>
-        <p>Management Lead </p>
-    </div>
-    <div>
-        <img src='https://t4.ftcdn.net/jpg/01/07/43/45/360_F_107434511_iarF2z88c6Ds6AlgtwotHSAktWCdYOn7.jpg'>
-        <h1>Leo Zhang</h1>
-        <p>Content Lead</p>
-    </div>
-    <div>
-        <img src='/assets/team/amane.jpg'>
-        <h1>Arya Mane</h1>
-        <p>Social Media Lead</p>
-    </div>
+    {% endfor %}
 </div>
+
+
+
+<h2>Tutoring Team</h2>
+<p>Our team of tutors and instructors currently teach virtually to students on a variety of subjects, leading engaging and personlized sessions.</p>
+
+{% assign members = site.team | where_exp:"item", "item.group == 'tutor'" | sort:"firstname" %}
+
+<div class="team-member-grid">
+    {% for member in members %}
+    <div class="grid-row" id="{{ member.slug }}">
+        <div class="grid-col">
+            {% if member.img %}
+                <img class="profile-img" src="{{ site.baseurl }}/assets/tutorphotos/{{ member.img }}" alt="picture of {{ member.firstname }} {{ member.lastname }}"/>
+                {% else %}
+                <img class="profile-img" src="{{site.baseurl}}/assets/tutorphotos/placeholder.png" alt="temporary picture for {{ member.firstname }} {{ member.lastname }}"/>
+            {% endif %}
+        </div>
+        <div class="grid-col">
+            <div class="team-member-content">
+                <h3 class="no-margin title">{{ member.firstname }} {{ member.lastname }}</h3>
+                <p></p>{{ member.school }}
+                <p><a class = "tla-link" href='{{ site.baseurl }}/team/{{ member.slug }}'><span class = "fas fa-arrow-circle-right"></span> More Info</a></p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+<p><i class='fas fa-info-circle'></i> Note: some tutor profiles or new tutors are not displayed on the website in transition times between semesters.</p>
+
+
+
+
 
 <h2>Previous Members</h2>
 <ul>
+    <li><b>Arya Mane</b> (2020): Social Media Lead</li>
     <li><b>Sabrina Xing</b> (2020): Management Lead</li>
-    <li><b>Andrew Shi</b> (2020): Curriculum Organizer</li>
+    <li><b>Andrew Shi</b> (2020): Curriculum Planner</li>
 </ul>
 
 <style>
@@ -63,14 +84,60 @@ description: Here are all of the amazing people that make Vantage happen! We are
         text-align:center;
         margin-top:40px;
     }
-    .flex-wrap img{
-        width:150px;
-        height:150px;
-        object-fit: cover;
-        border-radius:10px;
-        margin:0px auto;
-    }
     .flex-wrap h1{
         font-size:14pt;
     }
+
+    /************** GRIDS *********************/
+    .grid-col{
+        padding-right:30px;
+        margin:auto 0px;
+    }
+    .grid-row{
+        margin:30px 0px;
+        display:flex;
+        width:50%;
+    }
+
+    .team-member-content h3, .team-member-content p{
+        margin:0px;
+        margin:5px 0px;
+    }
+
+    /******************************************** EXECUTIVE GRID ********************************************/
+    .exec-grid {
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .exec-grid .profile-img{
+        width:140px;
+        height:140px;
+        object-fit:cover;
+        border-radius:10px;
+        margin:0px auto;
+    }
+
+
+
+    /******************************************** TUTOR GRID ********************************************/
+    .team-member-grid{
+        display:flex;
+        flex-wrap: wrap;
+    }
+    .team-member-grid .profile-img {
+        width:140px;
+        height:140px;
+        object-fit:cover;
+        border-radius:10px;
+        margin:0px auto;
+    }
+
+    @media only screen and (max-width: 600px){
+        .grid-row{
+            margin:30px 0px;
+            display:flex;
+            width:100%;
+        }
+    }
+
 </style>
