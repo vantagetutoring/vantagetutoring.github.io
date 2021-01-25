@@ -1,5 +1,6 @@
 ---
 title: Q&A
+type: general
 ---
 
 Common questions and answers for new tutors!
@@ -20,7 +21,7 @@ Common questions and answers for new tutors!
 </details>
 <details>
     <summary>Are you accepting jobs non-related to tutoring?</summary>
-    <p>In terms of paid jobs, only our tutors get paid. All other positions for our organization is purely voluntary. The entire executive team are all volunteers! If you are interested in joining as an exec member, look at our <a href='5-joinexec'>exec recruiting page</a>.</p>
+    <p>In terms of paid jobs, only our tutors get paid. All other positions for our organization is purely voluntary. The entire executive team are all volunteers! If you are interested in joining as an exec member, look at our <a href='4-joinexec'>exec recruiting page</a>.</p>
 </details>
 <details>
     <summary>Will there be more Q&A?</summary>

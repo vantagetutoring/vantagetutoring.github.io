@@ -8,11 +8,21 @@
     <div class='docholder'>
         <div class='nav'>
             <img src="/assets/general/logo.png" onclick='window.location.href="/"' alt="vantage-logo">
-            <p><b>Tutor Docs</b></p>
             
-            {% for doc in site.docs %}
-                <a href="{{doc.url}}">{{doc.title}}</a>
+            <p><b>General</b></p>   
+            {% for post in site.docs %}
+                {% if post.type == "general" %}
+                    <a href="{{post.url}}">{{post.title}}</a>
+                {% endif %}
             {% endfor %}
+
+            <br><p><b>For Tutors</b></p>
+            {% for post in site.docs %}
+                {% if post.type == "tutors" %}
+                    <a href="{{post.url}}">{{post.title}}</a>
+                {% endif %}
+            {% endfor %}
+            
             <br>
             <p><b>Contact Us</b></p>
             <a>647-588-6288</a>

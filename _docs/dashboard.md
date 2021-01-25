@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /tutor/dashboard
 title: Tutor Dashboard
 description: Setting up and how to use the dashboard.
 image: /assets/setup-1.png

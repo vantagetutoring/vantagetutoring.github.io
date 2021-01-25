@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Exec Positions</title>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"></link>
+  <link rel="stylesheet" href="https://use.typekit.net/gtu7ugu.css">
+  <link rel="shortcut icon" href="/assets/general/favicon.png" type="image/x-icon">
+</head>
+
+  <script src="https://kit.fontawesome.com/e8c8e8e543.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <body>
+    <div class='menubtn'><i class='fas fa-bars'></i></div>
+    <div class='docholder'>
+        <div class='nav'>
+            <img src="/assets/general/logo.png" onclick='window.location.href="/"' alt="vantage-logo">
+            
+            <p><b>General</b></p>   
+            
+                
+                    <a href="/docs/1-home">Home</a>
+                
+            
+                
+                    <a href="/docs/2-whatsnew">What's New</a>
+                
+            
+                
+                    <a href="/docs/3-becomeatutor">Become a Tutor</a>
+                
+            
+                
+                    <a href="/docs/4-joinexec">Exec Positions</a>
+                
+            
+                
+            
+                
+                    <a href="/docs/6-tutorqna">Q&A</a>
+                
+            
+                
+            
+                
+            
+                
+            
+
+            <br><p><b>For Tutors</b></p>
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+                    <a href="/docs/5-startingoff">Starting Off</a>
+                
+            
+                
+            
+                
+                    <a href="/docs/7-trial">Trial Class</a>
+                
+            
+                
+                    <a href="/docs/8-discord">Discord</a>
+                
+            
+                
+                    <a href="/docs/9-terms">Terms & Agreement</a>
+                
+            
+            
+            <br>
+            <p><b>Contact Us</b></p>
+            <a>647-588-6288</a>
+            <a href="mailto:tutoring.vantage@gmail.com">Email</a>
+        </div>
+        <div class='nav-spacer'></div>
+        <div class='content'>
+            <h1>Exec Positions</h1>
+            
+            <p><h2 id="open-positions">Open Positions</h2>
+
+<ul>
+  <li>Website Developer
+    <ul>
+      <li>Have experience with Github Repositories, Push Pull requests, intermediae HTML, CSS, Javascript knowledge, preferrable experienced in working with firebase or similar back-end APIs</li>
+    </ul>
+  </li>
+  <li>WeChat Lead
+    <ul>
+      <li>Must know how to communicate and write fluently in Mandarin</li>
+      <li>Must be organized and able to communicate effectively with other team members</li>
+    </ul>
+  </li>
+  <li>Marketing Lead
+    <ul>
+      <li>Must understand buisness marketing concepts and have relations completely. Using a variety of social media and tools both virutal and physical to connecting students with our organization.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="contact">Contact</h2>
+
+<p>If you are interested in helping and contributing to the team, please let us know! Positions on the executive team is on a complete voluntary basis and no pay is provided.</p>
+
+<p>Contact us through email at <a href="mailto:tutoring.vantage@gmail.com">tutoring.vantage@gmail.com</a> or Instagram <a href="https://www.instagram.com/vantagetutoring/">@vantagetutoring</a>.</p>
+</p>
+        </div>
+        
+    </div>
+  </body>
+</html>
+
+
+<style>
+    html, body {
+        height:100%;
+    }
+    .menubtn{display:none;}
+    .docholder{
+        display:flex;
+        height:100%;
+        width:100%;
+    }
+    .nav{
+        background-color:var(--main);
+        position:fixed;
+        top:0px;
+        left:0px;
+        width:240px;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        box-shadow: 10px 0 30px -10px rgb(223, 223, 223);
+    }
+    .nav-spacer{
+        width:240px;
+        min-width:240px;
+        max-width:240px;
+        height:100%;
+    }
+    .nav p, .nav a{
+        margin:3px 25px;
+        color:white;
+    }
+    .nav p{color:var(--text-dark)}
+    .nav img{
+        width:120px;
+        margin: 10px auto;
+        cursor:pointer;
+    }
+    .content{
+        padding:50px 100px;
+        padding-bottom:150px;
+        height:fit-content;
+        max-width:800px;
+        margin-top:50px;
+    }
+    img, video {
+        width:100%;
+        max-width:300px;
+        object-fit: scale-down;
+    }
+    button{
+      background-color:var(--main);
+      font-family:inherit;
+      color:white;
+      font-size: 12pt;
+      padding: 5px 20px;
+      border-radius: 5px;
+      cursor:pointer;
+      text-decoration:none;
+      width:auto;
+      margin-top:0px;
+      margin-bottom:0px;
+      margin:20px 0px;
+    }
+    @media only screen and (max-width: 600px){
+        .flex {
+            flex-direction:column;
+        }
+        .menubtn{
+            display:block;
+            z-index:10000;
+            position:fixed;
+            top:0px;
+            left:0px;
+            width:100%;
+            height:30px;
+            font-size:20pt;
+            padding-left:20px;
+            padding-top:20px;
+            cursor:pointer;
+        }
+        .docholder{
+            width:100%;
+            overflow-x:hidden;
+            overflow-y:scroll;
+
+        }
+        .content{
+            padding: 50px 65px;
+            margin-top:50px;
+        }
+        .nav-spacer{
+            display:none;
+        }
+        .nav{
+            margin-top:-100vh;
+            width:100%;
+            transition: all 0.5s ease-in-out;
+            overflow-y:scroll;
+        }
+        ::-webkit-scrollbar{
+            display:none;
+        }
+        .nav p, .nav a{
+            width:100%;
+            padding:0px;
+            margin:0px;
+            text-align:center;
+            margin-bottom:10px;
+            font-size:15pt;
+        }
+    }
+</style>
+
+<script>
+    var menu = false;
+    $('.menubtn').click(()=>{
+        if (!menu){
+            $('.nav').css('margin-top','0vh');
+            $('.fa-bars').removeClass().addClass('fas fa-times');
+            menu = !menu;
+        } else {
+            $('.nav').css('margin-top','-100vh');
+            menu = !menu;
+            $('.fa-times').removeClass().addClass('fas fa-bars');
+        }
+    })
+</script>
