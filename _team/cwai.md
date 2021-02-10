@@ -1,9 +1,9 @@
 ---
 firstname: "Chantel"
-lastname: "Wei"
+lastname: "Wai"
 group: "tutor"
 img: "cwei.jpg"
-grade: 11
+grade: 12
 school: "Unionville High School"
 subject: "Math & Arts"
 ---
