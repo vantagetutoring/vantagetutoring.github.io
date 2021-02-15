@@ -2,7 +2,7 @@
 firstname: "Sana"
 lastname: "Raisfirooz"
 group: "tutor"
-img: "sraisfirooz.jpeg"
+img: "sraisfirooz.jpg"
 grade: 12
 school: "Bayview Secondary School"
 subject: "Science & French"
