@@ -2,9 +2,13 @@
 layout: page
 permalink: contact
 title: Contact Us
-description: If you would like to schedule a free trial class, or have any questions, please contact us directly!
+description: <p><i class="fa fa-phone" aria-hidden="true"></i> <a href='tel:6475886288'>(647)-588-6288</a></p><p><i class="fa fa-envelope" aria-hidden="true"></i><a onclick='window.location.href="mailto:tutoring.vantage@gmail.com"'> tutoring.vantage@gmail.com</a></p>
 ---
 
+
+<iframe scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLSfF2f35S-rS35dRrVwy9ltcJmtMcEexyyWI_K3QIfpTkCfXtQ/viewform?embedded=true"  frameborder="0" marginheight="0" marginwidth="0" style='margin:auto;height:1200px;width:100%;'>Loading…</iframe>
+
+<!--
 <div id='enroll'>
     <div>
         <i class="fa fa-phone" aria-hidden="true"></i>
@@ -14,11 +18,17 @@ description: If you would like to schedule a free trial class, or have any quest
         <i class="fa fa-envelope" aria-hidden="true"></i>
         <p><a onclick='window.location.href="mailto:tutoring.vantage@gmail.com"'>tutoring.vantage@gmail.com</a></p>
     </div>
-</div>
+</div>-->
 
 
 
 <style>
+    i {
+        margin-right:10px;
+    }
+    a {
+        cursor:pointer;
+    }
     #enroll {
         display:flex;
         justify-content:space-around;

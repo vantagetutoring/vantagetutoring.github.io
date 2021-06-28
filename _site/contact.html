@@ -26,7 +26,7 @@
 		</div>
 		<div id='navlinks'>
 			<a class='tab' href="/about">About</a>
-			<a class='tab' href="/program">Program</a>
+			<a class='tab' href="/program">Services</a>
 			<a class='tab' href="/team">Team</a>
 			<a id='sign-up-btn' href='/contact'>Trial Class</a>
 			<!--
@@ -314,7 +314,7 @@
             <div class='flex'>
               <div>
                 <h1>Contact Us</h1>
-                <p>If you would like to schedule a free trial class, or have any questions, please contact us directly!</p> <br>
+                <p><p><i class="fa fa-phone" aria-hidden="true"></i> <a href='tel:6475886288'>(647)-588-6288</a></p><p><i class="fa fa-envelope" aria-hidden="true"></i><a onclick='window.location.href="mailto:tutoring.vantage@gmail.com"'> tutoring.vantage@gmail.com</a></p></p> <br>
                 
               </div>
             </div>
@@ -328,18 +328,27 @@
       <br>
     </div>
     <div id='mobile-con'>
-      <div id="enroll">
+      <iframe scrolling="no" src="https://docs.google.com/forms/d/e/1FAIpQLSfF2f35S-rS35dRrVwy9ltcJmtMcEexyyWI_K3QIfpTkCfXtQ/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0" style="margin:auto;height:1200px;width:100%;">Loading…</iframe>
+
+<!--
+<div id='enroll'>
     <div>
         <i class="fa fa-phone" aria-hidden="true"></i>
         <p>(647)-588-6288</p>
     </div>
     <div>
         <i class="fa fa-envelope" aria-hidden="true"></i>
-        <p><a onclick="window.location.href=&quot;mailto:tutoring.vantage@gmail.com&quot;">tutoring.vantage@gmail.com</a></p>
+        <p><a onclick='window.location.href="mailto:tutoring.vantage@gmail.com"'>tutoring.vantage@gmail.com</a></p>
     </div>
-</div>
+</div>-->
 
 <style>
+    i {
+        margin-right:10px;
+    }
+    a {
+        cursor:pointer;
+    }
     #enroll {
         display:flex;
         justify-content:space-around;
@@ -533,14 +542,14 @@
 					<a href='/'>Home</a>
 					<a href='/about'>About</a>
 					<a href='/team'>Our Team</a>
-					<a href='/program'>Program</a>
+					<a href='/program'>Services</a>
 					<a href='/contact'>Contact</a>
-					<a href='/docs/'>Docs</a>
+					<a href='https://www.craft.do/s/xIMbpKBWhlewTf'>Docs</a>
 
 					<!--<a href='/'>Sign Up</a>-->
 				</div>
 				<div class='link-col'>
-					<h2>Organization</h2>
+					<h2>Connect</h2>
 					<!--<a href='/'>Help & Support</a>-->
 					<!--<a href='/'>Volunteer</a>-->
 					<!--<a href='/'>Twitter</a>-->
@@ -716,13 +725,14 @@ background-color:white;
 </style>
     <script>
         window.addEventListener("load", () => {
-          $('.cover').remove();
+          //$('.cover').remove();
         });
     </script>
     <style>
       .cover{
         position:fixed;
         background-color:white;
+        display:none;
         top:0px;left:0px;height:100%;width:100%;
         z-index:10000000000;
       }

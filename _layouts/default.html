@@ -10,13 +10,14 @@
   {% include footer.html %}
     <script>
         window.addEventListener("load", () => {
-          $('.cover').remove();
+          //$('.cover').remove();
         });
     </script>
     <style>
       .cover{
         position:fixed;
         background-color:white;
+        display:none;
         top:0px;left:0px;height:100%;width:100%;
         z-index:10000000000;
       }
