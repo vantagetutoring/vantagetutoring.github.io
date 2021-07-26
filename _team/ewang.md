@@ -5,5 +5,5 @@ group: "tutor"
 img: "placeholder.png"
 grade: 12
 school: "Markville Secondary School"
-subject: "n/a"
+subject: "Math"
 ---

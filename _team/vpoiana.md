@@ -4,7 +4,7 @@ lastname: "Poiana"
 role: "Management Lead"
 group: "exec"
 img: "vpoiana.jpg"
-grade: 11
+grade: 12
 school: "University of Toronto Schools (UTS)"
 subject: "Science & French"
 ---

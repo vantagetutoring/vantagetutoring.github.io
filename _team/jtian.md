@@ -7,7 +7,7 @@ img: "jtian.jpg"
 email: "jayson.tian@ucc.on.ca"
 grade: 11
 school: "Upper Canada College (UCC)"
-subject: "English & Coding"
+subject: "Science & Coding"
 ---
 
 Hey guys! I'm Jayson, the founder, director, and web programmer of Vantage tutoring. I have been tutoring for over 4 years, and I am incredibly passionate of sharing my knowledge with others!

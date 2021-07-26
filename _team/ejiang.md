@@ -5,7 +5,7 @@ group: "tutor"
 img: "ejiang.jpg"
 grade: 11
 school: "White Oak Secondary School"
-subject: "Debate & Public Speaking"
+subject: "Debate"
 ---
 
 Hello! My name is Evelyn and I am a science tutor here at Vantage Tutoring! I am currently a student in the TOPS Program, an enriched math and science program at Marc Garneau CI. .

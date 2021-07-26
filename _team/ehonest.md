@@ -5,7 +5,7 @@ group: "tutor"
 img: "ehonest.jpg"
 grade: 12
 school: "Academy of Gifted Children - P.A.C.E."
-subject: "Mathematics"
+subject: "Math"
 ---
 
 Hey everyone! My name's Ethan, and I'm super excited for this opportunity to help out students of all ages on their journeys towards academic success. Some of my hobbies include programming games, playing sports, and speedcubing (solving Rubik's Cubes as fast as possible).

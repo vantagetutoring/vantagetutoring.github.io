@@ -5,7 +5,7 @@ title: Our Team
 description: Here are all of the amazing people that make Vantage happen! We are all high school or university students in Ontario who are dedicated to inspiring younger students.
 ---
 <h2 style='margin-top:-40px;'>Executive Team</h2>
-<p>Our directors and section leads that work in the backend to make this all happen. Feel free to reach out to any one of us to learn more about what we do! If you are interested in joining our exec team, click here!</p>
+<p>Our directors and section leads that work in the backend to make this all happen. Feel free to reach out to any one of us to learn more about what we do! If you are interested in joining our exec team, <a href='https://www.craft.do/s/oyAkdSTf4xh6xb' target="_blank">click here</a>!</p>
 
 {% assign director = site.team | where_exp:"person", "person.group == 'director'"%}
 {% assign vice = site.team | where_exp:"person", "person.group == 'vicedirector'"%}
@@ -51,6 +51,7 @@ description: Here are all of the amazing people that make Vantage happen! We are
             <div class="team-member-content">
                 <h3 class="no-margin title">{{ member.firstname }} {{ member.lastname }}</h3>
                 <p>{{ member.school }}</p>
+                <p>{{ member.subject }} Tutor</p>
                 <p class='linkmore'><a class = "tla-link" href='{{ site.baseurl }}/team/{{ member.slug }}'><span class = "fas fa-arrow-circle-right"></span> More Info</a></p>
             </div>
         </div>

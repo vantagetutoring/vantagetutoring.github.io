@@ -7,7 +7,7 @@ img: "stse.jpg"
 email: "stse"
 grade: 11
 school: "University of Toronto Schools (UTS)"
-subject: "Mathematics"
+subject: "Math"
 ---
 
 Hello! My name is Shelby, and I am a Math (and Latin) tutor here at Vantage Tutoring. I look forward to helping out students as well as sharing my love of learning, and I would be very excited if I ever get the chance to teach Latin!
