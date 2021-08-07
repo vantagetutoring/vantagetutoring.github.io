@@ -2,7 +2,7 @@
 # These are accessed via {{ site.title }}, {{ site.email }}, and so on.
 title: Vantage Tutoring
 email: jayson.tian@ucc.on.ca
-docs: https://www.craft.do/s/JebuPQy2F1h7p3
+doclink: https://www.craft.do/s/JebuPQy2F1h7p3
 permalink: /:categories/:title/
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
