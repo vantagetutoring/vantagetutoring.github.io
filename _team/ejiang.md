@@ -3,9 +3,9 @@ firstname: "Evelyn"
 lastname: "Jiang"
 group: "tutor"
 img: "ejiang.jpg"
-grade: 11
-school: "White Oak Secondary School"
-subject: "Debate"
+grade: 12
+school: "Marc Garneau C.I (TOPS)"
+subject: "Science"
 ---
 
 Hello! My name is Evelyn and I am a science tutor here at Vantage Tutoring! I am currently a student in the TOPS Program, an enriched math and science program at Marc Garneau CI. .
