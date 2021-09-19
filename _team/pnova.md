@@ -1,5 +1,5 @@
 ---
-firstname: "Patrick"
+firstname: "Patricia"
 lastname: "Nova"
 group: "tutor"
 img: "pnova.png"
