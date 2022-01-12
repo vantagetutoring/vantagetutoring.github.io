@@ -9,10 +9,12 @@ school: "University of Toronto Schools (UTS)"
 subject: "Science & French"
 ---
 
-Hey everyone! I'm Vanessa, a Grade 11 tutor at Vantage tutoring. I'm new to tutoring as I've been doing it for just under a year.
+Hey everyone! I'm Vanessa, a Grade 12 tutor at Vantage Tutoring. I'm quite experienced with tutoring as I've been doing it for three consecutive years.
 
-Aside from school, I have several interests and hobbies. I enjoy painting, playing piano and guitar, skateboarding, basketball, and I dabble in creative writing and podcasting.
+In terms of the subjects I tutor, for French, I have my DELF B2 certification which meets the language requirement for admission to universities in France. My prefered branch of science is Physics so I participated in an Astrophysics course at Harvard Summer School.
 
-As for achievements, I have made the honour roll for a variety of writing, math, and logic competitions. In addition, I made the top 20 at DECA provincials and won awards at Mock Trial competitions for my school. I have been accepted in the CTY program at Johns Hopkins University, Duke TIP and the Center for Talent Development at Northwestern University.
+Aside from school, I have several interests and hobbies. I enjoy creative writing, basketball, painting, podcasting, playing piano and guitar, and skateboarding.
 
-I'm so thrilled to have the opportunity to work with all these bright young minds and have a hand in helping them reach their full potential.
+As for achievements, I have made the honour roll for a variety of writing, chemistry, math, and logic competitions. In addition, I placed top 2 at DECA provincials and won a Mock Trial award at my school. Furthermore, I have been accepted in the CTY program at Johns Hopkins University, Duke TIP, and the Center for Talent Development at Northwestern University.
+
+I'm so thrilled to have the opportunity to share my knowledge with bright young minds and have a hand in helping them reach their full potential.
