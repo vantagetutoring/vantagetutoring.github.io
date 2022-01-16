@@ -11,7 +11,7 @@ subject: "Science & French"
 
 Hey everyone! I'm Vanessa, a Grade 12 tutor at Vantage Tutoring. I'm quite experienced with tutoring as I've been doing it for three consecutive years.
 
-In terms of the subjects I tutor, for French, I have my DELF B2 certification which meets the language requirement for admission to universities in France. My prefered branch of science is Physics so I participated in an Astrophysics course at Harvard Summer School. I aspire to study engineering in the future.
+In terms of the subjects I tutor, for French, I have my DELF B2 certification which meets the language requirement for admission to universities in France. My prefered branch of science is Physics so I participated in an Astrophysics course at Harvard Summer School.
 
 Aside from school, I have several interests and hobbies. I enjoy creative writing, basketball, painting, podcasting, playing piano and guitar, and skateboarding.
 
